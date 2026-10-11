@@ -1,0 +1,195 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 80" width="320mm" height="160mm">
+<text x="1" y="5" font-family="monospace" font-size="3.5">Sekonic SPL-400 ROM - character set 8 (Katakana)</text>
+<rect x="0" y="8" width="10" height="18" fill="none" stroke="#ccc" stroke-width="0.1"/>
+<text x="0.5" y="10" font-family="monospace" font-size="1.8" fill="#c00">21</text>
+<path fill="none" stroke="black" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round" d="M2 21 L2 19 L4 19 L4 21 L2 21"/>
+<rect x="10" y="8" width="10" height="18" fill="none" stroke="#ccc" stroke-width="0.1"/>
+<text x="10.5" y="10" font-family="monospace" font-size="1.8" fill="#c00">22</text>
+<path fill="none" stroke="black" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round" d="M16 13 L14 13 L14 21"/>
+<rect x="20" y="8" width="10" height="18" fill="none" stroke="#ccc" stroke-width="0.1"/>
+<text x="20.5" y="10" font-family="monospace" font-size="1.8" fill="#c00">23</text>
+<path fill="none" stroke="black" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round" d="M22 21 L24 21 L24 13"/>
+<rect x="30" y="8" width="10" height="18" fill="none" stroke="#ccc" stroke-width="0.1"/>
+<text x="30.5" y="10" font-family="monospace" font-size="1.8" fill="#c00">24</text>
+<path fill="none" stroke="black" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round" d="M32 19 L34 21"/>
+<rect x="40" y="8" width="10" height="18" fill="none" stroke="#ccc" stroke-width="0.1"/>
+<text x="40.5" y="10" font-family="monospace" font-size="1.8" fill="#c00">25</text>
+<path fill="none" stroke="black" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round" d="M42 15 L42 17 L44 17 L44 15 L42 15"/>
+<rect x="50" y="8" width="10" height="18" fill="none" stroke="#ccc" stroke-width="0.1"/>
+<text x="50.5" y="10" font-family="monospace" font-size="1.8" fill="#c00">26</text>
+<path fill="none" stroke="black" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round" d="M52 14 L56 14 L56 16 L52 21 M52 16 L56 16"/>
+<rect x="60" y="8" width="10" height="18" fill="none" stroke="#ccc" stroke-width="0.1"/>
+<text x="60.5" y="10" font-family="monospace" font-size="1.8" fill="#c00">27</text>
+<path fill="none" stroke="black" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round" d="M62 17 L66 17 L65 19 M64 18 L64 19 L63 21"/>
+<rect x="70" y="8" width="10" height="18" fill="none" stroke="#ccc" stroke-width="0.1"/>
+<text x="70.5" y="10" font-family="monospace" font-size="1.8" fill="#c00">28</text>
+<path fill="none" stroke="black" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round" d="M76 16 L74 18 L72 19 M74 18 L74 21"/>
+<rect x="80" y="8" width="10" height="18" fill="none" stroke="#ccc" stroke-width="0.1"/>
+<text x="80.5" y="10" font-family="monospace" font-size="1.8" fill="#c00">29</text>
+<path fill="none" stroke="black" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round" d="M84 16 L84 17 M82 18 L82 17 L86 17 L86 19 L84 21"/>
+<rect x="90" y="8" width="10" height="18" fill="none" stroke="#ccc" stroke-width="0.1"/>
+<text x="90.5" y="10" font-family="monospace" font-size="1.8" fill="#c00">2A</text>
+<path fill="none" stroke="black" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round" d="M92 17 L96 17 M94 17 L94 21 M92 21 L96 21"/>
+<rect x="100" y="8" width="10" height="18" fill="none" stroke="#ccc" stroke-width="0.1"/>
+<text x="100.5" y="10" font-family="monospace" font-size="1.8" fill="#c00">2B</text>
+<path fill="none" stroke="black" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round" d="M102 17 L106 17 M105 16 L105 21 M105 17 L102 21"/>
+<rect x="110" y="8" width="10" height="18" fill="none" stroke="#ccc" stroke-width="0.1"/>
+<text x="110.5" y="10" font-family="monospace" font-size="1.8" fill="#c00">2C</text>
+<path fill="none" stroke="black" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round" d="M112 18 L116 17 L115 19 M113 16 L114 21"/>
+<rect x="120" y="8" width="10" height="18" fill="none" stroke="#ccc" stroke-width="0.1"/>
+<text x="120.5" y="10" font-family="monospace" font-size="1.8" fill="#c00">2D</text>
+<path fill="none" stroke="black" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round" d="M123 16 L125 16 L125 21 M122 21 L126 21"/>
+<rect x="130" y="8" width="10" height="18" fill="none" stroke="#ccc" stroke-width="0.1"/>
+<text x="130.5" y="10" font-family="monospace" font-size="1.8" fill="#c00">2E</text>
+<path fill="none" stroke="black" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round" d="M132 17 L135 17 L135 21 L132 21 M132 19 L135 19"/>
+<rect x="140" y="8" width="10" height="18" fill="none" stroke="#ccc" stroke-width="0.1"/>
+<text x="140.5" y="10" font-family="monospace" font-size="1.8" fill="#c00">2F</text>
+<path fill="none" stroke="black" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round" d="M142 17 L142 18 M144 17 L144 18 M146 17 L145 20 L142 21"/>
+<rect x="150" y="8" width="10" height="18" fill="none" stroke="#ccc" stroke-width="0.1"/>
+<text x="150.5" y="10" font-family="monospace" font-size="1.8" fill="#c00">30</text>
+<path fill="none" stroke="black" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round" d="M152 17 L156 17"/>
+<rect x="0" y="26" width="10" height="18" fill="none" stroke="#ccc" stroke-width="0.1"/>
+<text x="0.5" y="28" font-family="monospace" font-size="1.8" fill="#c00">31</text>
+<path fill="none" stroke="black" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round" d="M2 31 L7 31 L5 34 M3 32 L4 34 L2 39"/>
+<rect x="10" y="26" width="10" height="18" fill="none" stroke="#ccc" stroke-width="0.1"/>
+<text x="10.5" y="28" font-family="monospace" font-size="1.8" fill="#c00">32</text>
+<path fill="none" stroke="black" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round" d="M16 31 L14 34 L12 35 M14 34 L14 39"/>
+<rect x="20" y="26" width="10" height="18" fill="none" stroke="#ccc" stroke-width="0.1"/>
+<text x="20.5" y="28" font-family="monospace" font-size="1.8" fill="#c00">33</text>
+<path fill="none" stroke="black" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round" d="M24 31 L24 33 M22 35 L22 33 L26 33 L26 36 L24 39"/>
+<rect x="30" y="26" width="10" height="18" fill="none" stroke="#ccc" stroke-width="0.1"/>
+<text x="30.5" y="28" font-family="monospace" font-size="1.8" fill="#c00">34</text>
+<path fill="none" stroke="black" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round" d="M33 32 L35 32 M34 32 L34 38 M32 38 L36 38"/>
+<rect x="40" y="26" width="10" height="18" fill="none" stroke="#ccc" stroke-width="0.1"/>
+<text x="40.5" y="28" font-family="monospace" font-size="1.8" fill="#c00">35</text>
+<path fill="none" stroke="black" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round" d="M42 33 L46 33 M45 31 L45 39 M45 33 L42 39"/>
+<rect x="50" y="26" width="10" height="18" fill="none" stroke="#ccc" stroke-width="0.1"/>
+<text x="50.5" y="28" font-family="monospace" font-size="1.8" fill="#c00">36</text>
+<path fill="none" stroke="black" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round" d="M52 33 L56 33 L56 37 L55 39 M54 31 L53 39"/>
+<rect x="60" y="26" width="10" height="18" fill="none" stroke="#ccc" stroke-width="0.1"/>
+<text x="60.5" y="28" font-family="monospace" font-size="1.8" fill="#c00">37</text>
+<path fill="none" stroke="black" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round" d="M62 33 L65 32 M62 35 L66 34 M63 31 L65 39"/>
+<rect x="70" y="26" width="10" height="18" fill="none" stroke="#ccc" stroke-width="0.1"/>
+<text x="70.5" y="28" font-family="monospace" font-size="1.8" fill="#c00">38</text>
+<path fill="none" stroke="black" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round" d="M72 33 L74 31 L76 33 L75 36 L72 39"/>
+<rect x="80" y="26" width="10" height="18" fill="none" stroke="#ccc" stroke-width="0.1"/>
+<text x="80.5" y="28" font-family="monospace" font-size="1.8" fill="#c00">39</text>
+<path fill="none" stroke="black" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round" d="M83 31 L82 34 M83 33 L86 33 M84 33 L84 37 L82 39"/>
+<rect x="90" y="26" width="10" height="18" fill="none" stroke="#ccc" stroke-width="0.1"/>
+<text x="90.5" y="28" font-family="monospace" font-size="1.8" fill="#c00">3A</text>
+<path fill="none" stroke="black" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round" d="M92 32 L96 32 L96 38 L92 38"/>
+<rect x="100" y="26" width="10" height="18" fill="none" stroke="#ccc" stroke-width="0.1"/>
+<text x="100.5" y="28" font-family="monospace" font-size="1.8" fill="#c00">3B</text>
+<path fill="none" stroke="black" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round" d="M102 33 L107 33 M103 31 L103 35 M106 31 L106 36 L104 39"/>
+<rect x="110" y="26" width="10" height="18" fill="none" stroke="#ccc" stroke-width="0.1"/>
+<text x="110.5" y="28" font-family="monospace" font-size="1.8" fill="#c00">3C</text>
+<path fill="none" stroke="black" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round" d="M112 31 L114 31 M112 33 L114 33 M112 39 L116 36 L117 31"/>
+<rect x="120" y="26" width="10" height="18" fill="none" stroke="#ccc" stroke-width="0.1"/>
+<text x="120.5" y="28" font-family="monospace" font-size="1.8" fill="#c00">3D</text>
+<path fill="none" stroke="black" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round" d="M122 32 L127 32 L125 36 L122 39 M125 36 L127 39"/>
+<rect x="130" y="26" width="10" height="18" fill="none" stroke="#ccc" stroke-width="0.1"/>
+<text x="130.5" y="28" font-family="monospace" font-size="1.8" fill="#c00">3E</text>
+<path fill="none" stroke="black" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round" d="M132 34 L137 33 L136 35 M133 31 L133 38 L134 39 L137 39"/>
+<rect x="140" y="26" width="10" height="18" fill="none" stroke="#ccc" stroke-width="0.1"/>
+<text x="140.5" y="28" font-family="monospace" font-size="1.8" fill="#c00">3F</text>
+<path fill="none" stroke="black" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round" d="M142 31 L143 33 M147 31 L145 36 L142 39"/>
+<rect x="150" y="26" width="10" height="18" fill="none" stroke="#ccc" stroke-width="0.1"/>
+<text x="150.5" y="28" font-family="monospace" font-size="1.8" fill="#c00">40</text>
+<path fill="none" stroke="black" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round" d="M152 33 L154 31 L156 33 L155 36 L152 39 M153 33 L155 35"/>
+<rect x="0" y="44" width="10" height="18" fill="none" stroke="#ccc" stroke-width="0.1"/>
+<text x="0.5" y="46" font-family="monospace" font-size="1.8" fill="#c00">41</text>
+<path fill="none" stroke="black" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round" d="M4 49 L2 50 M3 50 L4 52 L3 57 M2 52 L6 52"/>
+<rect x="10" y="44" width="10" height="18" fill="none" stroke="#ccc" stroke-width="0.1"/>
+<text x="10.5" y="46" font-family="monospace" font-size="1.8" fill="#c00">42</text>
+<path fill="none" stroke="black" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round" d="M12 49 L12 51 M14 49 L14 51 M17 49 L15 54 L12 57"/>
+<rect x="20" y="44" width="10" height="18" fill="none" stroke="#ccc" stroke-width="0.1"/>
+<text x="20.5" y="46" font-family="monospace" font-size="1.8" fill="#c00">43</text>
+<path fill="none" stroke="black" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round" d="M23 49 L25 49 M22 51 L26 51 M24 51 L24 55 L23 57"/>
+<rect x="30" y="44" width="10" height="18" fill="none" stroke="#ccc" stroke-width="0.1"/>
+<text x="30.5" y="46" font-family="monospace" font-size="1.8" fill="#c00">44</text>
+<path fill="none" stroke="black" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round" d="M33 49 L33 57 M33 52 L36 53"/>
+<rect x="40" y="44" width="10" height="18" fill="none" stroke="#ccc" stroke-width="0.1"/>
+<text x="40.5" y="46" font-family="monospace" font-size="1.8" fill="#c00">45</text>
+<path fill="none" stroke="black" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round" d="M42 51 L46 51 M44 49 L44 55 L43 57"/>
+<rect x="50" y="44" width="10" height="18" fill="none" stroke="#ccc" stroke-width="0.1"/>
+<text x="50.5" y="46" font-family="monospace" font-size="1.8" fill="#c00">46</text>
+<path fill="none" stroke="black" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round" d="M53 50 L55 50 M52 56 L56 56"/>
+<rect x="60" y="44" width="10" height="18" fill="none" stroke="#ccc" stroke-width="0.1"/>
+<text x="60.5" y="46" font-family="monospace" font-size="1.8" fill="#c00">47</text>
+<path fill="none" stroke="black" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round" d="M62 50 L66 50 L65 54 L62 57 M63 52 L66 56"/>
+<rect x="70" y="44" width="10" height="18" fill="none" stroke="#ccc" stroke-width="0.1"/>
+<text x="70.5" y="46" font-family="monospace" font-size="1.8" fill="#c00">48</text>
+<path fill="none" stroke="black" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round" d="M74 49 L74 50 M72 50 L76 50 L72 56 M74 53 L74 57 M74 53 L76 56"/>
+<rect x="80" y="44" width="10" height="18" fill="none" stroke="#ccc" stroke-width="0.1"/>
+<text x="80.5" y="46" font-family="monospace" font-size="1.8" fill="#c00">49</text>
+<path fill="none" stroke="black" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round" d="M86 49 L84 54 L82 57"/>
+<rect x="90" y="44" width="10" height="18" fill="none" stroke="#ccc" stroke-width="0.1"/>
+<text x="90.5" y="46" font-family="monospace" font-size="1.8" fill="#c00">4A</text>
+<path fill="none" stroke="black" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round" d="M93 51 L92 57 M95 50 L96 57"/>
+<rect x="100" y="44" width="10" height="18" fill="none" stroke="#ccc" stroke-width="0.1"/>
+<text x="100.5" y="46" font-family="monospace" font-size="1.8" fill="#c00">4B</text>
+<path fill="none" stroke="black" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round" d="M102 49 L102 56 L103 57 L106 57 M106 51 L102 52"/>
+<rect x="110" y="44" width="10" height="18" fill="none" stroke="#ccc" stroke-width="0.1"/>
+<text x="110.5" y="46" font-family="monospace" font-size="1.8" fill="#c00">4C</text>
+<path fill="none" stroke="black" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round" d="M112 50 L116 50 L116 51 L115 54 L112 57"/>
+<rect x="120" y="44" width="10" height="18" fill="none" stroke="#ccc" stroke-width="0.1"/>
+<text x="120.5" y="46" font-family="monospace" font-size="1.8" fill="#c00">4D</text>
+<path fill="none" stroke="black" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round" d="M122 53 L124 50 L127 55"/>
+<rect x="130" y="44" width="10" height="18" fill="none" stroke="#ccc" stroke-width="0.1"/>
+<text x="130.5" y="46" font-family="monospace" font-size="1.8" fill="#c00">4E</text>
+<path fill="none" stroke="black" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round" d="M132 51 L136 51 M134 49 L134 57 M133 53 L132 56 M135 53 L136 56"/>
+<rect x="140" y="44" width="10" height="18" fill="none" stroke="#ccc" stroke-width="0.1"/>
+<text x="140.5" y="46" font-family="monospace" font-size="1.8" fill="#c00">4F</text>
+<path fill="none" stroke="black" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round" d="M142 50 L147 50 L145 54 M144 52 L146 56"/>
+<rect x="150" y="44" width="10" height="18" fill="none" stroke="#ccc" stroke-width="0.1"/>
+<text x="150.5" y="46" font-family="monospace" font-size="1.8" fill="#c00">50</text>
+<path fill="none" stroke="black" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round" d="M153 49 L156 51 M152 51 L155 53 M152 54 L156 57"/>
+<rect x="0" y="62" width="10" height="18" fill="none" stroke="#ccc" stroke-width="0.1"/>
+<text x="0.5" y="64" font-family="monospace" font-size="1.8" fill="#c00">51</text>
+<path fill="none" stroke="black" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round" d="M4 68 L2 75 L6 74 M5 73 L7 75"/>
+<rect x="10" y="62" width="10" height="18" fill="none" stroke="#ccc" stroke-width="0.1"/>
+<text x="10.5" y="64" font-family="monospace" font-size="1.8" fill="#c00">52</text>
+<path fill="none" stroke="black" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round" d="M16 67 L15 71 L12 75 M13 70 L16 73"/>
+<rect x="20" y="62" width="10" height="18" fill="none" stroke="#ccc" stroke-width="0.1"/>
+<text x="20.5" y="64" font-family="monospace" font-size="1.8" fill="#c00">53</text>
+<path fill="none" stroke="black" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round" d="M22 67 L26 67 M22 70 L26 70 M23 67 L23 73 L24 75 L26 75"/>
+<rect x="30" y="62" width="10" height="18" fill="none" stroke="#ccc" stroke-width="0.1"/>
+<text x="30.5" y="64" font-family="monospace" font-size="1.8" fill="#c00">54</text>
+<path fill="none" stroke="black" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round" d="M32 69 L36 68 L35 70 M33 67 L34 75"/>
+<rect x="40" y="62" width="10" height="18" fill="none" stroke="#ccc" stroke-width="0.1"/>
+<text x="40.5" y="64" font-family="monospace" font-size="1.8" fill="#c00">55</text>
+<path fill="none" stroke="black" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round" d="M43 68 L45 68 L44 74 M42 74 L46 74"/>
+<rect x="50" y="62" width="10" height="18" fill="none" stroke="#ccc" stroke-width="0.1"/>
+<text x="50.5" y="64" font-family="monospace" font-size="1.8" fill="#c00">56</text>
+<path fill="none" stroke="black" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round" d="M52 68 L56 68 L56 74 L52 74 M52 71 L56 71"/>
+<rect x="60" y="62" width="10" height="18" fill="none" stroke="#ccc" stroke-width="0.1"/>
+<text x="60.5" y="64" font-family="monospace" font-size="1.8" fill="#c00">57</text>
+<path fill="none" stroke="black" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round" d="M63 67 L65 67 M62 69 L66 69 L66 71 L65 73 L63 75"/>
+<rect x="70" y="62" width="10" height="18" fill="none" stroke="#ccc" stroke-width="0.1"/>
+<text x="70.5" y="64" font-family="monospace" font-size="1.8" fill="#c00">58</text>
+<path fill="none" stroke="black" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round" d="M72 71 L72 67 M76 67 L76 71 L74 75"/>
+<rect x="80" y="62" width="10" height="18" fill="none" stroke="#ccc" stroke-width="0.1"/>
+<text x="80.5" y="64" font-family="monospace" font-size="1.8" fill="#c00">59</text>
+<path fill="none" stroke="black" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round" d="M82 75 L83 67 M85 67 L85 75 L87 73"/>
+<rect x="90" y="62" width="10" height="18" fill="none" stroke="#ccc" stroke-width="0.1"/>
+<text x="90.5" y="64" font-family="monospace" font-size="1.8" fill="#c00">5A</text>
+<path fill="none" stroke="black" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round" d="M93 67 L93 75 L95 74 L96 72"/>
+<rect x="100" y="62" width="10" height="18" fill="none" stroke="#ccc" stroke-width="0.1"/>
+<text x="100.5" y="64" font-family="monospace" font-size="1.8" fill="#c00">5B</text>
+<path fill="none" stroke="black" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round" d="M102 68 L102 74 L106 74 L106 68 L102 68"/>
+<rect x="110" y="62" width="10" height="18" fill="none" stroke="#ccc" stroke-width="0.1"/>
+<text x="110.5" y="64" font-family="monospace" font-size="1.8" fill="#c00">5C</text>
+<path fill="none" stroke="black" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round" d="M112 70 L112 68 L116 68 L116 72 L114 75"/>
+<rect x="120" y="62" width="10" height="18" fill="none" stroke="#ccc" stroke-width="0.1"/>
+<text x="120.5" y="64" font-family="monospace" font-size="1.8" fill="#c00">5D</text>
+<path fill="none" stroke="black" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round" d="M122 75 L125 73 L126 71 L127 67 M122 70 L124 70"/>
+<rect x="130" y="62" width="10" height="18" fill="none" stroke="#ccc" stroke-width="0.1"/>
+<text x="130.5" y="64" font-family="monospace" font-size="1.8" fill="#c00">5E</text>
+<path fill="none" stroke="black" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round" d="M132 67 L133 69 M134 67 L135 69"/>
+<rect x="140" y="62" width="10" height="18" fill="none" stroke="#ccc" stroke-width="0.1"/>
+<text x="140.5" y="64" font-family="monospace" font-size="1.8" fill="#c00">5F</text>
+<path fill="none" stroke="black" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round" d="M142 67 L142 69 L144 69 L144 67 L142 67"/>
+<rect x="150" y="62" width="10" height="18" fill="none" stroke="#ccc" stroke-width="0.1"/>
+<text x="150.5" y="64" font-family="monospace" font-size="1.8" fill="#c00">60</text>
+<path fill="none" stroke="black" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round" d=""/>
+</svg>

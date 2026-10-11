@@ -1,0 +1,5132 @@
+G) HEWLETT
+
+PACKARD
+
+SERVICE MANUAL
+
+HP 7479A
+GRAPHICS PLOTTER
+
+SERIAL NUMBERS
+
+This manual applies directly to plotters
+with serial numbers prefixed 2541V.
+
+For additional important information about
+serial numbers, see PLOTTERS COVERED
+BY MANUAL in Section I.
+
+©1983, 1987 by HEWLETT-PACKARD COMPANY
+16399 W. BERNARDO DRIVE, SAN DIEGO, CALIFORNIA 92127-1899
+
+MANUAL PART NO. 07475-90000 Printed: AUGUST 1987
+
+Model 7475A Table of Contents
+
+TABLE OF CONTENTS
+Section Page Section Page
+I GENERALINFORMATION ............. 1-1 VI SERVICE ........ 0.0. cece cece cece nees 6-1
+1-1. Introduction ....................2.. 1-1 6-1. Introduction ................0.0 eee 6-1
+1-6. Specifications ...............0eeeee 1-1 6-3. Simplified Theory of Operation ..... 6-1
+1-8. Safety Considerations ............. 1-1 6-7. RS-232-C/CCITT V.24 Interface
+1-10. Plotters Covered by Manual ........ 1-1 Circuit (Option 001) .............. 6-1
+1-15. Description ................ 0. cece ee 1-2 6-14. HP-IB Interface (Option 002) ....... 6-2
+1-19. Line Voltage and Fuse Selection .... 1-2 6-25. Microprocessor Circuit ............. 6-5
+1-23. Grounding Requirements .......... 1-3 6-29. Read Only Memory Circuit ......... 6-5
+1-25. Options ............ 0.0 cee eee eee eee 1-3 6-31. Random Access Memory Circuit .... 6-5
+1-29. Accessories Supplied ............... 16 6-33. Gate ArraysAandB .............. 6-5
+1-31. Recommended Test Equipment ..... 1-6 6-35. Pen Carousel .................-006- 6-5
+1-33. Packaging for Shipment ........... 1-6 6-37. Motor Servo Systems .............. 6-5
+6-41. Motor Supply Sensor Circuit ....... 6-6
+ll OPERATING AND PERFORMANCE 6-44. Motor Current Sensor Circuit ....... 6-7
+TEST 20... ccc cece ccc eee ee eee 2-1 6-46. Pen Down Circuit ............-...5. 6-7
+2-1. Introduction ...............000 00 eee 2-1 6-48. Power Supplies ..............-+0455 6-7
+23 Rear Panel Switches 6-50. Recommended Test Equipment ..... 6-7
+(Option 001) .........0sceeeseeeee 21 6-52. Troubleshooting ................... 6-7
+2.9. Rear Panel Switches 6-54. Exchange Printed Circuit
+(Option 002) cd ceccuceccuccccuseuee 9-1 Assembly seat eee ener ence Hee eees 6-7
+2-13. Basic Operating Test .............. 2-1 6-56. Drive Motors and Pen Solenoid ..... 6-7
+2-15. Hewlett-Packard Graphics 6-58. Troubleshooting Table ............. 6-8
+Language ........-...ceeeeeeeeee 2.9 6-60. Test A ....... cece cece cece cree 6-8
+9-17. Demonstration Plot ................ 2.9 6-62. Test B ....... ccc ce eee ee eee 6-8
+2-19. Test Program ..............ece scene 2-2 6-64. Part Removal and Replacement .... 6-9
+2-21. Repeatability ...................0.5 2-2 6-65. Top Case Removal .............---. 6-9
+6-66. Pen Carousel Housing Removal .... 6-9
+III ADJUSTMENTS ...............000cceees 3-1 6-67. Paper Drive Motor Assembly
+3-1 Introduction 3-1 Removal ............ccceeeecceees 6-10
+IIIT EERE 6-68. Pen Solenoid ...................005 6-11
+6-69. Pen Drive Motor and Belt .......... 6-11
+IV REPLACEABLE PARTS ...........000005 4-1 6-72. Pen Carriage, Penholder, and
+4-1. Introduction ..................00 00s 4-1 Damper Removal .............-+- 6-13
+4-3. Exchange Assemblies .............. 4-1 6-75. Pinch Rollers Removal and
+4-5. Replaceable Parts Lists ............ 4-1 Replacement ............ceeeceees 6-14
+4-7. Ordering Information .............. 4-1 6-76. Printed Circuit Assembly
+4-9, Code List of Manufacturers ........ 4-1 Removal .......ccccc cccccceccuce 6-14
+4-11. Designations and Abbreviations ... 4-1 6-77. Pinch Roller Mechanism Removal .. 6-15
+6-79. Paper Drive Shaft and Coupler
+V PRODUCT HISTORY .................... 5-1 Removal .............ccceeeeeeeee 6-15
+5-1. Introduction ..................0000. 5-1 6-80. Power Module and Transformer .... 6-16
+5-3. History of Assemblies by 6-81. Power Module Wiring .............. 6-16
+Serial Prefix Number ............ 5-1 6-83. Cleaning ..............cccee eee eeee 6-16
+5-7. History of Printed Circuit 6-85. Pen Stall Cleaning ................. 6-17
+Assemblies ..............00000008 5-1 6-87. Diagrams .................0cc eee 6-17
+TABLES
+Table Page Table Page
+1-1 Specifications ............00cc cece neues 1-1 4-1. Parts List, Main PCA, RS-232-C,
+1-2 Line Voltage Selection ................. 1-3 Option 001 ...... 0. eee eee 4-2
+1-3 Line Fuses ..............000cccceeeeeees 1-3 4-2. Parts List, Main PCA, HP-IB
+1-4. Accessories Supplied ................... 1-6 Option 002 ..... 0... cece cece eee ee 4-5
+1-5 Recommended Test Equipment ......... 1-6 4-3. Parts List, Mechanical Parts ........... 4-8
+2-1 Baud Rate Selection ................... 2-1 4-4, Parts List, Pen Carousel Parts ......... 4-10
+2-2. 7475A HP-GL Instruction Set .......... 2-3 4-5. Code List of Manufacturers ............ 4-11
+Table of Contents
+
+Table
+
+4-6.
+5-1.
+5-2.
+
+ii
+
+Model 7475A
+TABLES (Continued)
+Page Table Page
+Reference Designations and 5-3. Date Codes ............ ccc ccc e cece e ee 5-1
+Abbreviations ...............:.000eees 4-12 6-1. RS-232-C/CCITT V.24 Interface Signal
+Assemblies by Plotter Serial Number Levels 0.0.0.0... . ccc cece eee eee tees 6-2
+|p =) 0 >, a 5-1 6-2. Recommended Test Equipment ......... 6-7
+Item Description ............. 0 ccc eee ees 5-1 6-3. Troubleshooting ....................... 6-8
+ILLUSTRATIONS
+Page Figure Page
+Model 7475A .. 0... . ccc cece eee 1-0 6-9. Pen Carousel Housing ................. 6-10
+Top Case Removal .................0005 1-3 6-10. Paper Drive Motor and Solenoid
+Line Voltage Selection ...............55 1-4 Cables ......... 0... ccc cece eee eee ee 6-10
+Power Cord Configurations ............ 1-5 6-11. Paper Drive Motor Clamp and Pen Drop
+P1 and P2 Button and Power Switch Shield ......... 0.0... cc cece cee eee eens 6-10
+Locations ........... 00. c cece eee eens 2-3 6-12. Paper Drive Coupler Parts ............. 6-11
+Demonstration Plot .................065 2-5 6-13. Pen Solenoid and Pen Drive ............ 6-12
+Test Program ...............0. esse e eee 2-6 6-14. Pen Drive Tensioner ................... 6-12
+Features Test Plot ..................00. 2-9 6-15. Pen Carriage ...............00. cece eee 6-12
+Repeatability Test Points .............. 2-10 6-16. Measuring Pen Down Force ............ 6-14
+Model 7475A Exploded View ........... 4-9 6-17. Pinch Rollers ......................002. 6-14
+Pen Carousel Parts .................05. 4-10 6-18. Chassis Assembly Removal ............ 6-14
+7475A Simplified Block Diagram ....... 6-1 6-19. Underside of Chassis Assembly ........ 6-15
+RS-232-C/CCITT V.24 Interface 6-20. Power Module Removal ................ 6-16
+CircuitS 1.0.0... cc cece cece eee eee eee 6-3 6-21. Power Module Wiring .................. 6-17
+HP-IB Interface Circuits and Handshake 6-22. Schematic Diagram Notes ............. 6-18
+Timing Diagram ...................4, 6-4 6-23. ANSI Y32.14 Logic Symbols ........... 6-20
+Quadrature Waveforms ..............6. 6-6 6-24. RS-232-C, Option 001 Schematic
+Motor Servo System Block Diagram ........... cee cece cece eens 6-27
+Diagram .. ow... cece eee ee eee ee 6-6 6-25. HP-IB, Option 002 Schematic
+Drive Signal’ ses ............c cece eee 6-9 Diagram ........... 0c cece cece eee 6-29
+Top Case Reu_oval ............ cece eee 6-9 6-26. Power Supply, Schematic
+Pen Carousel Cable .................... 6-9 Diagram .......... 0... cece cee cece ees 6-31
+Model 7475A
+
+Safety Symbols
+
+General Definitions of Safety Symbols Used On Equipment
+
+CAUTION
+
+1-A-26-1
+
+International caution symbol (refer to manual): the product will be
+marked with this symbol when it is necessary for the user to refer to
+the instruction manual in order to protect against damage to the
+instrument.
+
+Indicates dangerous voltage (terminals fed from the interior by
+voltage exceeding 1000 volts must be so marked).
+
+Protective conductor terminal. For protection against electrical
+shock in case of a fault. Used with field wiring terminals to indi-
+cate the terminal which must be connected to ground before
+operating equipment.
+
+Low-noise or noiseless, clean ground (earth) terminal. Used fora
+signal common, as well as providing protection against electrical
+shock in case of a fault. A terminal marked with this symbol must
+be connected to ground in the manner described in the installation
+(operating) manual, and before operating the equipment.
+
+Frame or chassis terminal. A connection to the frame (chassis) of
+the equipment which normally includes all exposed metal struc-
+tures.
+
+Alternating current
+Direct current
+Alternating or direct current
+
+The WARNING sign denotes a hazard. It calls attention to a pro-
+cedure, practice, or the like, which, if not correctly performed or
+adhered to, could result in personal injury.
+
+The CAUTION sign denotes a hazard. It calls attention to an op-
+erating procedure, practice, or the like, which if not correctly
+performed or adhered to, could result in damage to or destruction
+of part or all of the product.
+
+iii
+Section I Model 7475A
+
+7475-A-1-1
+
+Figure 1-1. Model 7475A
+
+1-0
+
+Model 7475A
+
+Section I
+
+SECTION |
+GENERAL INFORMATION
+
+1-1. INTRODUCTION
+
+1-2. This service manual contains information nec-
+essary to test and service the Hewlett-Packard Model
+7475A Plotter. This manual is divided into six sections
+as follows:
+
+I GENERAL INFORMATION
+
+II OPERATING AND PERFORMANCE TESTS
+Il ADJUSTMENTS
+
+IV REPLACEABLE PARTS
+
+Vv PRODUCT HISTORY
+
+VI SERVICE
+
+1-3. Information for interfacing, operating, and pro-
+gramming the Model 7475A is contained in the following
+publications:
+
+HP
+Title Part Number
+
+Interfacing and Programming Manual 07475-90001
+Operation and Interconnection Manual 07475-90002
+
+Programmer’s Reference Card 07475-90004
+
+1-4. This General Information section includes a de-
+scription of the plotter, its specifications, options avail-
+able, accessories supplied, and general installation
+instructions.
+
+1-5. SPECIFICATIONS
+
+1-6. Table 1-1 lists the specifications for the Model
+7475A. These specifications include the performance
+standards against which the plotter is tested.
+
+1-7. Also included in Table 1-1 are supplemental
+characteristics. Supplemental characteristics are not
+specifications but are typical characteristics included as
+additional information for the user.
+
+1-8. SAFETY CONSIDERATIONS
+
+1-9. Safety information relevant to the service proce-
+dure being described is provided in the appropriate sec-
+tions of this manual. The Model 7475A and this manual
+should be reviewed for safety markings and instructions
+before service work is begun.
+
+Table 1-1. Specifications
+
+PERFORMANCE SPECIFICATIONS
+Repeatability
+With the same pen: 0.1 mm (0.004 in.)
+With a different pen: 0.2 mm (0.008 in.)
+
+SUPPLEMENTAL CHARACTERISTICS
+Maximum plotting area
+B/A3: 402.2 mm (15.8 in.)
+X 274.8 mm (10.8 in.) metric
+
+414.2 mm (18.3 in.)
+X 258.0 mm (10.2 in.) English
+
+A/A4: 274.8 mm (10.8 in.)
+X 192.2 mm (7.6 in.) metric
+
+258.0 mm (10.2 in.)
+X 198.2 mm (7.8 in.) English
+
+Pen velocity
+Pen down: maximum, 38.1 cm/s (15 in./s)
+programmable, 1 to 38 cm/s in 1 cm/s
+increments.
+
+Pen up: 50.8 cm/s (20 in./s)
+
+Addressable step size
+0.025 mm (0.00098 in.)
+
+Acceleration
+Approximately 2g
+
+Power requirements
+Source: 100, 120, 220, or 240 Vac —10%, +5%
+Frequency: 48 to 66 Hz
+Consumption: 35 W maximum
+
+Size
+Length: 57 cm (22.5 in.)
+Width: 37 cm (14.5 in.)
+Height: 13 em (5 in.)
+
+Weight
+7.2 kg (15.8 Ib)
+
+1-10. PLOTTERS COVERED BY MANUAL
+
+1-11. The plotter serial number is located on the rear
+panel. Hewlett-Packard uses a two-part serial number
+consisting of a four-digit prefix and a five-digit suffix
+separated by a letter (0000A00000). The prefix is the
+same for all identical plotters and changes only when a
+modification is made that affects parts compatibility.
+The suffix is assigned sequentially and is different for
+
+1-1
+Section I
+
+each plotter. This manual applies directly to plotters
+with the serial prefix shown on the title page.
+
+1-12. Ifthe serial number prefix of your plotter is higher
+than the one shown, one or more update packages of
+revised pages are supplied with the manual. Use these
+new pages to replace the original pages. If two or more
+update packages are supplied, insert them in order by
+revision letter; that is, Revision A first, then Revision B,
+etc. The title page will then show the latest serial prefix
+and the manual will apply directly to plotters with that
+prefix.
+
+1-13. In addition to plotter changes, revised pages may
+correct errors in the manual or include improved proce-
+dures.
+
+1-14. If the plotter at hand has a lower serial prefix
+than the one shown on the title page, information in the
+Product History section will adapt this manual to that
+plotter.
+
+1-15. DESCRIPTION
+
+1-16. The Model 7475A accepts digital information to
+produce graphic plots on ISO A3, 297 X 420 mm (11 X 17
+in.) paper or ISO A4, 210 x 297 mm (8-1/2 X 11 in.) paper
+or special transparency plastic. Disposable pens are avail-
+able in various ink colors.
+
+1-17. The six-pen capability permits several colors to
+be used in a plot without stopping the plotter to change
+pens manually. Pens are automatically capped while
+they are stored in the pen carousel.
+
+1-18. Seven different line types are provided. Labeling
+can be done in nineteen character sets plus user-defined
+characters. Text (labeling) can be written in any direction,
+upright, or slanted. Character size is also variable. In
+addition, arc and circle generation as well as area fill
+with various fill types are provided.
+
+1-19. LINE VOLTAGE AND FUSE SELECTION
+
+CAUTION
+
+To prevent damage to the plotter, make
+sure the line voltage and fuse selection
+is correct before connecting line power.
+
+The line power cord and power outlet
+must have a protective earth (ground)
+terminal.
+
+1-20. The 7475A primary power circuit can be configured
+to operate from any one of the following power sources
+at a line frequency of 48 to 66 Hz, single phase. Maxi-
+mum power used is 35 W.
+
+1-2
+
+Model 7475A
+
+100 Vac —10%, +5%
+120 Vac—10%, +5%
+220 Vac —10%, +5%
+240 Vac —10%, +5%
+
+1-21. Line voltage selection, and the required fuse
+ratings for each line voltage setting, are specified on the
+line voltage label which is visible through the small
+recessed window in the rear panel. See Figure 1-2.
+
+CAUTION
+
+Applying a line voltage of 220 V or 240 V
+to the plotter while the line voltage selec-
+tion is set for 100 V or 120 V operation
+may damage the plotter circuits.
+
+1-22. The line voltage selection may be changed to con-
+form to the line voltage in a particular area. Use the fol-
+
+lowing procedure.
+
+The following procedure should be per-
+formed only by service-trained person-
+nel who are aware of the electrical shock
+hazards involved.
+
+a. Set the plotter LINE switch to OFF (0) and dis-
+connect the line cord.
+
+b. Remove the plotter top case by removing the
+screws indicated in Figure 1-2. Lift the rear of the
+top case and the front will then release. When
+replacing the top case, make sure the PAPER
+HOLD lever extends through the case, and that
+the tabs inside the front of the top case align
+properly above and below the base plate.
+
+c. Line voltage selection is determined by the power
+input connections to the transformer primary wind-
+ings. Table 1-2 lists the wire colors and trans-
+former contact connections for each line voltage.
+The transformer pin numbers are identified on
+the power module molding. Figure 1-3 illustrates
+the connections for each voltage. Change the wire
+connections as required to conform to the desired
+line voltage selection.
+
+d. Make sure the line fuse is correct according to
+Table 1-3. The fuseholder cap is the bayonet type.
+Press and turn counterclockwise to remove, clock-
+wise to lock.
+
+e. Change the position of the line voltage label
+block so that the voltage selected is right side up.
+This block snaps in and out of the power module
+molding.
+
+f. Replace the top case, making sure it fits properly
+on the front edge of the base and the PAPER
+HOLD lever extends through the case.
+
+g. Install the proper power cord for the power range
+selected and type of mains outlet to which the
+cord is to be connected. See Figure 1-4.
+Model 7475A
+
+LINE VOLTAGE AND LINE
+FUSE RATING LABEL FUSE
+
+EE DOEELUREEERESEEIE! WEEELE TEEN bene
+
+REMOVE
+THREE
+SCREWS
+
+7475-A-2-1
+
+Figure 1-2. Top Case Removal
+
+1-23. GROUNDING REQUIREMENTS
+
+1-24. To protect operating personnel, the plotter must
+be properly grounded. The plotter is supplied with a
+three-conductor power cable which, when connected to
+an appropriate power outlet, grounds the plotter. To
+preserve this protection feature, do not operate the plot-
+ter from a power outlet which has no grounded connection.
+
+Section I
+
+1-25. OPTIONS
+
+1-26. The Model 7475A is available with one of two
+types of interface, designated as the following options:
+
+RS-232-C/CCITT V.24
+Hewlett-Packard Interface Bus
+
+Option 001
+Option 002
+
+1-27. Option 016 provides a special “eavesdrop” cable
+for Option 001.
+
+1-28. The line voltage selection ordered is designated
+as one of the following:
+
+Option 010 100 Vac
+Option 012 120 Vac
+Option 022 220 Vac
+Option 024 240 Vac
+
+1-29. ACCESSORIES SUPPLIED
+
+1-30. The items listed in Table 1-4 are supplied with
+each plotter.
+
+1-31. RECOMMENDED TEST EQUIPMENT
+
+1-32. Equipment required to maintain the Model 7475A
+is listed in Table 1-5.
+
+Table 1-2. Line Voltage Selection
+
+NOMINAL TRANSFORMER PRIMARY CONNECTIONS*
+LINE
+VOLTAGE PIN 1 PIN 2 PIN 3 PIN 4 PIN 5 PIN 6 PIN 7
+100 V 8 928 958 8 958 NC 928
+120 V 8 NC 928 8 928 958 958
+220 V 8 958 NC 958 928 8 928
+240 V 8 NC 958 958 928 8 928
+*Wire identification is by color code:
+8= GRAY
+928 = WHITE/RED/GRAY
+958 = WHITE/GREEN/GRAY
+Table 1-3. Line Fuses
+LINE FUSE FUSE FUSEHOLDER CAP
+VOLTAGE RATING HP PART NUMBER HP PART NUMBER
+100/120 V 0.6 AT 2110-0016 2110-0565
+*220/240 V (0.25 X 1.25 in.) 0.3 AT 2110-0044 2110-0565
+(5X 20 mm) 0.315 AT 2110-0639 2110-0567
+
+*Hither Part No. 2110-0044 or 2110-0449 will provide adequate protection. Part No. 2110-0044 is a standard U.S. fuse for
+240 V line; Part No. 2110-0449 is a standard European fuse for 220 V line.
+
+1-3
+Section I Model 7475A
+
+8 928 958 8
+
+7475-A-3-1 ; TAT5-A-4-1
+LINE VOLTAGE 928
+LABEL BLOCK
+
+LINE VOLTAGE 958
+LABEL BLOCK
+
+DETAIL A — 100V DETAIL B — 120V
+
+T475-A-5-1 7475-A-6-1
+
+LINE VOLTAGE 928 LINE VOLTAGE 8 928
+LABEL BLOCK LABEL BLOCK
+DETAIL C — 220V DETAIL D — 240V
+
+WIRE IDENTIFICATION IS BY COLOR CODE:
+
+8 = GRAY
+928 = WHITE/RED/GRAY
+958 = WHITE/GREEN/GRAY
+
+CAUTION
+
+MAKE SURE CORRECT FUSE 1S
+INSTALLED. REFER TO TABLE 1-3.
+
+Figure 1-3. Line Voltage Selection
+
+1-4
+
+Model 7475A Section I
+
+BS 13634 Option No.
+
+HP Part Number 8120-1351; 250 V, 13 A, 1¢ plug 900
+rating. For use in United Kingdom, Cyprus, Nigeria,
+Zimbabwe, Singapore.
+
+/Y YH HP Part Number 8120-1369; 250 V, 10 A, 1¢ plug 901
+iil rating. For use in Australia, New Zealand.
+CEE 7-VIl
+HP Part Number 8120-1689; 250 V, 10/16 A,1¢ plug 902
+rating. For use in East and West Europe, Saudi
+Arabia, Egypt, South Africa, India.
+NEMA 5-15P
+HP Part Number 8120-1378; 125 V, 15 A, 1¢ plug 903
+rating. For usein Canada, Japan, Mexico, Philippines,
+Taiwan, UL approved in United States.
+NEMA 6-15P
+oe es HP Part Number 8120-0698; 250 V, 15 A, 1¢ plug 904
+ro, rating. For use in Canada, UL approved in United
+® States.
+SEV 1011
+
+HP Part Number 8120-2104; 250 V, 10 A, 1¢ plug 906
+rating. For use in Switzerland.
+
+DHCK-107
+
+HP Part Number 8120-2956; .250 V, 10 A, 1¢ plug 912
+rating. For use in Denmark.
+
+NOTE: AII plugs are viewed from connector end.
+
+L = Line or Active Conductor (also called “live” or “hot”’)
+N = Neutral or Identified Conductor
+E = Earth or Safety Ground
+
+1-A-18-4
+
+Figure 1-4. Power Cord Configurations
+
+1-5
+Section I
+
+1-33. PACKAGING FOR SHIPMENT
+
+1-34. If the plotter is being returned to Hewlett-Packard
+for service, attach a tag indicating the type of service
+required, model number, full serial number, and your
+return address. Also include this information in any
+correspondence.
+
+1-35. If the original packaging material has been re-
+tained, pack the plotter in the same manner as it was
+received. The following general instructions should be
+used for packing with commercially available materials.
+
+Model 7475A
+
+a. Wrap the plotter in heavy paper or plastic.
+b. Use a strong shipping container.
+
+c. Use a layer of shock-absorbing material at least
+70 to 100 mm (3 to 4 in.) thick around all sides of
+the plotter to provide firm cushioning and prevent
+movement inside the container.
+
+d. Seal container securely. Mark container FRAGILE
+to ensure careful handling.
+
+Table 1-4. Accessories Supplied
+
+DESCRIPTION QTY HP PART NUMBER
+Interfacing and Programming Manual 1 07475-90001
+Operation and Interconnection Manual 1 07475-90002
+Programmer’s Reference Card 1 07475-90004
+*Plotter paper, pad, 8-1/2 X 11 in. or 1 17800P
+210 X 297 mm (A4), 50-sheets 17802P
+*Plotter paper, pad, 11 X 17 in. or 1 17804P
+297 X 420 mm (A3), 50-sheets 17806P
+Package of 5 fiber-tip pens, 0.3 mm nib width, 1 17847P
+1 each blue, green, black, aqua, violet
+Package of 5 black fiber-tip pens, 0.7 mm nib width 1 17826P
+Package of 5 fiber-tip pens, 0.3 mm nib width, 1 17849P
+1 each brown, yellow, orange, red, red-violet.
+Pen Carousel 1 5061-5080
+*Power Cord 1 See Figure 1-4
+
+*Paper size and power cord supplied is based on the destination of the plotter.
+
+Table 1-5. Recommended Test Equipment
+
+TYPE
+
+RECOMMENDED MODEL
+
+Computer/controller
+
+Rom Drawer
+T/O Rom
+Digital Multimeter
+
+Oscilloscope
+
+Optical Comparator
+
+HP 85 Personal Computer with the
+appropriate interface:
+
+HP 82937A HP-IB Parallel Interface
+HP 82939A RS-232-C Interface and
+HP 8120-3258 RS-232-C Interface cable
+
+HP 82936A
+
+HP 00085-15003
+HP 3465A
+
+HP 1740A
+B&L 81-34-35
+
+1-46
+Section II
+
+SECTION II
+OPERATING AND PERFORMANCE TEST
+
+Model 7475A
+2-1. INTRODUCTION
+2-2. The following information is provided to determine
+
+whether the plotter is operating properly. If operation is
+not correct, refer to Section VI of this manual for service
+information.
+
+2-3. REAR PANEL SWITCHES (Option 001)
+
+2-4. A3/A4. This switch chooses between B/A3 size
+paper and A/A4 size paper. The switch is used to set the
+default paper size only at power up. Subsequent paper
+size changes can be made from the front panel.
+
+2-5. BAUD RATE. Table 2-1 shows the switch settings
+required. Disregard any markings on the switch itself
+and use the 1 and 0 markings on the rear panel to
+determine baud rate.
+
+2-6. PARITY. Two rear panel switches are used for
+parity selection. When the 81/PARITY switch is set to 1
+(ON), the S2/PARITY switch selects odd or even parity.
+
+2-7. MET/US. This switch is used to program the
+plotting area for four paper sizes:
+Paper Switch Maximum
+Size Position . Plotting Area
+B/A8 MET 275 X 402 mm
+US 10.2 X 16.3 in.
+A/A4 MET 192 X 275 mm
+US 7.5 X 10.2 in.
+
+2-8. D/Y. When the EAVESDROP switch is in the Y
+position, received data is retransmitted and the plotter
+
+does not respond unless it is given a “Plotter On”
+instruction. When this switch is in the D position, the
+plotter responds to all recognized commands.
+
+2-9. REAR PANEL SWITCHES (Option 002)
+
+2-10. ADDRESS. The plotter’s HP-IB address is set by
+five of the seven switches on the rear panel. Disregard
+any markings on the switch itself and use the 1 and 0
+labels on the rear panel to determine the address in
+binary coded decimal.
+
+2-11. A3/A4. This switch chooses between B/A3 size
+paper and A/A4 size paper. The switch is used to set the
+default paper size only at power up. Subsequent paper
+size changes can be made from the front panel.
+
+2:12. MET/US. This switch is used to program the
+plotting area for four paper sizes:
+
+Paper Switch Maximum
+Size Position Plotting Area
+B/A3 MET 275 X 402 mm
+US 10.2 X 16.3 in.
+A/A4 MET 192 X 275 mm
+US 7.5 X 10.2
+
+2-13. BASIC OPERATING TEST
+
+2:14. The front panel controls can be used to test basic
+operation of the plotter; however, this procedure does not
+test the I/O circuits.
+
+a. Make sure six pens are installed in pen carousel.
+
+Table 2-1. Baud Rate Selection
+
+ONE STOP BIT TWO STOP BITS
+REAR PANEL SWITCHES BAUD REAR PANEL SWITCHES
+B4 B3 B2 BI RATE B4 B3 B2 BI
+— — — — External 0 0 0 0
+— — — — 75 0 0 0 1
+— — _ — 110 0 0 1 0
+0 0 1 1 150 — _— — _
+0 1 0 0 200 — — — —
+0 1 0 1 300 1 0 1 1
+0 1 1 0 600 1 1 0 0
+0 1 1 1 1200 1 1 0 1
+1 0 0 0 2400 1 1 1 0
+1 0 0 1 4800 1 1 1 1
+1 0 1 0 9600 _— _— _— _
+
+1 = Switch Open; 0 = Switch Closed
+
+2-1
+Section II
+
+CAUTION
+
+Before applying power to the plotter,
+check the line voltage selection (visible
+through the small window in the rear
+panel) and make sure the selected line
+voltage and fuse value are correct. If
+not, refer to Line Voltage and Fuse
+Selection in Section I.
+
+b. Apply power to the plotter.
+
+c. With the PAPER LOAD lever in the LOAD posi-
+tion, place a sheet of paper ISO A4/ 8-1/2 X 11
+in. or ISO A3/ 11 X 17 in.) against the left-hand
+rail and the rear guide. Lower the lever to the
+PAPER HOLD position and be sure that the
+plotter is set for the proper paper size.
+
+d. Select a pen by pressing one of the six pen push-
+buttons and then operate each of the front-panel
+controls. Vertical, horizontal, and diagonal lines
+(using the directional controls with a pen down)
+should be smooth.
+
+NOTE
+
+If the pen is down, it will lift when
+either P1 or P2 is pressed. The VIEW
+pushbutton is a latching control. After
+VIEW is pressed once, the other controls
+will not operate until VIEW is pressed
+a second time. The ERROR light should
+be on when in the VIEW mode. The
+ERROR light should be on when the
+PAPER lever is in the LOAD position.
+If Pl or P2 is pressed while the lever
+is in LOAD, the ERROR light should
+flash. This error may be cleared by
+moving the lever to HOLD and back
+to LOAD, or by pressing ENTER and
+VIEW at the same time, in which case
+the plotter initializes again. While the
+plotter is ON, and the PAPER lever is
+in the HOLD position, the ERROR
+light flashes very briefly approximately
+every five seconds when the motor
+power supply voltage is sensed.
+
+2-15. HEWLETT-PACKARD GRAPHICS
+LANGUAGE
+
+2-16. The Model 7475A recognizes the Hewlett-Packard
+Graphic Language (HP-GL) instructions listed in Table
+2-2.
+
+2-2
+
+Model 7475A
+2-17. DEMONSTRATION PLOT
+
+2-18. The Model 7475A contains a demonstration plot
+stored in Read Only Memory (ROM). The running of
+this plot will verify proper operation of most of the logic
+circuits as well as the operation of the paper and pen
+drive mechanisms; however, it does not test the I/O
+circuitry. To run the demonstration plot proceed as follows:
+
+a. Make sure six pens are installed in carousel.
+
+b. With the PAPER LOAD lever in the LOAD posi-
+tion, place a sheet of paper (A4/ 8-1/2 X 11 in. only)
+against the left hand rail and the rear guide.
+Lower the lever to the paper HOLD position.
+
+c. While holding down buttons P1 and P2, apply
+power to the plotter. See Figure 2-1. Release buttons
+after initialization starts.
+
+d. The resultant plot is illustrated in Figure 2-2.
+
+2-19. TEST PROGRAM
+
+2-20. The program in Figure 2-3 is written in BASIC
+language specifically for the HP Model 85 Personal
+Computer, but may be adapted to other controllers. This
+program tests the input/output circuits of the 7475A and
+the majority of the logic circuits, as well as the operation
+of the paper and pen drive mechanisms. The resultant
+plot is illustrated in Figure 2-4.
+
+NOTE
+
+Lines beginning with an exclamation
+point are only explanatory and not part
+of the plot program. Those lines may be
+omitted when entering the program.
+
+The addresses shown in lines 130, and
+140 are only examples, and may vary
+with the system or computer used.
+
+2-21. REPEATABILITY
+
+2-22. To verify repeatability specification (Table 1-1)
+load six new pens in the carousel and run the test
+program previously described. Using an optical com-
+parator, verify that the repeatability points on the test
+plot are within 0.1 mm using the same pen, and within
+0.2 mm using a different pen. See Figure 2-5.
+Model 7475A
+
+Section IT
+
+P1 &P2
+PUSHBUTTONS
+
+POWER SWITCH
+
+PEN USS =SIZE
+
+COO
+
+(S758 PLOTTER
+HEWLETT BACM £BD
+
+7475-A-32-1
+
+7475-A-36-1
+
+Figure 2-1. Pl and P2 Button and Power Switch Locations
+
+Table 2-2. 7475A HP-GL Instruction Set
+
+INSTRUCTION
+
+DEFINITION
+
+VECTOR GROUP
+
+PA x,y(,x,¥(—))
+PR x,y(,x,y(,—))
+PU
+PD
+
+CHARACTER GROUP
+
+CAn
+
+CP spaces, lines
+CSn
+
+DI run, rise
+
+DR run, rise
+
+LB c....c
+
+SA
+
+SI wide, high
+
+SL tan angle (+ or —)
+
+SR wide, high
+SS
+UC
+
+DIGITIZE GROUP
+
+AXES GROUP
+
+TL tp(,tn)
+XT
+
+YT
+
+SETUP GROUP
+
+IP pl x,ply(,p2x,p2y)
+IW xlo,ylo,xhi,yhi
+OP
+
+Plot absolute (integer format, —32 768 to +32 767)
+Plot relative (integer format, —32 768 to +32 767)
+Pen up
+
+Pen down
+
+Designate alternate character set (n = integer from 0 to 4, 6 to 9, or 30 to 39)
+
+Character plot (decimal format, —128 to + 127.9999)
+
+Designate standard set (n = integer, 0 to 4, 6 to 9, or 30 to 39
+
+Absolute direction (decimal format —128 to +127.9999)
+
+Relative direction (decimal format —128 to +127.9999)
+
+Label ASCII string (c = ASCII characters)
+
+Select alternate character set
+
+Absolute character size (decimal format in centimetres)
+
+Absolute character slant from vertical (decimal format, tangent of angle from
+vertical)
+
+Relative character size (decimal format, percentage of P2x — Plx and P2y — Ply)
+
+Select standard character set
+
+User-defined character
+
+Digitize clear
+
+Digitize point
+
+Output current position and pen status
+Output digitized point and pen status
+
+Tick length (tp = positive length, tn = negative length)
+X-axis tick
+Y-axis tick
+
+Input P1 (and P2) (integer format —32 768 to +32 767)
+Input window (integer format —32 768 to +32 767)
+Output Pl and P2
+
+2-3
+
+Section [If
+
+Table 2-2. 7475A HP-GL Instruction Set (Continued)
+
+Model 7475A
+
+ARC AND CIRCLE GROUP
+
+AA x center, y center arc
+angle(,chord angle)
+
+AR x center, y center arc
+angle(,chord angle)
+
+CI radius(,chord angle)
+
+AREA FILL GROUP
+
+FT type (spacing (angle))
+
+RA x,y
+
+RR x,y
+
+WG radius, start angle,
+stop angle (,chord angle)
+
+RA x,y
+
+ER x,y
+
+EW radius, start angle,
+stop angle (,chord angle)
+
+PT thickness
+
+MISCELLANEOUS GROUP
+
+ROn
+
+INSTRUCTION DEFINITION
+
+CONFIGURATION AND
+STATUS GROUP
+
+DF Set default values
+
+IM e(,sGp)) Input e, s, and p masks
+
+IN initialize
+
+OE Output error
+
+OS Output status
+
+SC x1,x2,yl,y2 Scale (integer format —32 768 to +32 767)
+
+DTc Define label terminator (c = ASCII character)
+
+OA Output actual position and pen status
+
+OO Output options
+
+OF Output factors
+
+OI Output identification
+
+OW Output window
+
+Draw arc starting with current position
+Draw arc with center relative to current position
+
+Draw circle around current position
+
+Fill type
+Shade rectangle, absolute
+
+Shade rectangle, relative
+Shade wedge
+
+Edge rectangle, absolute
+Edge rectangle, relative
+Edge wedge
+
+pen thickness
+
+Rotate axes in degrees (n = 0,90)
+
+2-4
+Section IT
+
+Model 7475A
+
+SHVSA
+
+AYOLSTIH OGNSQIAIO
+
+%60 - “OLIN
+
+ace — O93
+
+NOTLINGIelStId SNNsaAsd
+
+NOTLVOINOWNOO SSAA0daW 1
+
+986th
+
+Ge6t ve6t EG6t cB6t
+
+NY
+
+SG
+
+r
+
+|
+
+Saqvs
+SULTHAVeES
+
+00s
+
+Coot
+
+cost
+
+o00e
+
+o0Se
+
+7475-A-?-1
+
+Figure 2-2. Demonstration Plot
+
+2-5
+Section IT Model 7475A
+10 ! "Rutost"
+20 |
+30 | 7475A FEATURES PLOT
+40 !
+50 } (JULY 4,19863)
+60 !
+70 !
+50 ! SELECT ADDRESS FOR PLOTTER INTERFACE
+0 |
+100 CLEAR
+110 DISP "ENTER ADDRESS"
+120 DISP
+130 DISP " eg. RS-232-C 7107"
+140 DISP " eg. HP-IB 77057"
+150 DISP
+160 INPUT N
+170 DISP “ADDRESS IS"5N
+180 IF N<99 THEN GOSUB 1280
+190 |!
+200 ! INIT 7470A & OUTPUT P1,P2 & WINDOW COORDINATES
+210 |
+220 OUTPUT N USING “#,K" 5 "INOP;"
+230 ENTER N 3 X1,11,X2, 2
+240 OUTPUT N USING "#,K" 3 “OW”
+250 ENTER N ; X3,Y3,X4, 4
+260°!
+270 ! DRAW + AT P1 & P2 & LABEL COGRDINATES
+280 |
+290 OUTPUT N USING "#,K" ; "SP1PAS080, 4064PDPUSM+PR" X15", "591
+300 OUTPUT N USING “#,K" 5 "CP2,-.3LBP1=(", VAL$(X1),",", VAL$(Y1),")", CHRS(3)
+310 OUTPUT N USING "#,K" 3 "PRMSx25" "syZeNgMsH
+320 OUTPUT N USING "#,K" 3 "CP-16,-.3LBP2=(", VAL$(X2),",", VAL$(Y2),")" , CHRS(3)
+330 QUTPUT N USING "#,K" ; "PAZ022,2464"
+340 GOSUB 1180
+350 QUTPUT N USING "#,K" ; "PRBOBB, 4064"
+360 GOSUB 1220
+370 OUTPUT N USING "#,K" ; “FT4,100, 45PA93?2,6440RR7C0, 7OOSPZER700, 700"
+380 |
+390 | DRAW & LABEL AXIS
+400 |
+410 QUTPUT N USING "#,K" ; "SP2PA9144,1016PD"
+420 FOR I=1 TO 8
+430 QUTPUT N USING "#,kK" 3; "XTPR-1011,0"
+440 NEXT I
+450 FOR I#1 TO 15
+460 OUTPUT N USING "#,K" ; "PRO,400YT"
+470 NEXT I
+480 OUTPUT N USING "#,K" ; "PUPAZ022, 4064"
+430 GOSUB 1180
+500 OUTPUT N USING "#,K" ; "PA8088,5664"
+510 SOSUB 1220
+520 OUTPUT N USING "&,K" ; "FT4,50,90PA9722,5600WG350, 0, 360, 4OSP3EW350,0, 360, 40"
+530 OUTPUT N USING "8#,K" ; "SP3PAG00, 3500DI0, 1LBCentimetres" ,CHR$(3)
+540 OUTPUT N USING "#,K" ; "“PA?OO,6966DI"
+550 FOR IT=15 TO O STEP -1
+560 IF I<10 THEN OUTPUT N USING "#,K" ; "“CP1,0"
+570 OUTPUT N USING "#,K" ; "LB" ,VAL$¢(I), CHR$(13),CHR¢(3)," PRO, -400"
+580 NEXT I
+590 QUTPUT N USING "#,K" ; "PA2Z2022,5664"
+600 GOSUB 1180
+610 OUTPUT N USING "#,K" 3 "FR2Z022,2564"
+620 GOSUB 1220
+630 OUTPUT N USING "8#,K" 5 "FT1,0,OPA9722, 4060PT.5WG700,60, GOSP4EW700, 60, 60"
+640 OUTPUT N USING "#,K" ; “PA1032, 756SP4"
+650 FOR I=0 TO 8
+7475-A-33-1
+
+2-6
+
+Figure 2-3. Test Program (Sheet 1 of 3)
+Model 7475A Section II
+
+B60 OUTPUT N USING “#,K" ; "LB", VALS(I),CHR$(13), CHR$(3),"PR1011,0"
+670 NEXT I
+
+680 OUTPUT N USING "#,K" ; “PA4830,516;LBInches", CHR$(3)
+
+690 OUTPUT N USING "#,K" ; "PAgOBs,2464"
+
+700 GOSUB 1180
+
+710 OUTPUT N USING "#,K" 3; "PA2022, 4064"
+
+720 GOSUB 1220
+
+730 OUTPUT N USING "#,K"
+740 |
+
+750 | DRAW CIRCULAR FAN
+760 |
+
+770 OUTPUT N USING "#,K" 3 "SP4PA5080, 4064"
+
+780 FOR I=108 TO 508 STEP 100
+
+790 OUTPUT 705 USING "#,K" 3 "CI" )I
+
+800 NEXT I
+
+510 OUTPUT 705 USING "#,K" 5; "SP6IW3580, 2564,6580, 5564PA3580, 2564ER3000, 3000SP5"
+830 FOR I=0 TO 345 STEP 15
+
+840 X5=5080+508xCOS(I)
+B50 Y5=4064+508*SIN(I)
+B60 OUTPUT N USING "#, kK"
+B70 X5=5080+2200xC0S(1)
+B80 Y5=4064+2200KSIN(I)
+890 OUTPUT N USING "#,K" 5; "PA"; VAL$CINT(XS) 95", "3 VALS CINTCYS)) 3 "PU"
+9300 NEXT I
+
+910 OUTPUT N USING "#,K" ; "“IWPABOBS, 4064;"
+
+920 GOSUB 1180
+
+930 OUTPUT N USING "#,K"
+940 GOSUB 1220
+
+950 OUTPUT N USING "#,K" ; "FT4,50, 90PA8722, 2030NG350, 0, 350SPEEW350, 0, 360;"
+360 |
+
+970 ! DRAM LABELS
+
+980 |
+
+990 OUTPUT N USING “#,K" ; “SP6PA3810,6514"
+
+1000 OUTPUT N USING "#,K" 3; "VSST1,1SL.45LB7475A" , CHR$ (3)
+
+1010 QUTPUT N USING "#,K" 3 "PR4645,1778"
+
+1020 OUTPUT N USING "#,K" 3 "SESLLBFeatures", , CHRS(3)
+
+1030 OUTPUT N USING “#,K" 3; "CP-6,-1LBPlot", CHR$(3)
+
+1040 OUTPUT N USING "#,K" ; "PAB0BB, 5664"
+
+1050 GOSUB 1180
+
+1060 QUTPUT N USING "#,K" ; "PA8088,2464;"
+
+1070 GOSUB 1220
+
+1080 OUTPUT N USING "#,K" 3 "FT4,100, 45PA9372,490RR700, 700SP1ER700, 700"
+1090 |
+
+1100 | FRAME WINDOW
+
+1110 }
+
+1120 OUTPUT N USING "#,K" ; "PAS50B0,4084PDPU" 5X35" ,"513
+
+1130 OUTPUT N USING "#,K" 3 "ER"SX4s" "2 74s"SPOPAN X45" "ps yqsugn
+
+; “FT1,0, SOPAS?7 22, 3570PT.SWG700, 240, SOSPSEW700, 240,60"
+
+we
+
+"PA" 5 VALS CINTCXS)95","5 VALS CINTCYS) 3" PD"
+
+; "PAZ2022,5664"
+
+wwe We We we We
+
+1140 END
+
+1150 |
+
+1160 ! PEN TO PEN REPEATABILITY SUBROUTINES
+1170 |
+
+1180 OUTPUT N USING "#,K" ; "PRS, -9PD247,0,0,18,-247,0,0,247, -18,0, 0, -247,"
+1190 OUTPUT N USING "#,K" 3; "-247,0,0,-18,247,0,0, -247, 18,0,0,247PU"
+1200 RETURN
+
+1210 |
+
+1220 OUTPUT N USING "#,K" 3; "PRO,512PD0, -1024PU-512,512PD1024, OPU"
+1230 | OUTPUT N USING "#,K" 3; "-512,0,512,0,0,-512,0,512CI512PU;"
+1240 RETURN
+
+1250 |
+
+1260 | HP 85 RS232C INTERFACE SETUP
+
+1270 |
+
+1280 CONTROL 10,1 3; 16 | RECEIVED DATA GENERATES INTERRUPT
+
+1290 CONTROL 10,2 3; 5 ! ACTIVATES DTR & CTS
+
+1300 CONTROL 10,3 ; 11 |! ACTIVATES RTS,URS & DTR
+
+7475-A-34-1
+
+Figure 2-3. Test Program (Sheet 2 of 3)
+
+2-7
+Section II
+
+7475-A-35-1
+
+Model 7475A
+1310 CONTROL 10,4 3; 3 t @ BITS”WORD WITH NO PARITY
+1320 CONTROL 10,5 3; 16 | ENABLES HARDWIRE HANDSHAKE
+1330 CONTROL 10,16 3; O ! NO CHARACTERS SENT AT EOL
+1340 !
+1350 ! 7470A-0P001 TURN-ON & CONFIGURATION
+1360 !
+1370 QUTPUT N USING "#,K" 5 "ELC" 4 TURN PLOTTER ON LIST1260
+1380 QUTPUT N USING "&#,K" 3 "R.J" | ABORT DEVICE CONTROL INSTRUCTION
+1390 QUTPUT N USING "@#,K" 5 "&.K" ft ABORT GRAPHIC INSTRUCTION
+1400 OUTPUT N USING "#,K" 3 "E.M355135;10:" | TERMINATE QUTPUT WITH Cr & Lf
+1410 QUTPUT N USING "#,K" 3 "&.O;13:" | SET HARDWARE HANDSHAKE MODE
+1420 OUTPUT N USING "“#,K" 3 "ELL" | OUTPUT BUFFER SIZE
+1430 ENTER N B
+1440 DISP "BUFFER SIZE IS";B
+1450 RETURN
+9114
+
+2-8
+
+Figure 2-3. Test Program (Sheet 3 of 3)
+Section II
+
+Model 7475A
+
+S9UDUT
+cS v €
+
+(96S ‘0S2) =Td +
+
+0
+
+f]
+“
+
++ (9622 ‘0SZ0F) =ed
+
+39Td
+saunjzeas
+
+©
+
+VGLEZ
+
+0
+
+rr mM WwW
+
+7 or wo WO
+Sdu}oWT}UaD
+
+vt
+
+A
+
+383
+
+vt
+
+St
+
+7A75-A-B-1
+
+Figure 2-4. Features Test Plot
+
+2-9
+Section II Model 7475A
+
+PEN TO PEN
+REPEATABILITY POINTS
+[ P2= (10250, 7796) +
+15 7
+14+ y Jf y 5A
+sat
+12+
+aa t
+10 +
+¢9
+c
+i: ©
+5
+<7 + © +
+& _
+6
+5
+4
+3
+2 Featuras
+Plot
+4
+0
+0 4 2 3 4 5 6 7 a
++ Pi= (250, §96) Inches
++)
+SAME PEN
+REPEATABILITY POINTS
+(DOT IN MIDDLE)
+7475-A-B-1
+
+Figure 2-5. Repeatability Test Points
+
+2-10
+Model 7475A
+
+Section ITT
+
+SECTION IIl
+ADJUSTMENTS
+
+3-1. INTRODUCTION
+
+3-2. This section describes mechanical adjustments
+required to return the HP 7475A to its normal operating
+condition after repairs have been made. There are no
+electrical adjustments in the HP 7475A.
+
+3-3. EQUIPMENT REQUIRED
+
+3-4. The adjustment procedures require use of the fol-
+lowing tools:
+
+Allen wrench (0.050 in.)
+100 mm ruler
+
+3-5. MECHANICAL ADJUSTMENTS
+3-6. PEN HEIGHT ADJUSTMENT
+
+3-7. Pen height adjustment is necessary if the pen
+carriage assembly is disassembled or replaced.
+
+The following procedure should be per-
+ormed only by service-trained personnel
+who are aware of the electrical shock
+hazards involved.
+
+a. Set the HP 7475A LINE switch to OFF (QO) and
+disconnect the line cord.
+
+b. Remove the HP 7475A top case by removing the
+screws indicated in Figure 3-1.
+
+c. Position pen holder at center of platen.
+
+d. Using the 100 mm ruler, measure the distance
+from the platen to bottom of pen holder. It should
+be 10.5 mm. See Figure 3-2.
+
+e. To adjust pen height, insert a 0.050 in. Allen
+wrench through hole at rear of pen carriage. Turn
+clockwise to decrease height and counter-clockwise
+to increase pen height. See Figure 3-3.
+
+f. Reverse procedure to replace top case.
+_— = 9 ==
+SSSR
+/ 10.5mm \
+PEN PLATEN
+HOLDER
+7090-A-27-1
+
+Figure 3-2. Measuring Pen Height
+
+SPOREEURDEELOUOESEE OE [CREED SD ETRE EGLO EEE:
+
+7475-A-2-1
+
+REMOVE THREE
+SCREWS
+
+PEN HEIGHT ADJUSTMENT SCREW
+
+7090-A-25-1
+
+Figure 3-1. Top Case Removal
+
+Figure 3-3. Pen Height Adjustment
+
+3-1
+
+Model 7475A
+
+Section IV
+
+SECTION IV
+REPLACEABLE PARTS
+
+4-1. INTRODUCTION
+
+4-2. This section contains information for ordering
+parts for the HP Model 7475A Plotter. Included are lists
+of electrical and mechanical parts and an illustration of
+mechanical parts.
+
+4-3. EXCHANGE ASSEMBLIES
+
+4-4. Part numbers for assemblies that are available
+on an exchange basis are listed in the parts lists below
+the new assembly number. These factory repaired and
+tested assemblies are available only on a trade-in basis;
+therefore, the defective assembly must be returned for
+credit. For this reason, assemblies required for spare
+parts stock must be ordered by the new part number.
+
+4-5. REPLACEABLE PARTS LISTS
+
+4-6. Electrical parts for the 7475A are listed in Table
+4-1 and 4-2. Table 4-3 is a list of mechanical parts which
+are illustrated in Figure 4-1. Table 4-4 is a list of carousel
+parts that are illustrated in Figure 4-2.
+
+Table 4-1 = Option 001 PCA
+Table 4-2 = Option 002 PCA
+Table 4-3 = Mechanical parts
+Table 4-4 = Carousel parts
+
+4-7. ORDERING INFORMATION
+
+4-8. Toobtain replacement parts or assemblies address
+an order or inquiry to the nearest Hewlett-Packard Sales
+and Support Office. Include the HP Part Number, the
+check digit (listed under the heading “CD” in the parts
+list), the description, and the quantity required.
+
+4-9. CODE LIST OF MANUFACTURERS
+
+4-10. Table 4-5 lists the five-digit code numbers assigned
+to the manufacturers of parts in the Model 7475A Plotter.
+These code numbers appear with the parts in Table 4-1
+through 4-4 as an aid for ordering replacement parts
+directly from the manufacturer.
+
+4-11. DESIGNATIONS AND ABBREVIATIONS
+
+4-12. Table 4-6 lists designations and abbreviations
+used throughout this manual. Abbreviations in the parts
+lists are always capital letters. In other parts of the
+manual both upper- and lower-case abbreviations are
+used.
+
+4-1
+Section IV
+
+Table 4-1. Parts List, Main PCA, RS-232-C, Option 001
+
+Model 7475A
+
+Reference HP Part ic Qty Description Mfr Mfr Part Numb
+Designation | Number | Code umber
+Al 07475-60101 1 1 PCA-MAIN RS-232-C {OPTION 001) 28480 07475-60101
+aici 0180-3251 1 1 CAPACTTOR-FXD 68UF 35VDC 28480 0190-3251
+A1C2 0180-2087 v4 1 CAPACTITOR-FXD @200UF+75-10% 40VDC AL. 26480 0180-2887
+A1C3 0160-3847 9 19 CAPACTTOR~FXD .O1UF +100-0% SOVDC CER 264600 0160-3847
+A1C4 0160-3847 > CAPACTTOR--FXD .O01UF +100-0% SOVDC CER 28480 0160-3847
+a1cs ; 0160-3847 9 CAPACTTOR-FXD .O1UF +100-0% SOVDC CER 26480 0160-3847
+A1C6 0160-3647 9 CAPACITOR-FXD .O1UF +#100-0% SOVDC CER 28480 6160-3847
+Alc? 0160-3847 9 CAPACITOR-FXD .Q1UF +100-0% SOVDC CER 28480 0140-3847
+aice” 0160-3533 0 9 CAPACITOR-FXD 470PF +-5% 300VDC MICA 28480 0160-3533
+A1c? 0160-2306 3 1 CAPACTTOR-FXD @7PF +-5% SOOVDC MICA 2b4e0 0160-2306
+A1C10 0140-0202 2 1 CAPACITOR-FXD 15PF +-5% SOOVDC MICA 72136 DM1ISC15067050 0WVICR
+aé1C11 0160-3847 9 CAPACTTOR-FXD .O1UF +100-0% SOVDC CER 26480 0160-3847
+A1C12 0160-3847 9 CAPACITOR-FXD .O1UF +100-0% SOVDC CER 28480 0160-3847
+41013 oh 0 CAPACITOR-FXD 470PF +-S% SO00VDC MICA 26480 0160-3533
+41014 -3B47 9 CAPACITOR-FXD .O1UF +100-0% SOVDC CER 28480 0140-3847
+Aicis 0160-3947 9 CAPACITOR-FXD .O1UF +100-0% So0vDC CER 2n4so 0160-3847
+A1C14 0 CAPACITOR-FXD 470PF 4-54 300VDC MICA 28480 0160-3533
+A1C17 i 9 CAPACITOR-FXD .O1UF +100-0% SOVDC CER 20480 0160-3847
+41C16 0160-3847 9 CAPACTITOR-FXD .O1UF +100-0% SOVDC CER 28480 01460-3847
+A1C19 01460-3047 9 CAPACITOR-FXD .,O1UF +100-0% SOVDC CER 26480 0160-3847
+A1C20 0160-3947 9 CAPACITOR-FXD .O1UF +100-0% SOVDC CER 28480 0140-3847
+A1C21 01460-3847 9 CAPACITOR-FXD .01UF +100-0% SOVDC CER 26460 0160-3847
+A1C22 0160-3847 9 CAPACITGR-FXD .O1UF +100-0% SOVDC CER 28480 0160-3847
+A1C23 0160-3533 Q CAPACTTOR-FXD 470PF +-5% 300VDC MITA 26480 0160-3533
+A1Ce4 0160-3533 0 CAPACITOR~FXD 470PF +-5% SO0VDC MICA 2B4B0 0160-3533
+aices 0160-3847 9 CAPACITOR-FXD ,O1UF +100-0% SOVDC CER 28480 0140-3847
+41026 0160-3847 9 CAPACITOR-FXD .O1UF +100-0% SOVDC CER 26480 0160-3847
+41027 0180-2879 7 2 CAPACITOR-FXD 22UF+50~10% 25VDC AL 28480 01680-2879
+A1C28 0160-4835 7 1 CAPACITOR-FXD .1UF 4+-10% SOVDC CER 28460 01460-4835
+A1C29 01460-3847 9 CAPACITOR~FXD ,O1UF +100~-0% SOVDC CER 264680 0160-3847
+A1C30 0180-0291 3 ru CAPACITOR~FXD 1UF+-10% 35VDC TA 56289 150D1 05xX9035A2
+a1C31 0180-2984 i] 2 CAPACITOR~FXD 47UF+-20% SOVDC Al. 0180-2984
+A1C32 0180-3154 3 1 CAPACTTOR-FXD 46800UF+-20% 25VDC AL 0180-3154
+A1LC33 0180-2984 ba] CAPACITOR-FXD 47UF+-20% SOVDC AL 0180-2984
+A1034 01600-2879 7 CAPACITOR-FXD 22UF+50-10% 25VDC AL 0180-2879
+41035 0180-0291 3 CAPACITOR-FXD 1BF4+-10% 35VDC0 TA 56289 150D105X9035A2
+ALCIS 0160-6309 4 1 CAPACITOR-FXD .47UF +-20% 63VDC CER 28480 0160-6309
+A1C37 0160-0158 9 3 CAPACITOR-FXD SGOOPF +-10% 200VDC POLYE 284680 0160-0158
+A1C38 0180-2984 7 2 CAPACITOR-FXD 330UF+-20% SOVDC AL 28480 0180-2986
+ALCI9 0160-0158 9 CAPACTTOR-FXD SG00PF +~10% 200VDC POLYE 28480 01690-0158
+A1C40 0160-0158 9 CAPACITOR-FXD SS600PF +-10% 200VDC POLYE 28480 0160-0158
+41041 0180-2986 7 CAPACTTOR-FXD 330UF4+-20% SOVDC Al. 28480 0190-2986
+Aic4as 0160-3847 9 CAPAGCITOR-FXD .QiUF +100-0% SOVDC CER 28480 0160-3847
+A1C46 0160-3533 0 CAPACITOR~-FXD 470PF +~5S% S00VDC MICA 26400 0160-3533
+A1C47 0160-3533 0 CAPACITOR-FXD 470PF +-5% 300VDC MICA 28480 0160-3533
+A1C48 0160-3533 it} CAPACITOR-FXD 470PF +-5% SOOVDC MICA 28480 0160-3533
+AICRI 1901-10465 a 1 RECT 1N4936 400V 18 200NS 14936 IN4936
+ALCR2 1901-0944 4 4 RECT 45V 10A 284650 1901-0944
+ALCRS 1901-0944 4 RECT 454 10A 28480 19701-0944
+ALCR4 1901-0944 4 RECT 45 10A 28480 1901-0944
+AICRS 1701-0944 4 “PWR RECT 45) 104A 2B4B0 1901-0944
+A1ICRGE 1901-0050 3 1 DIODE~SWITCHING @0V 200MA 2NS DO-35 2h48d 1701-0050
+A1ICR7 1901-0704 4 6 DIODE-PWR RECT 1N4002 100V 14 DO-41 01295 IN4002
+AiCRS 1901-0704 4 ] : RECT 1N4002 1004 1A DO-41 012995 1N4002
+ALERD 1901-1001 2 4 RECT 1000 3A 04713 MREN01
+A1CR1IO 1901-1081 2 RECT 100V 3A 04713 MREO1
+AICRI1 1701-1081 2 RECT 100V 3A 04713 MRSO1
+A1CRI2 1901-1081 2 RECT 100 3A 04713 MRSO1
+ALCR1I3 1901-0704 4 RECT 1N4002 100V 1A DO-41 01295 1N4002
+ALCRI4 1701-0704 4 DIODE -PWR RECT 1N4002 100V 1A DO-41 01295 1N4002
+AICRIS 1901-0704 4 DIODE-PWR RECT 1N4002 100 146 DO-41 01298 1N4002
+AICR16 1901-0704 4 DIODE~PWR RECT 1N4002 1004 14 DOQ-41 01295 1N4002
+A1CR17-20 1901-1065 2 4 DIODE-PWR RECT IN4936 400V 1A 01295 1N4936
+A1DS1 1990-0975 8 2 LED-GREEN WSPACER 1990-0975
+AlbDs2 1990-0975 8 LED—GREEN W/SPACER 1990-0975
+41053 1990-0976 9 1 LED-YELLOW WSPACER 1990-0976
+41ES 1200-0567 1 1 SOCKET-IC 28-CONT DIP DIP-SIDR 28480 1200-0567
+AIEY 1205-0463 & 1 HEAT SINK 28480 1205-0463
+A1LE10 1205-0472 7 1 HEAT STNK- 4254 29480 1205-0472
+
+Model 7475A
+
+Section IV
+
+Table 4-1. Parts List, Main PCA, RS-232-C, Option 001 (Continued)
+
+ae fr
+
+Reference HP Part [c Qty Description M Mfr Part Number
+Designation | Number {0 Code
+
+2110-0589 7 6 TYPE 104 240 v #0480 2110-0589
+
+2110-0589 ? ER-CLIP TYPE 108 26 vy) Peau 2110-0589
+
+2110-0589 ? OLDER“CLIP TYPE 10a 250 2B480 2110-0589
+
+2110-0589 7 FUSEHOLDER-CLIP TYPE 10A y Pasa 2110-0589
+
+2110-0589 7 FUSEHOLDER-CLIP TYPE 104 #30 V PRE () 2110-0589
+
+2110-0589 7 FUSEHOLDER~CLIP TYPE 10A 250 ¥ 2R4an 2110-0589
+AWF 4 2110-0655) 8 1 F 3.15A 250V 20 AGO 2144-
+Aira 2110-0472 ] 1 FUSE -0.8A NM EL. PR4RO 2110-
+ALF3 2110-0673 Q 1 FUSE<1,64 NM EL. 2845 @110~-
+Alt 0361-1125 8 2 RIVET-RLIND PL.-THRU DOME -HD .124DTA 284c0 i) 361~
+ALH2 0361-1125 8 RIVET-BLIND PL-THRU DOME-HD .124DTA Paaad N3G1-1128
+ALHS 0515-1877 4 4 SCREW-MACH M3 X 0.5 8MM-LG PAN—HD PR4aRo 0515-1877
+ALH4 0515-1877 4 SCREW-MACH M3 X 0.5 8MM—LG PAN-HD Pe 40 0515-1877
+ALHS 0515-1877 4 SCREW-MACH M3 X 0.5 8MM--LG PAN-HD pean 0515-1877
+ALHG 0515-1877 4 SCREW-MACH M3 X 0.5 8MM-LG PAN-HD eO4gg 0515-1877
+ALH? 0535-0031 2 2 NUT-HEX W/LIWR M3 X 0,5 2. 44M-THK aooog QRUER BY DESCRIPTION
+ALH8 0535-0031 2 NUT@HEX W/LKWR MZ X 0.5 2. 44M-THK ongnd QROLR BY DESCRIPTION
+A1di 1200~ 1975 1 a SOCKET -STRP 4°CONT SIP DIP -SLDR 20480 1200-8575
+Alyse 1-3 192 1 2 CONNECTOR 3-PIN M POST TYPE PASO 1281-3192
+ALI3 est oapas 7 2 CONNECTOR 2-PIN M POST TYPE 20480 1efi-4245
+A134 1252-0094 8 1 CONNECTOR 25-PIN F D SUEMIN 460 1252-0094
+Alss 1251-4245 7 CONNECTOR 2-PEN M POST TYPE 3480 Leh 44s
+ALIG 1200-0575 1 GOCKET-STRP 4—CONT SIP DIP-SL DR 2e4no 1208 057%
+ALI? 1251-8170 5 1 CONN-POST TYPE ,100-PIN-SPCG 2—-CONT P4e0 1 :
+ALIS 251-3276 2 1 CONNECTOR 4-PEIN HK POST TYPE PEABO
+ALI? 1251-3192 { CONNECTOR 3-PIN M POST TYPE 2R4B0
+ALLA Ft 00-1788 6 1 GHOKE-WIDE BAND ZMAX=680 ORM@® 190 Miz OP144 WCPO BOs 4e
+A101 1054-0921 & 4 TRANSISTOR NPN DARL TO-220An PD=2W 2n4B80
+ALQ2 1854-0921 é TRANSISTOR NPN DARL TO--220An PD= 20406
+Aias 1854-0921 & TRANSIGTOR NPN DARL TO-220an PD=2W PR4BN
+A1LW4 1854~0921 6 TRANSISTOR NPN DARL TO-220AB PD=2W #9480
+A1Q5 1853-0509 4 4 TRANSISTOR PNP TO-220AR PD=2W FT=3MHZ PABA 1843-0509
+A1QG6 1853-0509 4 TRANSISTOR PNP TO-220AB PD=2W FT=3MH7 Poago 1 050?
+A107 1953-0507 4 TRANSISTOR PNP 22 DAR PD=2W FTS3MHZ Paaa 1853-0309
+A1Q8 1853-0509 4 TRANSISTOR PNP TO-220An PD=2u FT=3M1l2 Poago 0509
+a1az 1653-0059 9 1 TRANSISTOR PNP 2N3791 SI TO-% PD=150W 04712 N37? 1
+Alti0 1854-0932 9 1 TRANSISTOR-NPN TIP 31A 28481) 104-0932
+AiR4 0499-0982 8 4 RESISTOR-EXD 1K OHM 5% 2w 28480 0499-0982
+ALR2 0499-0982 8 STOR-FXD 1K OHM 5% 2W PASEO 0409-9908
+AIRS 0499-0982 a ISTOR-FXD 1K OHM 5% 2W 28480 0G99-0902
+A1R4 0699--0982 8 RESISTOR-FXD 1K QHM 5% 2uW 28480 0695-0982
+AIRS 0698-3132 4 3 RESISTOR 261 1%.125W F TC=0+—100 28480 0698-3132
+ALRG 0698-3132 4 RESISTOR 261 1%.125W F TC=04+—100 28480 0698-3132
+A1R7 0811-3456 7 q RESIESTOR .4 3% 1M PW Tost) -?t PR4aa O01 3456
+AIRS 0683-1055 5 1 RESISTOR 1M 5% 25H FO TO=-900/+900 O1124 CHI 985
+ALR? 0698-3132 4 RESISTOR 261 1%.125W F TC= 0+—100 28480 0698-3132
+A1R10 0698-3155 1 3 RESISTOR 4.4K 1% .125W F TC=04+-109 AMAL 0698-3155
+AIR11 0678-3444 1 1 316 1% Tt t+-100 RASA C4e1/B-TU-314er oe
+AIRI2 0698-3155 1 4,64K 1% F oTO=04-160 TAI4G C4 1/8-TO- 4G41-F
+ALR13 0757~0441 8 1 B.25K 1% F TO=0+-100 D4%-46 (4-1 /8-TO- 8284
+AIR14 0757-0279 0 1 3.16K 1% F Te=04+-109 PARAG C4-1/8-TO- 3181 -F
+AIRS 0698-3155 1 4. OME 1% roTCed+-100 AAG 4-1/8 TO 4b6ad ok
+AIR1S 0757-0280 1 1 9.09K 1% .12@5W F TC=0%-100 49701 BPACT/A-TO 9001 =F
+AIR 0757-0280 3 1 1K 4% .125W F Teed'- 100 PAA C4-1/0°TO 1001 OF
+ALR1IE 0698-4493 a 1 10.7K 1% .125W F Teso+-100 PAG C4 1/8-TO LOD F
+AIRT? 1699-U263 8 1 Bod ay SO 100 MBAR) US?9- (263
+AYR20 0757-0818 3 1 jl 100 hago Nnea7. 9618
+AIR24 0757-0274 5 1 1. 21K BP oTC=d!- 160 C4 1/8-TO-1e1t or
+ALR22 0757-0401 0 1 100 1% FT f4~1 00 C4 -1/8-TO 16d
+ALRZ3 0678-3622 7 1 STOR 126 5% Py MO Toads a0 PRAAD 098 3622
+AYR24 0699-0975 9 ra sISTOR- “EXD 10 OHM 2% 2S 4 D4SS - 0975
+ALRES 0679 -0975 3 10 Ohm 2% AP? G78
+ALR26 0698-3435 0 1 RESISTOR 38.3 4% ,125W F TC=d+-100 C4 V/8oTO FARO F
+A1R27 0698-3155 1 RESISTOR 4.64K 1% .125W F TC=0+-100 C4 1/8- Tle anal or
+ATRNA 1810-0279 gj 3 NETWORK -RES 10-S1P4.7K GM xX 9 EAA?
+ALRND 110-0643 1 NETWORK-R GIP 4. PK Od x 4 PeLARO LE10- 064%
+ATRNS 1910-9279 5 NETWORK HES 10 -S1P 4.7K OHM Xo W111 M1 oaacy
+ALRN4 1810-0279 5 NOTWORK-RES 10-S7P4.7K GIIM X 9 DidPt OLDA4PS
+
+4-3
+
+Section IV
+
+Model 7475A
+
+Table 4-1, Parts List, Main PCA, RS-232-C, Option 001 (Continued)
+
+Reference HP Part j[c oe Mfr
+
+Designation Number |0 Qty Description Code Mfr Part Number
+A1S1 3101-2655 4 1 SWITCH SL 9-1A DIP-SLIDE -ASSY .1A SOVDC 28480 3101-2655
+A1S2 0363-0193 2 1 CONTACT-SWITCH HOOK SHAPE; 302 SST 20480 OF63%--0193
+Alui 1820-2715 9 3 IC DRYR TTL NAND DUAL 2-INP 01295 SN'75447P
+Alu2 1820-2715 9 IG DRYR TTL NAND DUAL. 2~INP 01295 GN75447P
+A1LUg 1820-2744 4 2 IC-1MC3--0005 28480 1820-2744
+A1u4 1920-2744 4 IC-1MC3-0005 28480 1820-2744
+A1US 1820-2754 6 1 Ic MISC CMOS 31471 UA-4 MASKED
+A1US 1820-2753 ba 1 Ic MISC CMOS 31471 UA-4 MASKED
+A1U7 1820-1470 1 1 IC MUXR/DATA-SEL TTL ILS 2-TO-1-LINE QUAD 01295 SN741.S157N
+aA1us 1820-2715 9 IC DRYR TTL NAND DUAL 2-INP O1295 SN75447P
+ALU 1820-0990 8 2 IC RCVR DTL NAND LINE QUAD 01295 SN75189A]
+A110 1826-0138 @ 1 IC COMPARATOR GP QUAD 14-DIP-P PKG 91295 LM339N
+AlU11 1820-0509 3 1 TC DRYR NTL LINE DRYR QUAD 04713 AC 14881
+A1ui2 1820-1438 1 3 IC MUXR/DATA~SEL. TTL LS 2-TQ-1~LINE QUAD 01295 GN74LS257AN
+A113 3 1 IC-RIGITAL MC&BSOP 28480 1820-2470
+ALU14 E ath 2 1 IC MICPROC NMOS &-BIT 04713 MCenoeP
+A1U15 1818-3290 2 1 ROM 28480 1818-3290
+A1UI6 1818-3291 3 1 ROM 28480 1818-3291
+ALUG7 1818—3022 8 1 IC CMOS (16K) STAT RAM 200—NS 3-S 28480 1818-3022
+A1u1a 1820-1196 8 1 IC FF TTL LS D-TYPE POS-EDGE-TRIG COM 01295 SN74LS174N
+A1U19 18920-2274 3 1 IC DRYR TTL QUAD 13405 ULN- 2068B
+Alu20 1920-1438 1 IC MUXR/DATA-SEL TTL LS 2@-TG-1~LINE QUAD a1a95 §N7 41.525 7AN
+A1ue1 4826-0904 6 1 IC-LM330T-5.0 28400 1926-0904
+A122 1820-1199 1 1 IC INV TTL LS HEX 1-INP 01295 SN74LS04N
+A123 1820-1202 7 1 IC GATE TTL LS NAND TPL. 3- INP 01295 SN74LS10N
+A1lu24 1820-1197 9 2 IC GATE TTL |.S NAND QUAD 2-INP 91295 SN74LS00N
+A125 1820-1197 9 IG GATE TTL LS NAND QUAD 2--INP 01295 SN7 41.SO0N
+A1U26 1820-0990 8 IC RCVR DTL NAND LINE QUAD 01295 SN751B9AT
+A1lU27 1820-1438 1 If MUXR/DATA-SEL. TTL LS 2@-TO-1-LINE QUAD 01295 SN74LS257AN
+A1VR1 1902-0952 6 1 ZNR 5S.6V 3% DO-3S PD=.4W TC=+, 046% 28480 1902-0952
+ALYR2 1902-3094 3 1 ZNR 5.11 2% DO-35 PD=.4W 28480 1992-3094
+ALYVRZ 1902-0551 1 2 ZNR 6,2 5% PD=1W IR=1004 28480 1902-0551
+ALYR4 1902-0551 1 DIODE -ZNR 6.2V 5% PD=1W IR=10UA 204680 1902-0551
+ALIYVRE 1902-3114 8 2 DINDE-ZNR 6.19V 2% DO-35 PD=,4W 28480 1902-3114
+ALVRS 1902-3114 8 DIQDE-~ZNR 6&.19V 2% DG-35 PD=,4W 28480 19902-3114
+AIVR7 1902-1379 1 DIODE-ZNR 3-9V 28480 1902-1379
+AL1Y1 0410-1334 & 1 CRYSTAL.-QUARTZ 4 MHZ HC-18/U~-HLDR 28480 0410-1334
+
+Model 7475A Section IV
+Table 4-2. Parts List, Main PCA, HP-IB, Option 002
+oe Mfr
+Reference HP Part 5} Oty Description Cod Mfr Part Number
+Designation Number ode
+Al 07475-60102 2 1 PCA-MAIN HP-IB (OPTION 002} 28480 07475-60102
+AiC1 0180-3251 1 1 CAPACTTOR-FXD 69UF 35VDC 28480 0180 3251
+A1Ce 01890-2887 7 1 CAPACITOR-FXD 2200UF4+75-10% 40VDC AL. 28480 0180-2887
+A1c3 0160-3847 9 19 CAPACTTOR-FXD ,01UF +100-0% SOVDC CER 264600 0160-3847
+A1C4 0160-3047 9 CAPACTTOR-FXD .O1UF +#100-0% SOVDC CER 28480 0140-3847
+A1cs 0160-3847 9 CAPACTTOR-FXD ,O1UF +100-0% SOVDC CER 28480 0160-3847
+A1C6 40-38 9 CAPACTITOR-FXD .O1UF +100-0% SOVPC CER 28480 0160-3B47
+A1C7 0160-3847 9 CAPACTITOR-FXD .O1UF +100-0% SOVDC CER 28480 0160-3847
+A1C8 0160-3847 9 CAPACITOR-FXD .O1UF +100-0% SOVDC CER 28480 0160-3847
+A1C9 0160-3947 9 CAPACTTOR-FXD .O1UF +100--0% SOVDC CER 26480 0160-3847
+410190 0160-2306 3 1 CAPACTTOR-FXD 27PF +-5% ZO0OVDC MICA 284B0 0160-2306
+A1C11 0140-0202 2 1 CAPACITOR~FXD 15PF +-5% SOOVDC MICA 72136 DM1ISCISOTOSOOWVICR
+A1C12 0160-3047 9 CAPACTTOR-FXD .,O1UF +100-0% SOVDC CER 28400 0160-3847
+41013 0160-3947 9 CAPACTTOR-FXD .O1UF +100-0% SOVDC CER 28480 0140-3847
+41014 0140-3847 9 CAPACITOR-FXD .O01UF +100-0% SOVDC CER 268480 0160-3047
+AICIS 0160-3847 9 CAPACTTOR~FXD .01UF +100-0% SOVDC CER 28490 0160-3847
+A1IC16 0160-3847 9 CAPACITOR--FXD .O1UF +100-0% SOVDC CER 23480 0160-3847
+41017 0160-3847 9 CAPACITOR-FXD ,O1UF +100-0% SOVDG CER 28480 0160--3847
+41018 0140~3847 9 CAPACTTOR-FXD .O1UF +100-0% SOVDC CER 26480 01460-3847
+41019 0160-30847 9 CAPACITOR-FXD .O1UF +100-0% SOVDC CER 28480 0160-3847
+41020 0180-2079 7 2 CAPACITOR-FXD 22UF4+50-10% 25VDC AL 28480 0180-2879
+41Ce21 0160-4835 7 1 ; CAPACITOR~FXD .1UF +-10% SOVDC CER 26480 0160-4835
+AlCe2 0190-0291 3 2 CAPACITOR-FXD 1UF+~10% 35VDC TA 36289 150D1 05xX903542
+41023 0160-30847 9 CAPACITOR-FXD .O1UF +100-0% 5OVDC CER 26400 0140-3847
+A1C24 0100-3154 3 1 CAPACITOR-FXD 4S800UF+-20% 25VDC AL 28480 0180-3154
+A1C25 9180-2979 7 CAPACTTOR-FXD 22UF+50-10% 25VDC AL 29400 0190-2879
+A1IC26 0180-0291 3 CAPACITOR-FXD 1UF+--10% 35VDC TA 56289 150D105xX9035A2
+A1C27 0160-6309 4 1 CAPACITOR-FXD .47UF +-20% 63VDC CER 20480 0160-6309
+A1C28 0160-0159 0 3 CAPACITOR-FXD S800PF +--10% 200VDC POLYE 28480 0140-0159
+A1C29 0160-0159 0 CAPACITOR-FXD SH00PF +~10% 200VDC POLYE 28480 0160-0159
+AICO 01460-0159 0 CAPACITOR-FXD 4G00PF +-10% 200VDC POLYE 28460 0160-0159
+AiGSt 0190~-2984 3 2 CAPACITOR-FXD 47UF+-20% SOVDC AL. 28480 0180--2984
+A1C032 0100-2984 bay CAPACTTOR-FXD 47UF-+-20% SOVDC AL 28480 0180-2984
+A1C33 0160-3847 9 CAPACTITOR~-FXD .O1UF +100-0% SOVDC CER 28480 0160-3847
+A1034 0160-3847 9 CAPACITOR-FXD .O1UF 4100-0% SOVDC CER 28480 0140-3847
+AICR1 1901-1065 2 1 RECT 1N4934 400V 1A 200NS 14936 1N4936
+A1ICRE 1901-0944 4 4 RECT 45 10A 28480 1901-0944
+AICRI 1901-0944 4 RECT 45V 10A 28480 1901-0944
+AICR4 1201-0944 4 RECT 45 104 28480 1901-0944
+A1CRS 1701-0944 4 RECT 45 10A 284600 1901-0944
+A1IGRS 1701--0050 3 1 SWITCHING GOV 200MA ONG DO-35 20480 1901-0050
+A1CGR7 1901-0704 4 4 RECT 1N4002 100V 1A DO-~41 01295 1N4002
+AICRE 1901-0704 4 RECT 1N4002 100V 1A DO-41 01295 1N4002
+A1CRI 1901-1081 2 4 DIODE~PWR RECT 100 34 04713 MREO1
+A1CR10 1901-1081 2 DIODE--PWR RECT 100V 3A 04713 MRSO1
+A1CR11 1901-1081 2 DISDE~PWR RECT 100 3A 04713 MRSO1
+A1CR12 1901-1081 2 DIODE -PWR RECT 100V 3A 04713 MRS01
+A1CRiZ 1901-0704 4 DIODE RECT 1N4002 100V 1A DO-41 01295 1N4002
+A1CR14 1701--0704 4 DIODE-PWR RECT 1N4002 100V 14 DQ~-41 01295 1N4002
+A1DS1 1990-0975 8 2 LED-GREEN W/SPACER 29480 1990-0975
+AIDS2 1990-0975 8 LED-GREEN W/SPACER 28480 1990-0975
+A1lDS3 1990-0976 9 1 LED-YELLOW W/SPACER 28400 1990-0976
+ALE4 1200-0567 1 SOCKET-IC 28--CONT DIP DIP-SLDR 28480 1200-0567
+1205-04463 & 1 HEAT SINK 28400 1205-0463
+1205-0472 7 1 HEAT SINK- 6254 28480 1295-0472
+2110-0589 ? & FUSEHOLDER-CLIP TYPE 10A 250 V 2110-0589
+2110-0589 7 FUSEHOLDER-CLIP TYPE 10A 250 V 2110-0589
+2110-0589 7 FUSEHOLDER-CLIP TYPE 10A 250 V 2110-0589
+2110-0589 7 FUSEHOL.D! CLIP TYPE 104 250 V 2110-0589
+2110-0589 7 FUSEHOLDER~CLIP TYPE 10a 250 V 2110-0589
+2110-0589 7 FUSEHGLDER -CLIP TYPE 10A 250 V 284680 2110-0589
+A1F1i 2110-0655 a 1 Fus L15A A50V 23480 2110-0655
+ALF2 21410-0672 9 1 FUS'! BA NM RL 23480 2110-0472
+AIFS 2110-0673 0 1 FUSE -1.6A NM EL. 28480 2110-0673
+ALH1 0361-1125 8 2 RIVET~BLIND PL.-THRU DOME-HD ,124DTA eb 400 0361-1125
+A1He 0361-1125 8 RIVET-BLT “THRU DOME-HD .124DIA 28480 0361-1125
+ALH3 0515-1877 4 4 SCREW-~MACH M3 X 0.5 8MM—LG PAN-HD 28400 0515-1877
+ALH4 0515-1877 4 SCREW-MACH M3 X 0.5 8MM-LG PAN-HD 28480 0515-1877
+A1LHS 0515-1877 4 SCREW-MACH M3 X 0.5 8MM-LG PAN-HD eoarng 0515-1877
+
+Section IV
+
+Model 7475A
+
+Table 4-2. Parts List, Main PCA, HP-IB, Option 002 (Continued)
+
+Reference HP Part jc at Description Mfr Mfr Part Numb
+Designation | Number [2] ~Y P Code art Number
+A1H6 0515-1877 4 SCREW-MACH M3 X 0.5 8MM—LG PAN-HD 23400 0515-1877
+ALH7 0335-0031 2 2 NUT HEX W/LKWR MS X 0.5 2,.444-THK onnao ORDER BY DES TPT LON
+A1HB 0535-0031 2 NUT HEX W/LKWR M3 X 0.5 2. 44M THK 00009 ORDER BY DES IPT UC
+Asi 1200-05 1 2 SOCKET-STRP 4-CONT SIP DIP~SLDR 2uead TP00- 0875
+A1s2 1251-3192 1 2 3-PIN M POST TYPE 28480 >
+A1T3 1251-4245 7 a 2-PIN M4 POST TYPE 9480
+A1I4 1252-1323 8 1 P4A-PIN F MICRO RI GHON
+ALIS 1251-4245 7 2-PIN M POST TYPE
+ALT& 1200-0575 1 SOCKET -STRP 4°CONT SIP DEP -SLDR 28480
+A1LIS7 sa] 1 CONN POST TYPE . 28490
+4178 2 1 CONNECTOR 6-PIN M PC C 23480
+A1J9 1 CONNECTOR 3-PIN M POST TYPE 20480
+ALLA 9100-1788 é 1 CHOKE -WIDE BAND ZMAX=650 OHM@ 180 MHZ 02114
+aA1Qi 1654-0921 & 4 NPN DARL TO-220A PD=2W
+A1Q2 1854-0921 6 NPN DARL. TO AB PD=e2W
+A1Q3 1854-0921 6 NPN DARL TO 20AB P
+A1Q4 19854-0921 & NPN DARL TO-220AR PD=2W
+A1Q5 1853-0509 4 4 PNP TO-220AB PD=eW FT=3MH 2
+A1N6 1853-0509 4 PNP TO -220AR 28480 Le Soe
+A1Q7 1853-0509 4 PNP TO-220AB 490 10 0509
+A1Q8 1853-0509 4 PNP N22 2480 1653-0509
+A1Q9 1953-0059 9 1 PNP 2 04713 aNG7FL
+Aigio 1854-0932 9 1 “NPN TIP 31A 28480 1854-0932
+AIR1 0699-09982 8 4 RESTSTOR-FXD 1K OHM SA ew 28400 06979-0902
+AIR2 0698-3132 4 3 RESISTOR 261 1%.125W F TC=0+—100 28480 0698-3132
+AIRS 0699-0982 g RESISTOR-FXD 1K OHM 5% 2 28480 0699-0902
+A1R4 0699-0982 8 STOR“FXD 1K OHM 5% 2 26480 0699-098
+ALRS 0699-0982 8 RESISTOR-FXD 1K OHM 5% aw 28400 0499-0992
+A1RG 0698-3132 4 RESISTOR 261 1%.125W F TC=0+—100 28480 0698-3132
+ALR7 0811-3456 7 1 RESTSTOR .1 3% 106 PW OTC + OO es4B0 VOW: 3454
+ALRB 0683-1055 ba] 1 RESISTOR 16 5% .e25w FC T a gai CHALOIS
+ALR? 0698-3132 4 RESISTOR 261 1%.125W F TC=0+—100 28480 0698-3132
+AiR10 0698-3444 1 1 RESISTOR 316 1% .125W F TC=04-100 RANA C4-1/8-T0 -316R -F
+AIR11 0699-3155 1 1 RESISTOR 4.64K 1% +100 PASTAS C4-1/9-T0. 4641-7
+A1R12 0757-0441 8 1 RE STOR 8.25K 1% 100 24546 C4-1/8-T0- 8251 -F
+A1R13 0757-0279 0 2 RESISTOR 3.16K 1% #100 24546 C4 1/8 6TH 3167 -F
+A1IR14 0757-0288 1 1 RESISTOR 9.09K 1% =)+-100 17701 MPF 401 /B-TO 8091 -F
+ALR15 0757-0280 3 1 RESISTOR 1K 1% ,1e25W F To PATA C4-1/8°TO-1004-F
+AIR16 0698-4403 0 1 10.7K 1% .12@5W F TCs0+-100 P4546 C4-1/8-TO-187 2 oF
+ALR17 0499 263, g a 112% .25W F TL t-100 t 90 0699-02635
+A1R18 0757-0818 3 1 B25 1% oS F 4-100 8480 0757-0018
+ALR? 0478-0085 it) 1 RESISTOR 2,61K 1% .12 . 100 PATA’ C4 1/8-T0- BOLL F
+A1R20 0757-0401 Q 1 RESTSTOR 100 1% 100 eAS4AG C4 -1/8-TO-19T
+AIR21 0699-0263 8 RESISTOR 26.1 2% .25mW F TC 100 D699-0263
+ALR22 0698-3435 0 1 RESISTOR 38.3 1% .125W F TO=0+ -100 C4 2/8 TO-3BR3-F
+A1R23 0757-0279 0 RESISTOR 3.16K 1% .125W F TC=0+-100 0757-0279
+AIRNI 1810-0279 ba 3 4.7K OHM X 9 e@10A472
+ALRN2 1010-0279 sa] . 4.7K OHM X 9 PILATE
+ALRNS 1910-0643 7 1 S-SIP 4.7K OHM xX 4 1810-0643
+AIRNA 1910-0279 5 NETWORK-RES 10°SIP4.7K DMM X ? 21 0A4a? 2
+A151 3101-1973 7 1 SWITCH: SL. 7-1A DIP-SLIDE-ASSY .1A S0OUDC 28480 BLOV-1973
+A182 0363-0193 2 1 CONTACT SWITCH HOOK SHAPE: 302 SST FBABD ORS F-10193
+Aww1 1820-2715 9 3 IC DRYR TTL NAND DUAL 2@-TNP SNPSGATP
+A1U2 1820-2715 9 DRYR TT). NAND DUAL 2- ENP SNVS447P
+4103 1820-2744 4 2 1MC3- 0005 26400 1070-2744
+A1U4 1820-2744 4 C-1403--0005 28480 La20-P27 44
+A1US 1820-2754 6 1 If MISt CMOS 31471 UA 4 MASKED
+A1U6 1820-2753 S 1 TC Mise CMOS 31471 UA 4 MASKED
+A1L7 1820-1470 1 1 IC MUXR/DATA-SEL TTL LS 2-TO-1-LINE QUAD 0195 SN74.5157N
+A1iUB 1820-2715 9 TC DRYR TTL. NAND DUAL 2 -INP 01295 GN?7S5447P
+A1LUg 1826-0136 8 1 > COMPARATOR GP QUAD 14-DIP-P PKG O1e9S LMARON
+A110 1820-2424 7 2 > TVR. OCTL 04713 MC344'7P
+aAiui1 1820-2424 7 ~ TTL. 04713 MOZ44a7P
+aiui2 1920-2219 8 1 MICPROG~ § NMOS 3B BIT 4713 MCGB4ANP
+41013 1820-2099 2 1 IC MECPROC NMOS 8 BIT 04713 MCEG0e2P
+A1U14 1818-3288 8 1 ROM 28480 1818-3288
+A1U15 1818-3289 9 1 ROM 28480 1818-3289
+A1U16 1818-3022 9 1 IC CMOS (16K) STAT RAM 200-NS 3-S 2e84o0 1818-3022
+A117 1820-1196 8 1 TC FF TTL.LS D-TYPE POS EPGE TRIG COM 01295 SN7ALS174N
+A1U18 1820-2274 ka] 1 IC DRYR TTL QUAD 13606 ULLN- 2068
+aiu19 1820-1430 1 1 TC MUXR/DATA-SEL. TTL LG 2@-TO-1-LINE QUAD 01295 SN7AL.S257AN
+A1U20 1826-0904 6 1 IC~-LM330T-S 0 29480 199% -0904
+
+4-6
+Model 7475A
+
+Section IV
+
+Table 4-2. Parts List, Main PCA, HP-IB, Option 002 (Continued)
+
+Reference HP Part j[c ret oe Mfr
+: . t Description Mfr Part Number
+
+Designation | Number |0 Y P Code
+
+AlW21 1820-1199 1 1 IG INV TTL LS HEX 12--INP 01295 SN74LS04N
+A1U22 1820-1202 7 1 IC GATE TTL L& NAND TPL 3--INP 01°95 SN74LS10N
+A1U22 1820-1197 9 1 IC GATE TTL LS NAND QUAD 2-TNP 01295 SN74LS00N
+A1U24 07475-60103 3 1 ASSEMBLY-DIODE 28480 07475-60103
+A1VR1 1902-0952 6 1 DIODE -ZNR 5.60 5% DO-35 PD=.4W TC=4+, 046% 28480 1902-0952
+ALVRE 1902-3094 3 1 5.11 2% DG-35 Pp 4w 20480 1902-3094
+A1LYRZ 1902-3114 8 2 ZNR 6.19Y 2% DG-T5 P 4a 28460 19902-3114
+ALYR4 1902-3114 B DIODE-ZNR 6.19 2% DN-35 PD=.4W 28480 1902-3114
+A1yY1 0410-1334 6 1 CRYSTAL -QUARTZ 4 MHZ HC-18/U-HLDR 28480 0410-1334
+
+4-7
+Section IV
+
+Table 4-3. Parts List, Mechanical Parts
+
+Model 7475A
+
+Reference HP Part jc . Mfr
+Designation Number |D Qty Description Code Mfr Part Number
+1 07475-40101 [9 1 TOP CASE 28480 07475-40101
+2 07475-40102 |0 1 WINDOW 28480 07475-40102
+3 0515-1013 tt) 2 SCREW-MACH M4 X 0.7 12MM-LG 28480 0515-1013
+4 07470-20012 _|4 2 STANDOFF 28480 07470-20012
+5 0515~0771 5 1 SCREW—MACHINE ASSEMBLY M4 X 0.7 12M—LG 28480 0515-0771
+6 07475-00010 |5 1 FRONT PANEL 28480 07475-00010
+7 0515-0751 1 1 SCREW—MACH M4 X 0.7 20MM—LG PAN—HD 28480 0515-0751
+8 5061~50B0 1 1 PEN CAROUSEL ASSEMBLY 28480 5061-5080
+9 07475-60175 | 9 1 PEN CAROUSEL HOUSING ASSEMBLY W/MOTOR 28480 07475-60175
+9A 3140-0687 0 1 CAROUSEL MOTOR ONLY 28480 3140-0687
+10 0624—0591 8 2 SCREW-TPG 3-24 .5—IN-LG PAN-HD-PHL STL 00000 ORDER BY DESCRIPTION
+1 5020-6306 0 1 IDLER PULLEY 28480 5020-6306
+12 07470-40027. |3 1 BELT TENSIONER 28480 07470-40027
+13 1460-1940 6 t SPRING-—CPRSN .36—IN—OD .875—iN—OA-LG 28480 1460-1940
+14 1460~2027 2 1 SPRING 28480 1460-2027
+15 07475-60020 3 1 PEN HOLDER 28480 07475-60020
+16 1460-1950 8 1 SPRING-PEN DOWN 28480 1460-1950
+17 5040-8672 9 1 END CAP 28480 5040-8672
+18 07475-40005 | 2 1 SILICONE RUBBER DAMPER SIL—R8R 28480 07475-40005
+19 5040-8650 3 1 PEN CARRIAGE 28480 5040—B650
+20 1460-2024 9 1 SPRING 28480 1460-2024
+21 1500-0649 6 1 8ELT-GEAR .188—WD 392—T .082—P 28480 1500-0649
+22 * 5020-6302 6 1 PEN LIFT BAR 28480 5020-6302
+23 * 6020-6301 5 1 SLIDER ROD 28480 5020-6301
+24 07470-40016 |0 1 PEN LIFT CAP 28480 07470-40016
+25 0515-0296 9 4 SCREW-MACH M4 X 0.7 35MM—LG PAN-HD 28480 0515-0296
+26 07470-40049 | 9 2 MOTOR CLAMP 28480 07470-40049
+27 07470-60180 | 1 1 PEN DRIVE MOTOR ASSEMBLY 28480 07470-60180
+28 5040-8668 3 1 PEN DROP SHIELD 28480 5040--8668
+29 5090-1471 7 1 NUT SHEET METAL 28480 5090-1471
+30 5040-8673 0 i BUSHING 28480 5040-8673
+31 07470-40037. | 5 1 PEN LIFT BUMPER 28480 07470-40037
+32 0515-0733 9 1 SCREW 28480 0515-0733
+33 07475-60015 | 6 1 SOLENOID 28480 07475-60015
+34 1460-2043 2 1 SPRING—SOLENOID 28480 1460-2043
+35 0510-0015 0 2 RETAINER—RING E-R EXT .125~IN—DIA STL 28480 0510-0015
+36 07475-40030 3 2 PINCH ROLLER 28480 07475-40030
+37 1460-2033 0 2 SPRING—PINCHROLLER ARM 28480 1460-2033
+38 5040-8652 3 1 ARM-—PINCHROLLER (RIGHT) 28480 5040-8652
+39 5040-8647 8 1 ARM-PINCHROLLER (LEFT) 28480 5040-8647
+40 07470-60175 | 4 1 PAPER DRIVE MOTOR ASSEMBLY 28480 07470 -60175
+41 5040-8674 1 1 RiNG—COUPLER 28480 5040-8674
+42 07470-40005 |7 1 COUPLER—GRIT WHEEL SHAFT 28480 07470—40005
+43 5061-5074 3 1 GRIT WHEEL SHAFT ASSEMBLY 28480 5061-5074
+44 5040-8669 4 1 CLAMP—BEARING 28480 5040--8669
+45 5040-8663 8 1 HANDLE-PINCHROLLER 28480 5040-8663
+46 5040-8646 7 1 CHASSIS 28480 5040-8646
+47 0905-0996 3 4 O—RINGS, RUBBER 28480 0905-0996
+48 0515-0070 7 1 SCREW-—MACH M4 X 0.7 6MM—LG PAN—HD 28480 0515~0070
+49 2110-0567 1 1 FUSEHOLDER CAP 12A MAX FOR UL (METRIC) 28480 2110-0567
+2110-0565 9 1 FUSEHOLDER CAP 12A MAX FOR UL (U.S.) 28480 2110-0565
+50 2110-0016 5 1 FUSE .6A 250V TD 1.25X .25 UL 75915 313.600
+2110-0639 8 FUSE .315A 250V IEC 28480 2110-0639
+2110-0044 9 FUSE .3A250V TD 1.25X .25 UL 75915 313.300
+51 0360-2073 5 1 JUMPER—TRANSFORMER 28480 0360-2073
+52 07475-40067 | 6 1 BLOCK—DISPLAY 28480 07475-40067
+53 07470-60124 |3 1 POWER MODULE ASSEMBLY 28480 07470-60124
+1251-4470 0 1 CONNECTOR-SGL CONT SKT .08—IN-BSC-SZ RND 28480 1251-4470
+2110-0610 5 1 FUSEHOLDER—EXTR POST 16A 250V 28480 2110-0610
+2110-0569 3 1 FUSEHOLDER COMPONENT NUT; THREAD M12.7 28480 2110-0569
+3101-2697 4 1 SWITCH 28480 3101-2697
+54 9100-4238 7 1 TRANSFORMER 76.2MMX70MMX63.5MM 28480 9100-4238
+55 07475-40021 | 2 1 BRACKET—PAPER BAIL 28480 07475-40021
+56 07475-20005 | 0 1 BAIL—PAPER 28480 07475-20005
+57 07475-60025 |8 1 BASE ASSEMBLY 28480 07475-60025
+58 07475-60101 |1 1 PCA—MAIN RS—232-—C (OPTION 001} 28480 07475-60101
+07475-66101 | 3 PCA-—MAIN (OPTION 001) REBUILT 28480 07475-66101
+07475-60102 |2 PCA—MAIN HP—IB (OPTION 002) 28480 07475-60102
+07475-66102 |4 PCA—MAIN (OPTION 002) RESUILT 28480 07475-66102
+59 07475-60011 | 2 1 PANEL~REAR, OPTION 001 28480 07475-60011
+07475-60012 _|3 1 PANEL—REAR, OPTION 002 28480 07475-60012
+60 2190-0034 5 2 WASHER-LK-— .194 1D. OPTION 002 ONLY 28480 2190-0034
+61 1251-7828 8 2 STANDOFF—OPTION 001 ONLY 28480 1251-7828
+62 1251-7999 4 1 DUSTCOVER—CONNECTOR OPTION 002 ONLY 2B480 1251-7999
+63 07475-00015 0 1 INSULATOR 28480 07475-00015
+64 07475-00001 4 1 RETAINER, SOLENOID 28480 07475-00001
+65 5040-8665 0 1 SPACER 28480 5040-8665
+67 5040-8662 7 Fl CLAW-PEN 28480 5040-B662
+68 5020-6308 2 1 PIN-DOWEL 2B480 5020-6308
+
+>
+—
+=
+=
+—
+Q
+o
+ie)
+ep)
+18
+SE Ln
+— ™
+Ho ro)
+nO
+LONVGE
+co2z* “oO
+Wi j= or
+AN OS
+CHRAwoe
+o8ecn
+~ YY
+FOLaD
+os
+
+25
+
+saber
+
+wr
+
+Jae
+
+Figure 4-1. Model 7475A Exploded View
+
+4-9
+
+7475-B-11-1
+
+7475-B-10-1D
+
+7475-B-9-1A
+Section IV
+
+Model 7475A
+
+7475-A-57-1
+Figure 4-2. Pen Carousel Parts
+Table 4-4. Parts List, Pen Carousel Parts
+Reference HP Part |c! g nti Mfr
+: A t Description Mfr Part Number
+
+Designation | Number |° y P Code
+1 0624-0591 8 1 SCREW-SELF TAPPING 28480 0624-0591
+2 5040-8661 6 1 PLATE-CAROUSEL TOP 28480 5040-8661
+3 1460-2034 1 1 SPRING-PAWL 28480 1460-2034
+4 5040-8658 1 6 CAPPER-PEN 28480 5040-8658
+5 07475-40002 | 9 6 BOOT-PEN 28480 07475-40002
+6 5040-8657 0 1 HUB-CAROUSEL 28480 5040-8657
+7 1460-2106 8 1 SPRING-CAPPER 28480 1460-2106
+8 5040-8659 2 1 SPIDER-CAROUSEL 28480 5040-8659
+9 5040-8660 5 6 PAWL-CAROUSEL 28480 5040-8660
+
+4-10
+Model 7475A Section IV
+Table 4-5. Code List of Manufacturers
+MFR. ZIP
+NO. MANUFACTURER NAME ADDRESS CODE
+00000 Any Satisfactory Supplier
+0003J Nippon Electric Company
+00779 Amp, Ince. Harrisburg, PA 17105
+00853 Sangamo Electric Company, South Carolina Div. Pickens, SC 29671
+01121 Allen-Bradley Company Milwaukee, WI 53204
+01295 Texas Instruments, Inc., Semiconductor Component Div. Dallas, TX 75222
+0192B RCA Corporation, Solid State Div. Somerville, NJ 08876
+02111 Spectrol Electronics Corp. City of Industry, CA 91745
+02114 Ferroxcube Corporation Saugerties, NY 12477
+03508 GE Company, Semiconductor Prod. Dept. Syracuse, NY 13201
+03888 KDI Pyrofilm Corporation Whippany, NJ 07981
+04713 Motorola Semiconductor Products Phoenix, AZ 85062
+07263 Fairchild Semiconductor Div. Mountain View, CA 94042
+11815 Cherry Rivet Div., Townsend Company Santa Ana, CA 92707
+13606 Sprague Electric Company, Semiconductor Div. Concord, NH 03301
+14936 General Instruments Corp., Semiconductor Prod. GP Hicksville, NY 11802
+19701 Mepco/Electra Corporation Mineral Wells, TX 76067
+24355 Analog Devices, Inc. Norwood, MA 02062
+24546 Corning Glass Works (Bradford) Bradford, PA 16701
+24655 General Radio Co. Concord, MA 01742
+27014 National Semiconductor Corporation Santa Clara, CA 95051
+27167 Corning Glass Works (Wilmington) Wilmington, NC 28401
+28480 Hewlett-Packard Company, Corporate Headquarters Palo Alto, CA 94304
+31471 American Micro Systems, Inc. Santa Clara, CA 95051
+32293 Intersil, Inc. Cupertino, CA 95014
+32694 Optron, Inc. Carrollton, TX 75006
+34649 Intel Corporation Mountain View, CA 95051
+56289 Sprague Electric Company North Adams, MA 01247
+72136 Electro Motive Corporation, Sub. IEC Willimantic, CT 06226
+75042 TRW, Inc., Philadelphia Div. Philadelphia, PA 19108
+75915 Littlefuse, Inc. Des Plaines, IL 60016
+83259 Parker Seal Co., Div. Parker-Hannifin Culver City, CA 90231
+84411 TRW, Capacitor Div. Ogallala, NE 69153
+86928 Seastrom Mfg. Co. Glendale, CA 91201
+91637 Dale Electronics, Inc. Columbus, NE 68601
+
+4-1]
+Section IV
+
+Table 4-6. Reference Designations and Abbreviations
+
+Model 7475A
+
+ceveceeceseeseeseseeeeeeaaens assembly
+attenuator;
+isolator; termination
+
+Bi ccenteeeeeee fan; motor
+battery
+CO ceeeenneneeeeeees capacitor
+CPi ecceeeesetseeeeeeeeees coupler
+diode;
+diode thyristor; varactor
+DC... directional coupler
+veeteeeneee delay line
+...annunciator;
+signaling device
+(audible or visual);
+
+lamp; LED
+A ieeeeccccetcsneeeereettteeneees ampere
+AC hieevcereeeee alternating current
+ACCESS... eee accessory
+ADI oon adjustment
+A/D .analog-to-digital
+AF..... ..audio frequency
+
+AFC... eeceeeeeeeeeees automatic
+frequency control
+AGC... automatic gain
+control
+ceteceeseesesesenaeaneens aluminum
+automatic level
+control
+AM 1... eeeeeteeeeeeeees amplitude
+modulation
+AMBPL..........cceeeeeees amplifier
+APC............ automatic phase
+control
+ASSY ooo assembly
+AUX Loc auxiliary
+AVE coccccccecsscceeeereeeeeree average
+AWG... eee American wire
+gauge
+BAL . oo eeecccceccceeceeeeene balance
+BCD... binary coded
+decimal
+BD ooo eeeeeentereeeee board
+BE CU... ee beryllium
+copper
+BFO ow. beat frequency
+oscillator
+BH oo... eee binder head
+BKDN............ breakdown
+bandpass
+bandpass filter
+ceeeceeeeeteeeeeeacstseeeeeees brass
+backward-wave
+oscillator
+CAL Le eeceeeetteeeees calibrate
+cew.. ..counter-clockwise
+CER..... ceramic
+CHAN... .cecceessneeeeeeee channel
+Co centimetre
+CMO...... cabinet mount only
+COAX .eccccceeeeetteeee coaxial
+1-A-24-3
+
+REFERENCE DESIGNATIONS
+
+| errr miscellaneous Poe electrical connector
+
+electrical part (movable portion);
+
+F voeeecccsccccssteceesteeeretseeeses fuse plug
+
+| ne filter Qo ieeeeeetetteeeeeeeeeetteee transistor;
+
+SCR;
+
+triode thyristor
+
+Jee electrical connector R iiciccccccetesseneeeeeeeees resistor
+
+(stationary portion) thermistor
+
+Jack — She eteeeeeee eee switch
+
+Kooi ccccceeeeeeneettteetneeees relay transformer
+
+L eee ceeeseeesereereeetteeeeee coil; terminal board
+
+inductor thermocouple
+
+M Lo eeeceeeeceentteeteetoeteeeee meter  TPuueeeeeeeeeeeeeeereeeeeees test point
+
+MP... eee miscellaneous UL integrated circuit;
+
+mechanical part microcircuit
+
+ABBREVIATIONS
+
+COEF... eee coefficient ELECT... electrolytic
+
+common ENCAP ...encapsulated
+
+COMP... composition EXT wiceeeeeeetereees external
+COMPL........ eee complete
+CONN .... connector
+CP ore cadmium plate
+CRT........... cathode-ray tube
+CTL wee complementary
+transistor logic
+
+CW. continuous wave FM... ee reeee frequency
+
+CWoeeececceceeteeecessreeeees clockwise modulation
+
+cm..... centimetre FP occeeereeee front panel
+
+D/A igital-to-analog FREQ....... .... frequency
+
+FXD.... ee eceeeceeeeeeneeee fixed
+
+g... gram
+
+GE germanium
+
+GHZ... eee gigahertz
+
+GL... eeeeeeccceceeeeeeentee ates glass
+
+(temperature interval) GRD ground(ed)}
+
+or difference | rr henry
+
+Octet degree (plane angle) Pence iiceeeeececeeeeeeseeenteeeeees hour
+
+OC eee degree Celsius HET... heterodyne
+
+(centigrade) HEX... eceeeeeee hexagonal
+
+OF ee degree Fahrenheit HD. ccceceteeeenereees head
+
+degree Kelvin HDW.........c ee hardware
+
+DEPC......... deposited carbon HF... high frequency
+
+ceeceeceeeeeeteeeteenaee detector HG... eeeeeeeeeeeeee MEFCUTY
+
+diameter HI.. high
+
+... diameter HP... Hewlett-Packard
+
+(used in parts list) HPF........0.0... high pass filter
+
+DIFF AMPL....... differential HR oe eeecececeeeeecneneees hour
+
+amplifier (used in parts list)
+
+iV oo. eeeceeteeeeteeeeees division HV oe high voltage
+
+DPDT............... double-pole, . Hertz
+
+double-throw ICw integrated circuit
+
+deneeeeeeeeeeetenseeteeatesenes drive ID................. inside diameter
+
+. double sideband LP oe eeeeee intermediate
+
+ceneeeeeeenes diode transistor frequency
+
+logic IMPG............00. impregnated
+
+DVM........... digital voltmeter TT Lee eeesececeseneeeeesteeeesnneees inch
+
+ECL.....emitter coupled logic INCD incandescent
+
+EMF ...........0006 electromotive INCL... eee include(s)
+
+force INP occ eeeeeeeettereees input
+
+EDP... electronic data INS. . insulation
+
+processing INT .ooceceeecenseceeeseeeees internal
+
+NOTE
+
+All abbreviations in the parts list will be in upper-case.
+
+Vl iiieesettsteeeeeeeeeeeeeeees electron
+tube
+
+VR oe eeeeseeeeetnereeee voltage
+regulator;
+
+breakdown
+
+diode
+
+transmission path;
+
+wire
+
+Seed eeeee esta eeaeeeaueteneeeens socket
+... crystal unit
+(piezo-electric or
+
+quartz)
+
+Yen tuned cavity;
+tuned circuit
+
+Kg oo ee ceeteettreeeeaes kilogram
+. kilohertz
+
+capacitance
+LED....... light-emitting diode
+LF... eects low frequency
+
+lock washer
+LO... low; local oscillator
+logarithmic taper
+(used in parts list)
+
+C0) logarithm(ic)
+LPF. .... low pass filter
+LV .oiceeeeceeccteeeeeees low voltage
+Moeececccsccsseeee metre (distance)
+MA vie eeeeeeccteeeeeees milliampere
+MAX. .... maximum
+MOD) occ eeeeeee ree megohm
+MEG. meg (10°)
+(used in parts list)
+
+MET FLM............ metal film
+MET OX......... metallic oxide
+MF.......... medium frequency;
+microfarad
+
+(used in parts list)
+MER.......... eee manufacturer
+MB oseeeeeeeeeeceeentetens milligram
+MHZ. ee eeeeeeeee megahertz
+
+.. millihenry
+
+(plane angle)
+
+MINAT...........000008 miniature
+mm.. .... millimetre
+MOD. modulator
+
+4-12
+
+Model 7475A
+
+Section IV
+
+Table 4-6. Reference Designations and Abbreviations (Continued)
+
+momentary
+metal-oxide
+scmiconductor
+
+IMS veeccceeteceeeneeees millisecond
+
+.. Mounting
+
+(indicating device)
+millivolt
+... Millivolt, ac
+millivolt, de
+millivolt, peak
+millivolt,
+peak-to-peak
+
+mVrMs ............. millivolt, rms
+
+milliwatt
+multiplex
+
+... microampere
+... microfarad
+...microhenry
+vee micromho
+microsecond
+microvolt
+
+uVac ... microvolt, ac
+uVde ...Microvolt, dc
+uVpk .. microvolt, peak
+MNVD-Pooeeeeceetceeeeeeees microvolt,
+peak-to-peak
+BVIMS ......0..... microvolt, rms
+BW ecccccee cee microwatt
+DA woe eeeeeeeneeeeee nanoampere
+NC... no connection
+N/Cu ee normally closed
+negative
+DP oer nanofarad
+NI PL. nickel plate
+N/O..... -normally open
+NOM... .. nominal
+NORM... eee normal
+NPN.......... negative-positive-
+negative
+NPO....000.... negative-positive
+zero (zero temperature
+coefficient)
+NRER....... not recommended
+for field replacement
+NSR... eee not separately
+replaceable
+
+1-A-25-3
+
+dese tenteneeeeeeeneteas nanosecond
+se bbeneeneeenees nanowatt
+order by description
+beseteenneees outside diameter
+
+Lee eeseeeeneeeneaeesees oval head
+
+OP AMPL.......... operational
+
+amplifier
+
+option
+
+Osc .... oscillator
+
+Ox .. oxide
+
+oz. . ounce
+QO...
+
+Pccccccccccccetetteeeeceeeeenens peak
+
+(used in parts list)
+
+PAM............ pulse-amplitude
+
+modulation
+
+PCL printed circuit
+
+PCM... ee pulse-code-
+
+modulation; pulse-count
+
+modulation
+
+PDM.......... pulse-duration
+
+modulation
+
+deveeceeeeteeeteneeeteeee picofarad
+
+peak inverse voltage
+
+seeeeeees peak
+... positive-negative-
+positive
+veveteaaeeeeeeeeeentneeeee part of
+.. polystyrene
+
+porcelain
+POS....... positive; position(s)
+(used in parts list)
+
+Lee essesseseeeeeeeeeees position
+
+. potentiometer
+sesteeenneeeaeeeess peak-to-peak
+ceetetennnteeeeeeees peak-to-peak
+(used in parts list)
+
+PWN uu... eee pulse-width
+modulation
+
+PWV qu... peak working
+voltage
+
+RC veces resistance-
+capacitance
+
+ceedaeeeeuneteeeeeeeees rectifier
+deceeetenneeeenteeeeeene reference
+deneeeceteneeensnenenes regulated
+ceveeeeseseseueees replaceable
+
+.. radio frequency
+radio frequency
+
+interference
+RH. cece round head;
+right hand
+RLC Lee resistance-
+inductance-
+capacitance
+RMO........... rack mount only
+rms... .. root-mean-square
+RND we eceeeeeeee round
+ROM........ read only memory
+R&P. rack and panel
+RWV.......00. reverse working
+voltage
+Swe scattering parameter
+SL iissseeccceeeessseeees second (time)
+ eeeeeeseecentereeeentnesennees second
+(plane angle)
+S-Boee slow-blow (fuse)
+(used in parts list)
+SCR... silicon controlled
+rectifier; screw
+RS)
+SECT oo eeceeeees
+
+PPM ...........005 pulse-position
+modulation;
+parts per million
+PREAMPL........ preamplifier
+PRF... pulse-repetition
+frequency
+PRR....... pulse repetition rate
+PS vecccccecsessecserseeeee picosecond
+PT oe ecceeeseceeetseeeetteeees point
+PTM Qo... eeecceeereees pulse-time
+modulation
+
+NOTE
+
+All abbreviations in the parts list will be in upper-case.
+
+MULTIPLIERS
+Abbreviation Prefix Multiple
+T tera 10”
+G giga 10°
+M mega 10°
+k kilo 10°
+da deka 10
+d deci 10!
+c centi 107
+m milli 107
+B micro 10°
+n nano 10°
+p pico 10?
+f femto 10"
+a atto 108
+
+signal-to-noise ratio
+
+single sideband
+
+SQL eee eeeneeee square
+SWR...... standing-wave ratio
+SYNC. ee synchronize
+Toe. timed (slow-blow fuse)
+TA... ceeeecessreeeeeceeeenes tantalum
+TO. eee temperature
+
+coefficient
+
+....time delay
+
+terminal
+
+thin-film transistor
+
+TGL oe eee eee toggle
+THD oo eeeeeee thread
+THRU .... through
+T1....... ... titanium
+TOL oe eeeeceeeceeeeeees tolerance
+TRIM... eee trimmer
+TSTR uo. eee transistor
+TTL........ transistor-transistor
+logic
+
+Ul cceceeeeeeee micro (10 °)
+(used in parts list)
+
+UF Lecce microfarad
+
+(used in parts list)
+UHF....... ultrahigh frequency
+
+.. voltampere
+sete testiceaeeeteeesrenneee volts, ac
+
+sects cetetsaneseeeeeseees variable
+
+cess vensceeeeeeeeeeeeenteee volts, dc
+VDCW...... volts, dc, working
+(used in parts list)
+
+VDK oe eee eee volts, peak
+severe volts, peak-to-peak
+seteeeeeereee volts, rms
+vacuum-tube
+
+voltmeter
+
+Sevtseneeeevees volts, switched
+
+W once tttttteteeeteeteeee watt
+WY ciccccccccceeesettsseeeeteeeeees with
+WIV . working inverse
+voltage
+
+WW. wirewound
+WY] On cccccccceeccccceeee without
+Lo ceccieeeesnnnteeees characteristic
+impedance
+
+Model 7475A Section V
+
+SECTION V
+PRODUCT HISTORY
+
+5-1. INTRODUCTION
+
+5-2. This section describes the differences between earlier models of the HP 7475 and the latest version documented
+in this manual. These earlier models are identified by their serial prefix number, and the date codes on their printed-
+circuit assemblies (PCAs). For ease of reference this section is divided into two major topics; History of Serial Prefix
+Numbers and History of Printed Circuit Assemblies.
+
+5-3. HISTORY OF ASSEMBLIES BY SERIAL PREFIX NUMBER
+
+5-4. Table 5-1 is a quick-reference table that lists, by plotter serial prefix number, the assemblies that differ from
+those documented in this manual. Also referenced are Item Numbers under which these differences are described in this
+section.
+
+5-5. Table 5-2 lists the assemblies that are described under each Item.
+
+5-6. | Knowing the serial prefix number of the plotter, the user can see in Table 5-1 which assemblies are documented
+in this section. In Table 5-2 the user can see if more than one change has been made to the assembly in question and
+which Items in this section to refer to.
+
+Table 5-1. Assemblies by Plotter Serial Prefix Number
+
+S/N PREFIX ASSEMBLIES ITEM
+2325A Al Main PCA See PCA History
+Chassis Assembly 5
+NOTE
+
+Assemblies designated with an asterisk (*) denote changes
+made during the plotter production cycle.
+
+Table 5-2. Item Description
+
+ITEM ASSEMBLIES
+5 Main Chassis
+Pinch Roller Arm (Left)
+
+5-7. HISTORY OF PRINTED CIRCUIT ASSEMBLIES
+
+5-8. | Hewlett-Packard’s printed-circuit assemblies have three major identification features:
+
+a. Part Number. All PCAs having the same part number are directly interchangeable. If a PCA is revised in any
+way that Guokes it non-interchangeable with previously issued PCAs, a new part number is assigned to the
+revised PCA.
+
+b. Revision Letter. This letter identifies the most recent revision to the etched circuit pattern. The original issue is
+identified with the letter ‘A’. If the master artwork for a PCB is revised in order to alter performance or
+manufacture, the revision letter is changed to the next letter in the alphabetical sequence.
+
+5-1
+Section V Model 7475A
+
+c. Assembly Date Code. The date code on the PCA is a four-digit number which identifies the assembly level.
+The first two digits represent the last two digits of the current year and are derived by subtracting 60 from the
+current year; the last two digits are the number of the week in that year, i.e. 2314 = fourteenth week in 1983. Any
+digits following a hyphen in the date code represent the division that manufactured the assembly.
+
+5-9. Table 5-3 is a quick-reference table that lists PCAs by part number and date code. Listed next to the part number
+
+and date code of the PCAs are the Items located in this section that describe the differences between the PCA in
+question and the level of that PCA described in the main body of this manual.
+
+Table 5-3. Date Codes
+
+PCA DATE CODE ITEM
+Al (07475-60101) 2314-11 1
+Al (07475-60102) 2314-11 2
+Al (07475-60101) 2420-11 3
+Al (07475-60102) 2420-11 4
+ITEM 1
+
+Date code 2314-11 is the date code on the original PCA installed in the plotter at the time of product introduction. Except
+for the following part numbers, PCAs having a date code of 2314-11 have the same components as those listed in
+Section IV.
+
+MAIN PCA, RS-232-C, OPTION 001
+
+REFERENCE PART CHECK
+DESIGNATOR NUMBER DESCRIPTION DIGIT
+A1DS1-2 1990-0485 LED 5
+-A1DS3 1990-0487 LED 7
+A1E4 1200-0567 SOCKET 1
+A1E8 1200-0654 SOCKET 7
+A1E11-16 2110-0597 FUSEHOLDER 7
+A1E18-20 07470-40038 SPACER 6
+A1H36 0515-0055 SCREW 8
+A1H9-12 0535-0031 NUT 2
+AlJd4 1251-4946 CONNECTOR 5
+ITEM 2
+
+Date code 2314-11 is the date code on the original PCA installed in the plotter at the time of product introduction. Except
+for the following part numbers, PCAs having a date code of 2314-11 have the same components as those listed in
+Section IV.
+
+MAIN PCA, HP-IB, OPTION 002
+
+REFERENCE PART CHECK
+DESIGNATOR NUMBER DESCRIPTION DIGIT
+A1D$1-2 1990-0485 LED 5
+A1DS3 1990-0487 LED 7
+A1E3 1200-0567. SOCKET 1
+A1E6 1200-0654 SOCKET 7
+A1E14-19 2110-0597 FUSEHOLDER 7
+A1E21-23 07470-40038 SPACER 6
+A1H36 0515-0055 SCREW 8
+A1H9-12 0535-0031 NUT 2
+
+5-2
+Model 7475A Section V
+
+ITEM 3
+
+Date code 2420-11 introduced a design change that eliminated inductive voltage spikes in the motor drivers when the
+plotter was switched off. The part numbers that differ from those listed in Section IV; and the effect of these component
+differences on the schematic diagram and parts location figure in Section VI, are as follows:
+
+MAIN PCA, RS-232-C, OPTION 001
+
+REFERENCE PART CHECK
+DESIGNATOR NUMBER DESCRIPTION DIGIT
+A1DS1-2 1990-0485 LED 5
+A1DS3 1990-0487 LED 7
+A1LE4 1200-0567 SOCKET 1
+A1E8 1200-0654 SOCKET 7
+A1E11-16 2110-0597 FUSEHOLDER 7
+A1E18-20 07470-40038 SPACER 6
+A1H346 0515-0055 SCREW 8
+A1H9-12 0535-0031 NUT 2
+AlJ4 1251-4946 CONNECTOR 5
+Al1U28 07475-60103 DIODE AY 3
+
++5V Unt 2
+UIA +18/26V PEN COIL Js 1)
+15 6pm = SUPPLY 7
+13 Lie - | > Wife.
+3 apm
++5V 37 ww CAROUSEL
+4 0 STEPPER
+5 U Nel pt {4) MOTOR
++5V 4
+a vis 5 ae
+Ul op ot 6
+a a
+4 lo [\]3 12 RE DS2 #PART OF U28
+—__ Rl2 as Mm (14) ”* sy orars-600s
+—-+ 45V 8.2K Te Die  asv aa PAPER size [a3]
+——__ 8 PX G3 i OS! 4,
+—— | urop>>—4 sv i
+b aig. L344 7, {
+3. 16K PAPER SIZE las)
+7475-B-37-2 7 _ 77 _
+
+Partial View of RS-232-C Main PCA Option 001 Schematic Diagram (Date Code 2420-11)
+
+ra
+1
+oe)
+u2ifa
+°
+Fe
+F2
+(
+(
+ats |
+ato ‘
+O] :
+
+7475-A-29-2
+
+Partial View of RS-232-C Main PCA Option 001 Parts Location Diagram (Date Code 2420-11)
+
+5-3
+Section V Model 7475A
+
+ITEM 4
+
+Date code 2420-11 introduced a design change that eliminated inductive voltage spikes in the motor drivers when the
+plotter was switched off. The part numbers that differ from those listed in Section IV are:
+
+MAIN PCA, HP-IB, OPTION 002
+
+REFERENCE PART CHECK
+
+DESIGNATOR NUMBER DESCRIPTION DIGIT
+A1DS1-2 1990-0485 LED 5
+A1DS3 1990-0487 LED 7
+A1E3 1200-0567 SOCKET 1
+A1E6 1200-0654 SOCKET 7
+A1E14-19 2110-0597 FUSEHOLDER 7
+A1E21-23 07470-40038 SPACER 6
+A1H3-6 0515-0055 SCREW 8
+A1H9-12 0535-0031 NUT 2
+
+ITEM 5
+
+Serial number prefix 2325A is the original serial number prefix of the plotter at the time of product introduction. Except
+for the following part numbers, all plotters with the serial number prefix 2325A have the same parts as those listed in
+
+Section IV of this manual.
+
+REFERENCE PART CHECK
+DESIGNATOR NUMBER DESCRIPTION DIGIT
+16 1460-2023 SPRING-SILVER 2.54 CM-L 8
+1460-2029 SPRING-COPPER 3.0 CM-L 4
+1460-2030 SPRING-CHROME 3.33 CM-L 7
+39 5040-8666 ARM-PINCH ROLLER (LEFT) 1
+46 5040-8667 CHASSIS 2
+
+7475-A-80-1
+
+Partial Diagram of Model 7475A Exploded View
+
+5-4
+Model 7475A
+
+Section VI
+
+SECTION VI
+SERVICE
+
+6-1. INTRODUCTION
+6-2. This section contains information needed for main-
+tenance and repair of the Model 7475A, including:
+
+Circuit Description
+Troubleshooting Information
+Parts Removal and Replacement
+Cleaning
+
+Schematic Diagrams
+Component Location Figures
+
+6-3. SIMPLIFIED THEORY OF OPERATION
+
+6-4. | The Model 7475A uses microprocessor-based logic
+to convert digital instructions into a graphic plot. The
+microprocessor receives instructions from either an inter-
+nal ROM program or an external controller through the
+I/O (input/output) circuits. It then issues data to the pen
+drive and paper drive motor servo systems and the pen
+down circuit to produce the plot. Figure 6-1 is a simplified
+block diagram of the 7475A plotter.
+
+6-5. The two drive motors are reversible dc motors.
+Encoders on each motor transmit rotation data back to
+their respective servo IC. One motor drives grit wheels
+which move the plotting medium, while the other motor
+moves the pen across the plotting surface.
+
+6-6. There are two optional I/O (input/output) circuits
+available for the Model 7475A. Option 001 is the RS-232-C/
+CCITT V.24 serial interface. Option 002 is the HP-IB
+(Hewlett-Packard Interface Bus) parallel data interface
+which is compatible with IEEE standard 488-1978.
+
+6-7. RS-232-C/CCITT V.24 INTERFACE
+CIRCUIT (Option 001)
+6-8. The Option 001 I/O (Input/Output) is an asyn-
+
+chronous full-duplex bit-serial interface for hardwired
+connection to a computer or terminal. Interface connec-
+tions are shown on the schematic diagram at the end of
+this section. This interface is compatible with EJA Stand-
+ard RS-232-C and with CCITT V.24. Input and output
+are controlled in the 7475A by the Asynchronous
+
+7475-A-12-1
+
+PEN SIX PEN
+CAROUSEL CAROUSEL
+MOTOR aE
+"me a
+MOTOR
+DRIVER =i :
+PEN :
+SOLENOID We
+PEN
+DOWN
+DRIVER ~
+™~
+DATA BUS se
+NTROLLER PEN DRIVE
+co ADDRESS BUS ~ MOTOR
+a
+;~
+‘ woron T{ -) ae
+MICROPROCESSOR
+1/0
+HP 1B + GATE
+RS-232-
+32-C ARRAYS SERVO FY OPTICAL
+4 ROM Ic ENCODER
+Pl 24K x8
+PAPER DRIVE
+REAR PANEL > MOTOR
+SWITCHES k@—
+eB MOTOR |
+45V DRIVER ~
+~~
+POWER [oY “
+SUPPLY L_ooaoy FRONT PANEL
+CONTROL & SERVO OPTICAL
+2 9y INDICATORS Te ENCODER
+L129 (RS-232-C ONLY) ,)
+
+Figure 6-1. 7475A Simplified Block Diagram
+
+6-1
+Section VI
+
+Communication Information Adapter (ACIA) U13, and 2
+multiplexers U12 and U27. See Figure 6-2 and 6-24.
+
+6-9. DATA INPUT AND OUTPUT CIRCUITS. Be-
+cause signals within the 7475A are positive-true TTL
+levels, inverting line drivers and receivers, U9, U11, and
+U26, are used to convert the logic and voltage between
+the levels required by the interface system (shown in
+Table 6-1) and the internal levels. Figure 6-2 is a diagram
+of the I/O circuits and the ACIA.
+
+6-10. ACIA. The logic level on the Read/Write input con-
+trols the direction of data flow through the data bus
+interface. When the RS (Register Select) input is high,
+the R/W input selects either the receive or transmit data
+register. When RS is low, the control/status registers are
+selected. The 1 MHz signal at the E input clocks data in
+and out of the ACIA on the data bus (D0-D7) and the
+RX/TX clock (Baud Rate Clock) clocks data in and out
+on the RXD (Received Data) and TXD (Transmitted
+Data) lines:
+
+6-11. MULTIPLEXER U12. When the address line (EIOO)
+is high, the 7475A transmitted data goes out on the
+Transmitted Data line (pin 2). The Secondary Transmitted
+Data line (pin 14) is held at a negative voltage. When
+EIOO is low, information on the Secondary Received
+Data line is retransmitted on the Transmitted Data line
+(pin 2), and the 7475A transmitted data goes out on the
+Secondary Transmitted Data line (pin 14).
+
+6-12, MULTIPLEXER U27. When the address line (EIO3)
+is low and chip select (CS) from U6, gate array B, is low,
+three control lines are passed onto the data bus. The
+functions of these control lines are as follows:
+
+a. DATA SET READY (DSR) — Activated by the
+modem to tell the plotter that the modem is
+operational.
+
+b. CLEAR TO SEND (CTS) — Activated by the
+modem to tell the plotter that it is ready to receive
+and re-transmit data from the terminal.
+
+c. DATA TERMINAL READY (DTR) — Activated
+by the plotter to tell the modem that the terminal
+is operational.
+
+6-13. BAUD RATE. The internal baud rate (transmit/
+receive) clock signal is derived in U5, Gate Array A,
+from the 4 MHz clock signal. The baud rate clock fre-
+quency is sixteen times the desired baud rate. Baud rate
+
+Model 7475A
+
+may be selected by means of the rear-panel switches, or
+an external clock signal may be used.
+
+6-14. HP-IB INTERFACE (Option 002)
+
+6-15. HP-IB interface connections are shown on the
+schematic diagram at the end of this section. Input/
+Output voltage levels must meet TTL requirements (low
+= —0.8 V; high = —2.0 V). All signals are active low
+(true). Figure 6-3 is a block diagram of the HP-IB Inter-
+face Circuits.
+
+6-16. All data and control signals to and from the HP-IB
+go through U10 and U11, the bus transceivers, which
+are enabled to transmit or to receive by U12, the inter-
+face adapter in response to HP-IB commands. The inter-
+face adapter automatically handles all handshake
+requirements on the HP-IB. When the plotter power is
+on, the bus transceiver inputs are high impedance to
+prevent loading the data lines. When the plotter power is
+off, the bus transceivers present an open circuit to all
+data lines; consequently, the plotter does not interfere
+with other HP-IB operations.
+
+6-17. A 16 line bus is used to carry data and control
+information and is divided into three sets of lines.
+
+Data bus — 8 signal lines — DIO1 through DIO8.
+
+Data transfer control — 3 signal lines —
+(Handshake).
+
+c. Interface management — 5 signal lines.
+
+6-18. The data bus transfers 8-bit data or control words
+between the controller and the plotter. The words are in
+bit parallel byte serial form. The words are transferred
+bi-directionally and asynchronously.
+
+6-19. The three data transfer control lines, or “hand-
+shake lines” are used to control the transfer of informa-
+tion on the data bus. These lines are identified as follows:
+
+a. DATA VALID (DAV) — Used to indicate that valid
+information is available on the data lines.
+
+b. NOT READY FOR DATA (NRFD) — Used to
+indicate the readiness of the Plotter to accept
+information.
+
+c. NOT DATA ACCEPTED (NDAC) — Used to indi-
+cate the acceptance of information by the Plotter.
+
+Table 6-1. RS-232-C/CCITT V.24 Interface Signal Levels
+
+INTERCHANGE VOLTAGE
+NOTATION
+NEGATIVE POSITIVE
+(More Negative than —3 V) (More Positive than +3 V)
+Binary State 1 0
+Signal Condition Marking Spacing
+Function off on
+
+6-2
+Model 74754 Section VI
+MULTIPLEXER
+| @
+A
+LINE DRIVERS/ Ag a
+RECEIVERS U27 ] —
+Fla CS
+( DATA ¢ = r
+SET on 0
+READY ' FA 7)
+CLEAR 5 V
+TO a )
+SEND 1 FA D6
+INTERNAL
+RECEIVED Vv |
+LINE SIGNAL 0 DATA BUS
+DETECTOR
+1 FA DS
+)
+1 FA ba J
+ACIA
+DATA f- _ 43 _
+TERMINAL 22 ut 54 ATS RIW READ/WRITE
+READY \ 14
+WO ¢ E 1 MHz
+3 2
+Recr ug RXD 3
+ee Fr BAUD RATE
+SECONDARY 46 Teck CLOCK
+RECEIVED ug
+DATA W
+MULTIPLEXER RS AG
+r) 1 csr j2 — 13
+AG-1 E100 cs1 HO ats
+1
+U12 L_ 15 cso [8 VMA
+F
+rc 18 D7
+U13 16
+TRANSMITTED 2 Q D6
+DATA un FA VW DS
+1 6
+TXD [18 D4
+SECONDARY 44 r— 0 | INTERNAL
+TRANSMITTED ull FA 19 p3. { DATA BUS
+DATA WJ 1 +5V 20
+D2
+21 01
+REQUEST 4
+L TO SEND — ( vn mv, 22 og J
+7AT5-AASIA
+
+Figure 6-2. RS-232-C/CCITT V.24 Interface Circuits
+
+6-20. The five interface management lines are used to
+provide an orderly flow of information accross the inter-
+face bus. The lines are identified as follows:
+
+ATTENTION (ATN) — Used by the controller to
+specify how data on the DIO signal lines are to
+be interpreted, (command, data, or parallel poll
+response) and which devices on the bus must
+respond to the data.
+
+SERVICE REQUEST (SRQ) — Used to indicate
+that the plotter needs attention and to request an
+interruption of the current sequence of events.
+
+INTERFACE CLEAR (IFC) — Used by the con-
+troller to place the bus in a known quiescent
+condition.
+
+END OR IDENTIFY (EOI) — Used by a talker to
+indicate the end of a multiple-byte transfer
+sequence or, in conjunction with ATN to execute
+a polling sequence.
+
+a.
+
+e. REMOTE ENABLE (REN) — Used to enable a
+remote control mode.
+6-21. Positive true logic is used within the plotter cir-
+
+cuitry. Therefore a positive false NRFD on the HP-IB
+bus will be converted to a positive true RFD within the
+plotter.
+
+6-22. When the HP-IB interface IC U12 receives a RESET
+pulse from the microprocessor U13 it sets the DAC and
+RFD lines passive true, indicating the ready condition.
+The controller will set ATN true indicating a bus message
+or address, and put the device address on data lines
+DIO1 through DIO5. The interface chip compares the
+address on the bus with the setting of the HP-IB address
+switch read at power up. If the address is valid, the HP-
+IB chip will then decode the lines DIO6 and DIO7, to
+determine if the 7475A is being addressed as an acceptor
+(listener) or source (talker). When the controller sends a
+valid address with DIO6 true and DIO7 false, the plotter
+is being addressed as a listener. When the controller is
+
+6-3
+Section VI
+
+Model 7475A
+
+7475-A-14-1
+
+BEGINS
+
+<<. T/R1 cs FROM
+_ GATE ARRAY A
+—_
+HP-IB
+HH Teas
+uit
+CLK }~q——___ )
+u12 AD@-AD7
+_ FROM
+<paTA DATA R/W lg f processor
+RESET [=e
+U10 ;
+j
+T/R2
+Appress | 5!
+SWITCH
+(ATN=FALSE)
+DATA
+SOURCE
+DAV
+VALID SOURCE
+! SOME
+ALL RDY I I RDY ALLRDY
+| |
+RFD | |
+| NONE RDY |
+ACCEPTOR
+| SOME ACC ,ALL ACC
+| |
+DAC |
+| |
+[ | ACCEPTOR
+DATA TRANSFER DATA TRANSFER
+
+ENDS
+
+Note; signals shown are HP-IB device levels and are complements of the bus.
+
+Figure 6-3. HP-IB Interface Circuits and Handshake Timing Diagram
+
+6-4
+Model 7475A
+
+ready to transfer data on the bus it sends ATN false and
+EOI false. Refer to Figure 6-3 for the handshake timing.
+When the plotter receives these two signals it starts the
+handshake sequence:
+
+a. The plotter indicates that it is ready to accept
+data by setting RFD true and DAC false.
+
+b. After RFD has gone true the controller places a
+data byte on the eight-data line and sets DAV true.
+
+c. After the DAV line has gone true, the plotter sets
+the RFD false, accepts the data and sets DAC true.
+
+d. After the DAC line has gone true, the controller
+can set DAV false again and take the data off the
+line. When DAV goes false, the plotter sets DAC
+false.
+
+e. When the plotter can accept a new byte of data it
+puts RFD true and the sequence is ready to start
+from step a.
+
+6-23. When the ATN input is true, the plotter compares
+the data on the HP-IB DIO lines to the address set by
+the rear panel address switches, and responds when
+addressed by the bus controller to listen or talk. When
+the ATN input is false and the plotter is addressed to
+listen, the interface adapter accepts and processes the
+data on the DIO lines.
+
+6-24. The interface adapter is enabled by a low true Chip
+Select (CS) signal from Gate Array A. When the inter-
+face adapter is enabled and its Read/Write (R/W) input
+is high, data can be read from the adapter, and when
+the R/W input is low, data can be written by the proc-
+essor into the adapter. The R/W input and the three reg-
+ister selection inputs, RSO-RS2, select the proper register
+in the interface adapter.
+
+NOTE
+
+In the following theory Option 001 desig-
+nators are listed first. Option 002 (HP-IB)
+plotter components are in parenthesis.
+
+6-25. MICROPROCESSOR CIRCUIT
+
+6-26. The 6802 microprocessor U14 (U13) used in the
+7475A has an internal clock circuit controlled by an
+external 4 MHz crystal. In addition to 4 MHz, the clock
+circuit has a 1 MHz output which is used to clock several
+other ICs.
+
+6-27. ADDRESS. The processor outputs a 16-bit address.
+A high VMA (Valid Memory Address) output indicates
+that the address is valid.
+
+6-28. RESET. An external RC circuit R18 (R16) and
+C27 (C20) provides a reset delay signal to the processor
+and other circuits at the time power is switched on.
+
+6-29. READ ONLY MEMORY CIRCUIT
+
+6-30. The Read Only Memory (ROM) U15 (U14) and U16
+(U15) contains 24K of fixed routines required for plotter
+operation. Each ROM is enabled by address lines from
+
+Section VI
+
+the microprocessor. Because the parallel data outputs
+are 3-state, they are effectively disconnected from the
+data bus while the ROM is not enabled.
+
+631. RANDOM ACCESS MEMORY CIRCUIT
+
+6-32. The Random Access Memory (RAM) U17 (U16)
+provides 2K of storage for current plotter instructions.
+The RAM is enabled by a signal from Gate Array A,
+and directed to read or write by the Read/Write (R/W)
+signal from the microprocessor. Data bytes are clocked
+in and out of the RAM by the 1 MHz signal from the
+microprocessor.
+
+6-33. GATE ARRAYS A AND B
+
+6-34. The two gate arrays U5 and U6 contain all of the
+circuitry needed to support the logic circuits and driver
+section of the electronics. The circuit functions for gate
+array A include the baud rate generator, interrupt timer,
+servo control and status ports, memory decode, pen drive
+motor control, and servo gain adjust. The circuit functions
+in gate array B include the pen solenoid pulse width
+modulator, power supply voltage measurement circuit,
+front panel input ports, memory decode, paper drives
+motor control, and servo gain adjust. Some of these
+functions will be discussed in later circuit descriptions.
+
+6-35. PEN CAROUSEL
+
+6-36. The pen carousel is driven by a reversible, dual coil
+stepper motor. To drive the motor, the STEPPER CLOCK
+(STCK) from U5 and READ/WRITE (R/W) from the
+microprocessor are enabled to clock four (4) data lines
+through the gating flip-flops U18 (U17) to the motor
+drivers U19 (U18) and onto the motor coils. The resulting
+quadrature waveforms, shown in Figure 6-4 (A & B),
+drive the motor either clockwise (A) or counterclockwise
+(B). When at rest all four motor coils are open, i.e., all
+four lines are at logic 0.
+
+6-37. MOTOR SERVO SYSTEMS
+
+6-38. Two identical servo systems are used to drive the
+the motors. Figure 6-5 is a block diagram of a motor
+servo system.
+
+NOTE
+
+The axes on the 7475A are referred to
+as the pen drive axis and the paper drive
+axis instead of X and Y. This is due to
+the fact that the axes will change with
+a change in paper size. If A/A4 size
+paper is loaded, longest edge across the
+platen, the pen drive becomes the X-axis
+and the paper drive becomes the Y-axis.
+If B/A3 size is loaded, the pen drive
+will become the Y-axis and the paper
+drive will become the X-axis. On the
+schematic diagrams for these circuits X
+and Y are used to designate logic func-
+tions which control the paper drive and
+pen drive movements respectively. Since
+these designations become variable with
+changes in paper size, they should be
+used for reference purposes only.
+
+6-5
+Section VI
+
+Model 7475A
+
+col LJ LJ
+“LJ LJ LSJ
+
+2 Ly Ld
+
+eo oJ Ly} LJ OL
+Porter tot to toreotu
+1 STOP _ | mec
+
+of LS LJ |
+
+(7.5°)
+(a) CW SEQUENCE (b) CCW SEQUENCE
+7475-A-15-1
+Figure 6-4. Quadrature Waveforms
+INC 4 ENCA
+FROM | ne,
+PROCESSOR — SERVO ENC B
+THROUGH} y5 ic 4
+GATE ARRAY J
+x4 SIGN
+XAy
+SERVO
+PULSE cou MOTOR + OPTICAL
+(PART OF DRIVERS > ENCODER
+GATE ARRAY) xe
+STRETCHED »
+PULSE ,
+PULSE WIDTH DIGITAL
+DATA FROM >} GAIN ADJUST +18/26V
+PROCESSOR (PART OF UNREGULATED
+GATE ARRAY)
+7470-A-15-1
+
+Figure 6-5. Motor Servo System Block Diagram
+
+6-39. Digital move commands are generated and sent
+by the microprocessor through the gate array U5 to the
+servo chips U3 and U4. The servo chips provide the
+interface to the microprocessor, decodes the encoder sig-
+nals, sums position errors, estimates velocity and sums
+it, and transforms the servo error to a pulse-width-
+modulated output. The servo chips output the pulse-width-
+modulated signal back to the gate array where the motor
+drive pulses are stretched to the proper width in the digital
+gain circuit. The servo conditioning circuit, also in
+the gate array, then passes the pulses on to the motor
+drivers through either the XA or XC line, depending on
+the direction of rotation indicated by the sign voltage
+from the servo chip. As the mechanical system moves,
+optical encoders mounted on the shaft of each motor
+send back digital pulses to the servo chip to close the
+servo loop.
+
+6-40. To maintain a consistant and predictable move-
+
+ment, it is essential to control the amount of power
+applied to the motor by each pulse. The pulse amplitude
+
+66
+
+depends on the actual voltage output of the motor drive
+power supply. The pulse width is modified to compen-
+sate for pulse amplitude so that the pulse represents the
+proper amount of power.
+
+6-41. MOTORSUPPLY SENSOR CIRCUIT
+
+6-42. The power supply for the drive motors is unre-
+gulated. For the gate array logic to know how much to
+stretch the servo chip pulse width, the microprocessor
+must know the level of unregulated voltage supplied to
+the motors. The voltage sensing circuit uses comparator
+U10 (U9) to provide single bit analog to digital conver-
+sion at intervals of approximately five seconds. The
+resulting digital information is used to regulate power
+through the motor drive circuits.
+
+6-43. Adivider R16 (R14) and R17 (R15) places one-tenth
+of the power supply voltage at the non-inverting input to
+the comparator. Pulses of known value from U6 Gate
+Array B are applied to an integrating capacitor C11 (C8)
+at the inverting input to the comparator. The pulse
+Model 7475A
+
+width is increased until the comparator output inverts.
+This pulse width information is used by the microproc-
+essor to regulate power to the motor drive circuits.
+
+6-44. MOTOR CURRENT SENSOR CIRCUIT
+
+6-45. Motor drive current flows through a 0.1 1 resistor,
+R7. The resulting voltage developed across this resistor
+is applied to the inverting input of the comparator ampli-
+fier U10 (U9). The other input to the amplifier is fixed at
+approximately +0.315 V. Consequently, if motor current
+reaches about 3.15 A, the comparator output changes
+from high to low, indicating excessive motor drive current.
+
+6-46. PEN DOWN CIRCUIT
+
+6-47. When the microprocessor receives a pen down
+instruction, a 15.6 kHz pulse signal is issued to the pen
+down driver U1. Because more power is required to acti-
+vate the pen solenoid than is needed to hold it after
+activation, the pulse is widened for a short period of time
+to provide this extra power. The duration of the pulse-
+width-modulated signal is controlled by the gate array
+U6 as a function of the 18/26 Vdc unregulated supply
+voltage. An air damper slows the descent of the pen to
+protect the pen tip.
+
+6-48. POWER SUPPLIES
+
+6-49. Four major voltages are generated by the 7475A
+circuitry. Low current linear supplies provide the +12 V
+and —5 V required for the servo IC’s. The +5 V supply
+provides the power for the remaining logic circuitry.
+Regulation for the +5 V linear supply is provided by U21
+(U20). The fourth supply is the unregulated 18/26 V
+supplied to the main drive motors and the pen carousel
+drive motor. The 18/26 V supply can be unregulated
+because of the voltage sensing and servo gain adjust cir-
+cuitry described in earlier paragraphs. In addition to
+these supplies, a—12 V source is provided on the RS-232-
+C (Option 001) version. This source is used in conjunc-
+tion with the +12 V supply to operate the I/O (input/
+output) line drivers.
+
+6-50. RECOMMENDED TEST EQUIPMENT
+
+6-51. Test equipment needed to maintain the 7475A is
+listed in Table 6-2. Models other than those listed may
+
+Section VI
+
+be used if their specifications equal or exceed those of
+the models listed.
+
+6-52. TROUBLESHOOTING
+
+6-53. If the plotter does not operate properly, make sure
+the input/output connector is seated correctly. If this is
+not the problem, remove the top case as instructed in
+Top Case Removal, and make sure all cables are secure
+in their connectors.
+
+6-54. EXCHANGE PRINTED CIRCUIT
+ASSEMBLY
+
+6-55. The printed circuit assembly is available on an
+exchange basis; that is, a factory-repaired and tested
+assembly may be ordered and the defective assembly
+returned for credit. Refer to Section IV for ordering
+instructions and the exchange part number for your par-
+ticular assembly. Because of the complexity of the cir-
+cuits, it is recommended that you replace and return a
+defective printed circuit assembly to Hewlett-Packard
+rather than attempt repair.
+
+6-56. DRIVE MOTORS AND PEN SOLENOID
+
+6-57. The drive motor/encoder assemblies and the pen
+solenoid are not repairable. Motor and encoder cables
+are replaceable. The motor cable (twisted pair) is P/N
+07470-60016. The encoder (flat) cable is P/N 8128-4027.
+
+Maintenance described herein is per-
+formed with power applied to the plot-
+ter and the top case removed. Such
+maintenance should be performed only
+by service-trained personnel who are
+aware of the hazards involved (for
+example, fire and electrical shock). Where
+maintenance can be performed without
+power applied, the line cord should be
+disconnected.
+
+Table 6-2. Recommended Test Equipment
+
+TYPE
+
+RECOMMENDED MODEL
+
+Computer/controller
+
+Rom Drawer
+1/O Rom
+Digital Multimeter
+
+Oscilloscope
+
+Optical Comparator
+
+HP Model 85 Personal Computer with
+the appropriate interface:
+
+HP 82937A HP-IB Parallel Interface
+HP 82939A RS-232-C Interface and
+HP 8120-3258 RS-232-C Interface cable
+
+HP 82936A
+
+HP 00085-15003
+HP 3465A
+
+HP 1740A
+B&L 81-34-35
+
+6-7
+Section VI
+
+6-58. TROUBLESHOOTING TABLE
+
+6-59. Table 6-3 lists trouble symptoms with possible
+causes and procedures.
+
+6-60. TESTA
+
+6-61.
+
+This test exercises:
+
+Both motor drive circuits
+Both motors and encoders
+The servo chips
+
+Error light circuit
+
+Gate arrays
+Microprocessor
+
+ROM
+
+Load a sheet of paper.
+
+Manually move the pen carriage near the center
+of its travel.
+
+Hold the ENTER pushbutton down while setting
+the LINE switch to ON. The ERROR light should
+remain ON.
+
+Press the — cursor pushbutton.
+
+1. ERROR light should turn ON and OFF conti-
+nuously (approximately one second for each
+state).
+
+2. Pen carriage should move left and right about
+6.4 mm (0.25 in.) continuously.
+
+6-62.
+
+6-63.
+
+Model 74754
+
+3. Paper should move back and forth about
+6.4 mm (0.25 in.) continuously.
+
+NOTE
+
+Test may be stopped by pressing
+ENTER and resumed by press-
+ing ~. Plotter will not operate in
+any other mode until power has
+been turned OFF and ON.
+
+TEST B
+
+This test helps to isolate problems to motors/
+
+encoders or logic circuits when a failure is accompanied
+by the ERROR light flashing ON/OFF at about one
+second per cycle. An oscilloscope is required.
+
+a.
+
+b.
+
+Disconnect the interface cable for this test.
+
+Hold down each of the four cursor directional
+pushbuttons, one at a time. If a control stops the
+ERROR light from flashing (stays either ON or
+OFF while the button is held down) the failure is
+associated with one of the following general areas.
+
+1 — X saturation line
+Paper Drive
+‘— X error line
+
++ — Y saturation line
+Pen Drive
+— — Y error line
+
+Table 6-3. Troubleshooting
+
+SYMPTOMS
+
+POSSIBLE CAUSES/PROCEDURES
+
+Does not respond to any front-
+panel controls. ERROR light is
+OFF with PAPER lever in
+LOAD position.
+
+Rear-panel line fuse (see Table 1-3).
+Power supplies. Check voltages and
+
+4 MHz clock
+Gate Array B
+
+power supply fuses on PCA.
+
+Responds to front-panel controls
+but not to external controller.
+
+I/O connector not seated properly (may
+
+Test I/O circuits by sending:
+
+produce an error indication at controller).
+
+“SP1;SP2” from controller.
+
+Does not operate properly.
+ERROR light flashes (PAPER
+lever in HOLD) about 1 second
+per ON/OFF cycle.
+
+Go to Test B in this section.
+
+Pen up/down does not operate.
+
+Check fuse (A1F2) and pen supply voltage.
+Check solenoid continuity.
+
+Paper slips while plotting.
+
+Pinchroller worn. Replace both pinchrollers.
+Pinchroller arm spring loose or broken.
+
+Diagonal lines not straight:
+Especially near horizontal lines
+Especially near vertical lines
+
+Defective pen drive motor/encoder assembly
+
+Defective paper drive motor/encoder
+assembly
+
+Deposits on gritwheels, pinchrollers or
+slider rod. Clean slider rod and pinch-
+rollers with a dry wiper.
+
+6-8
+
+Model 7475A
+
+c. Remove the top case as instructed in Top Case
+Removal.
+
+d. Connect the power cord. Hold the ENTER push-
+button down while setting the LINE switch to ON.
+
+e. Press the | pushbutton.
+
+f. Disconnect (from the printed circuit assembly)
+the motor drive cable (twisted pair) indicated by
+the results of step b.
+
+g. Use an oscilloscope to look at the drive signal at
+the connector. This should be a series of narrow
+pulses. See Figure 6-6. If not, the problem is in the
+motor drive circuit, servo IC, gate array, or the
+microprocessor.
+
+h. If the signal in step g. is correct, monitor the sig-
+nal at pin 4 of the encoder cable (with the cable
+connected to the PCA) while rotating the motor
+manually. This should produce pulses varying
+with the speed of motor rotation. If not, the encoder
+is defective. Replace the motor/encoder assembly.
+If pulses are present, the problem is probably in
+the servo IC.
+
+NOTE
+
+Plotter will not operate in any other
+mode until power has been turned OFF
+and ON.
+
+Note; 20ms/Div. , 10V/Div.
+
+7475-A-16-1
+
+Figure 6-6. Drive Signal Pulses
+6-64. PART REMOVAL AND REPLACEMENT
+NOTE
+
+All screws in the 7475A are metric sizes
+except the No. 3 self-tapping screws
+securing the pen carousel housing and
+the pen drop shield.
+
+6-65. TOP CASE REMOVAL
+
+a. Set the LINE switch of OFF (O) and disconnect
+the power cord and interface cable.
+
+Section VI
+
+b. Remove the screws at the rear of the plotter. See
+Figure 6-7.
+
+i] een enabenatannnaees
+ee
+
+7A75-A-2-1
+
+REMOVE THREE
+SCREWS
+
+Figure 6-7. Top Case Removal
+
+c. Lift the rear of the top case, then the front will
+release from the base.
+
+NOTE
+
+When replacing the top case, make
+sure the PAPER LOAD/HOLD lever
+extends through the case and the tabs
+inside the front align properly above
+and below the base plate.
+
+6-66. PEN CAROUSEL HOUSING REMOVAL
+
+a. Remove the top case as described in the preceed-
+ing paragraph.
+
+b. Disconnect the pen carousel cable from J8 on the
+main printed circuit assembly as shown in Figure
+6-8.
+
+y
+me
+sing
+
+PEN CAROUSEL
+CABLE
+
+Figure 6-8. Pen Carousel Cable
+
+6-9
+Section VI
+
+c. Remove the screw that secures the pen carousel
+housing to the chassis assembly. See Figure 6-9.
+
+Model 7475A
+
+PEN CAROUSEL PEN
+HOUSING CAROUSEL
+
+PEN CAROUSEL
+HOUSING SCREW
+
+7475-A-18-1
+
+PAPER DRIVE
+MOTOR
+ASSEMBLY
+
+ENCODER
+CABLE (IN J1)
+
+PEN SOLENOID
+CABLE (IN J2)
+
+PAPER DRIVE
+MOTOR CABLE
+(IN J3)
+
+7475-A-19-1
+
+Figure 6-10. Paper Drive Motor and Solenoid Cables
+
+Figure 6-9. Pen Carousel Housing
+
+d. Tip the pen carousel housing forward and lift
+straight up being careful not to catch the cable
+connector on the chassis assembly.
+
+e. To reassemble, reverse steps a. through d.
+
+6-67. PAPER DRIVE MOTOR ASSEMBLY
+REMOVAL
+
+a. Remove the top case. Refer to Top Case Removal.
+
+CAUTION
+
+Do not remove the encoder printed
+circuit assembly or the drive coupler
+from the motor. The entire unit must
+be assembled and calibrated at the
+factory.
+
+b. Disconnect the paper drive motor cable (twisted
+pair) from J3 and the flat encoder cable from J1
+on the main printed circuit assembly. See Figure
+6-10.
+
+Remove the pen drop shield. See Figure 6-11.
+
+d. Loosen the motor clamp and remove the motor
+from its mounting. See Figure 6-11.
+
+e. When replacing the motor, make sure that the
+rubber O-rings on the drive shaft coupler and the
+motor shaft coupler fit inside the grooves of the
+coupler ring, and the boss (key) on the underside
+of the motor casting fits into the corresponding
+hole in the chassis. See Figure 6-12.
+
+f. Make sure the pen carriage slider rod is all the
+way to the left, then replace the motor clamp. The
+arm on the clamp should hold the slider rod to
+the left. Tighten the clamp screw securely.
+
+g. Loosen the clamping screw in the paper drive
+shaft coupler just enough to allow the coupler to
+
+6-10
+
+PAPER DRIVE
+MOTOR CLAMP
+SCREW
+
+PAPER DRIVE
+MOTOR CLAMP
+
+PEN DROP
+SHIELD SCREW
+
+7475-A-20-1
+
+PAPER DRIVE
+MOTOR ASSEMBLY
+
+PEN DROP
+SHIELD
+
+Figure 6-11. Paper Drive Motor Clamp and Pen Drop
+Shield
+
+slide on the shaft. Make sure the nut remains in
+the coupler.
+
+h. Hold the drive shaft to the left by pushing (with a
+finger) on the left gritwheel, and push the drive
+shaft coupler to the right (with another finger) so
+that the coupler parts fit together snugly. Tighten
+the shaft coupler clamping screw securely.
+
+Model 7475A Section VI
+MOTOR SHAFT.
+COUPLER
+COUPLER
+RING
+
+PAPER DRIVE
+SHAFT COUPLER
+
+7475-A-21-1
+
+RUBBER
+O-RINGS
+
+6-68.
+
+Figure 6-12. Paper Drive Coupler Parts
+
+Reconnect the cables to the PCA. To prevent elec-
+trical interference, ensure the motor wires are
+intertwined up to the connector and fitted away
+from the encoder assembly.
+
+PEN SOLENOID
+Remove the top case. Refer to Top Case Removal.
+
+Loosen the paper drive motor clamp enough to
+slide the motor to the right about 2 cm (3/4 in.).
+See Figure 6-11. (Lift the right end of the motor
+slightly to release the motor from the chassis.)
+
+Disconnect the solenoid cable from J2 on the
+printed circuit assembly. See Figure 6-10.
+
+Loosen the solenoid mounting screw enough to
+allow removal of the solenoid. See Figure 6-13.
+
+When replacing the motor, make sure that the O-
+rings on the drive shaft coupler and the motor
+shaft coupler fit inside the grooves of the coupler
+ring, and the boss (key) on the underside of the
+motor casting fits into the corresponding hole in
+the chassis. See Figure 6-12.
+
+Make sure the pen carriage slider rod is all the
+way to the left, then replace the motor clamp. The
+arm on the clamp should hold the slider rod to
+the left. Tighten the clamp screw securely.
+
+Loosen the clamping screw in the paper drive
+shaft coupler just enough to allow the coupler to
+
+6-69.
+6-70.
+
+slide on the shaft. Make sure the nut remains in
+the coupler.
+
+Hold the drive shaft to the left by pushing (with a
+finger) on the left gritwheel, and push the drive
+shaft coupler to the right (with another finger) so
+that the coupler parts fit together snugly. Tighten
+the shaft coupler clamping screw securely.
+
+PEN DRIVE MOTOR AND BELT
+
+To remove the pen drive motor and belt, proceed
+
+as follows:
+
+a.
+
+Remove the top case. Refer to Top Case Removal.
+
+CAUTION
+
+Do not remove the encoder printed
+circuit assembly or drive pulley from
+the motor. The entire assembly must
+be assembled and calibrated at the
+factory.
+
+Disconnect the pen drive motor cable (twisted pair)
+from J5 and the flat encoder cable from J6 on the
+main printed circuit assembly. See Figure 6-13.
+
+Remove the belt tensioner by pressing downward
+on the tensioner and sliding the tang at the
+bottom out of the slot in the chassis. See Figure
+6-14.
+
+6-11
+Section VI
+
+Hold the drive shaft to the left by pushing (with a
+finger) on the left gritwheel, and push the drive
+shaft coupler to the right (with another finger) so
+that the coupler parts fit together snugly. Tighten
+the shaft coupler clamping screw securely.
+
+Replace all parts in reverse order.
+
+Model 7475A
+
+To protect against possible electrical
+shock, Be sure to replace the safety earth
+(ground) wire and tighten the screw
+securely. See Figure 6-20.
+
+6-80. POWER MODULE AND TRANSFORMER
+a. Remove the top case. Refer to Top Case Removal. 6-81. POWER MODULE WIRING
+b. Remove the chassis assembly. Refer to Printed 6-82. The power module is available as a prewired unit
+Circuit Assembly Removal, steps b. through f. including the power input connector, switch, and fuse
+holder (less cap and fuse). The part number for this
+NOTE assembly is 07470-60120. This does not include the power
+; . transformer. It is recommended that if replacement of
+The transformer is held in place by any part of the unit is required, the entire unit be replaced.
+the power module molding. However, if this it is not possible and any part must be
+. replaced separately, refer to Figure 6-21 for the correct
+c. Remove the safety earth (ground) wire screw at wiring information.
+the left end of the power module. See Figure 6-20.
+d. Disconnect the three-wire secondary power cable 6-83. CLEANING
+from the printed circuit assembly.
+e. Disconnect the primary wires from the transformer.
+f. R th in th dule. See Figure .
+620. © Screw mn tne power mous eee Disconnect the plotter from the power
+, source prior to performing any mainte
+g. Lift the left end of the module. The right end is ae oe NOE ap ow (water to run
+held by a tab which fits into the base plate. onto electrical components and circuits
+or through openings in the enclosure as
+h. Replace in reverse order. this may create a shock hazard.
+CAUTION CAUTION
+When connecting the transformer Do not attempt to clean the microgrip
+primary wires, refer to Section I, Line drive wheels. Cleaning solutions may
+Voltage and Fuse Selection, for correct dissolve the adhesive which secures the
+wiring. grit particles to the wheels.
+POWER MODULE
+MOUNTING SCREW
+SAFETY EARTH
+(GROUND) WIRE
+SCREW
+7475-A-28-1
+
+6-16
+
+Figure 6-20. Power Module Removal
+
+Model 7475A Section VI
+
+918
+FUSE TO
+SWITCH
+
+98 54 908
+TWO 8 — SWITCH TO TRANSFORMER (LINE)
+NEUTRAL GROUND LINE TO
+TO SWITCH FUSE TWO 928 — SWITCH TO TRANSFORMER (NEUTRAL)
+
+WIRE IDENTIFICATION IS BY COLOR CODE:
+
+54 = GREEN/YELLOW
+
+8 = GRAY
+
+98 = WHITE/GRAY
+908 = WHITE/BLACK/GRAY
+918 = WHITE/BROWN/GRAY
+928 = WHITE/RED/GRAY
+
+7470-A-21-1
+
+Figure 6-21. Power Module Wiring
+
+6-84. Thorough cleaning should be performed periodi- solution of soap and water and wiped
+cally. Cleaning intervals are determined by the type of dry with a lint-free cloth.
+operation, local air contamination, and climatic condi-
+tions. Cleaning procedures should include the following: 6-85. PEN STALL CLEANING
+a. Blow away the dust accumulation with compressed
+air, if available. Dust may also be removed with 6-86. Before using overhead transparency pens, remove
+a lint-free cloth. leftover ink from the capping hole in the pen stalls
+of the carousel using a cotton swab. This will prevent
+b. Clean the outer surface of the plotter with a the transfer of other inks to the plots.
+damp sponge or cloth. Use a mild soap and water
+solution if necessary. Wipe dry after cleaning. 6-87. DIAGRAMS
+NOTE 6-88. Figure 6-22 explains symbols which may appear
+To prevent sratching, do not use abra- on the schematic diagrams, and Figure 6-23 illustrates
+sive cleaners on the plastic cover. The logic symbols used. Figures 6-24 through 6-26 are sche-
+cover should be cleaned with a mild matic diagrams of the 7475A circuits.
+
+6-17
+Section VI Model 7475A
+
+SCHEMATIC DIAGRAM NOTES
+Resistance in ohms, capacitance in microfarads, inductance in millihenries unless otherwise
+noted.
+* Asterisk denotes a factory-selected value. Value shown is typical. Part might be omitted.
+» Indicates a NOTE on the schematic diagram.
+@ Tool-aided adjustment. ‘@) Manual control.
+[id Encloses a front-panel or circuit assembly silkscreened designator.
+Lo Encloses a rear-panel silkscreened designator.
+— - - Circuit assembly borderline.
+—-— Other assembly borderline. Also used to indicate mechanical interconnection (ganging)
+and RF shielding.
+—— ee Heavy line with arrows indicates path and direction of main signal.
+
+oun—ape-ame-em = Heavy dashed line with arrows indicates path and direction of main feedback.
+
+Indicates cable run with seven lines.
+
+L
+/
+33 Wiper moves toward CW with clockwise rotation of control (as viewed from shaft or knob).
+
+Numbered Test point. Measurement Lettered Test point. No measurement
+aid (metal post, circuit pad, etc.) aid provided.
+provided.
+( )
+—
+rh
+
+Encloses wire color code. Code used is the same as the resistor color code. First number
+identifies the base color, second number identifies the wider stripe, third number identifies
+the narrower stripe (e.g., (947) denotes white base, yellow wide stripe, violet narrow stripe).
+
+A direct conducting connection to the earth, or a conducting connection to a structure that
+has a similar function (e.g., the frame of an air, sea, or land vehicle).
+
+A conducting connection to a chassis or frame.
+
+Common connections. All like-designated points are connected. When accompanied by a
+letter, indicates the type common (i.e., A= Analog, D = Digital, F = Floating).
+
+1-A-1-2
+
+Figure 6-22. Schematic Diagram Notes (Sheet 1 of 2)
+
+6-18
+Model 7475A
+
+Section VI
+
+1-A-2-1A
+
+\
+
+aa
+
+PO@GLY
+
+oO
+a)
+
+Qh.
+
+p |
+66
+
+SCHEMATIC DIAGRAM NOTES (Continued)
+Light Emitting Diode (LED).
+
+Photo-Transistor.
+
+Cable and circuit assembly connectors.
+
+J — Fixed Portion
+P — Moveable Portion F. Computer
+
+-,; Museum
+
+Circuit assembly square-pin connectors.
+
+Operational Amplifier (integrated circuit).
+
+Voltage regulator (breakdown diode).
+
+Denotes Field Effect transistor (FET) with N-type base.
+
+Denotes FET with P-type base.
+
+Denotes Silicon Controlled Rectifier (SCR).
+
+Denotes spring-loaded switch.
+
+Indicates twisted pair.
+
+Identifies service sheet for quick reference.
+
+Signal line identification.
+
+Combined service sheet and signal line identification.
+
+Figure 6-22. Schematic Diagram Notes (Sheet 2 of 2)
+
+6-19
+Section VI Model 7475A
+
+INDICATOR SYMBOLS
+
+| ACTIVE HIGH inputs and outputs are indicated by the
+J absence of the polarity indicator (\ ) or negation symbol
+
+HIGH LEVEL _ (0).
+SENSITIVE ACTIVE PERIOD
+ACTIVE LOW inputs and outputs are indicated by the
+presence of the polarity indicator (\) or negation symbol
+LOW LEVEL {0}.
+SENSITIVE ACTIVE PERIOD
++ Y.
+LOW TO HIGH >
+EDGE SENSITIVE ACTIVE PERIOD EDGE SENSITIVE (Dynamic) inputs are indicated by
+
+the presence of the dynamic indicator symbol ( >).
+
+J
+
+af
+
+HIGH TO LOW
+
+EDGE SENSITIVE ACTIVE PERIOD
+
+OUTPUT DELAY
+
+The output changes state only after the referenced
+input (m) returns to its inactive state. (m is replaced
+by appropriate dependency symbol.)
+
++!
+
+INHIBIT INPUT
+
+An active high state input prevents the output of that
+element from being active.
+
+7
+
+INHIBIT INPUT
+
+-An active low state input prevents the output of that
+element from being active.
+
+7
+
+OPEN COLLECTOR OR EMITTER OUTPUT
+
+This output requires some external components to
+achieve logic state.
+
+Le
+
+1-A-3-1
+
+Figure 6-23. ANSI Y32.14 Logic Symbols (Sheet 1 of 6)
+
+6-20
+Model 7475A
+
+Section VI
+
+INDICATOR SYMBOLS (Continued)
+
+q
+
+SCHMITT TRIGGER
+
+AND GATE
+WITH
+HYSTERESIS
+
+_ Fo } Schmitt Trigger-.cr indicates that hysteresis exists
+in the device.
+
+Dependency Notation
+
+The input that controls or gates other inputs is
+
+G1
+labeled with a “C” or a “G”, followed by an identi-
+1 fying number. The controlled or gated input or
+output is labeled with the same number. In this
+example, “1 is controlled by “G1”.
+G1
+Xy
+On When the controlled or gated input or output
+oT already has a functional label (X is used here},
+that label will be prefixed or subscripted by
+—11X the identifying number.
+Cc lf a particular device has only one gating or control
+x input then the identifying number may be elimina-
+c ted and the relationship shown with a subscript.
+G1 . .
+G2 If the input or output is affected by more than
+1,2X one gate or control input, then the identifying
+numbers of each gate or control input will appear
+G1 in the prefix or subscript, separated by commas.
+G2 In this example “X” is controlled by “G1” and
+X12 "G2",
+ANSI Y32.14
+CONTROL
+(EEE STANDARD 91 FLIP DESIGNATIONS
+GATE ANSI Y32.14 TRUTH TABLE FLOP FOR F.F. DESCRIPTION
+A _
+B _ — =
+— L Le L IN/C N/C
+AND H HiH
+R-S HIHoL
+A L HI L
+~ & c H L]L a L/L oH
+BL — Ss ——
+H | undetermined
+1-A-4-1
+
+Figure 6-23. ANSI Y32.14 Logic Symbols (Sheet 2 of 6)
+
+6-21
+
+Section VI Model 7475A
+
+INDICATOR SYMBOLS (Continued)
+FF
+OR
+Toggles with
+T —T every clock
+pulse
+—
+NAND FFL
+—_—rc
+Data output
+D —% follows data
+r R q input. nput
+is gated by C.
+—J1 S$
+A
+c
+0 B
+NOR
+Ag c
+B & B FFla Jk/a a
+—d oy —J —
+L L|N/c N/c
+IK —* a LHI L 4H
+—J R HLI4H L
+A H H toggles
+Cc oi S
+XOR B
+A|B Qa
+BUF- A 8 —_ —, Frio.
+FER vt G
+0/0 —“6
+a J and K input:
+m = puts
+K (gated) Kg are gated by G.
+Jj rR
+INVERT- A B ALB
+ER 71/0 s
+Qo}1
+FFLQ
+xc
+J G _ This output is
+J-K (master K : Q dependent upon
+slave) G negative going
+tj R edge of the signal.
+1S
+S Set input — when active causes the flip-flop to set (Asynchronous)
+R_ Reset input — when active causes the flip-flop to reset (Asynchronous)
+N/C No Change
+1-A-5-1
+
+Figure 6-23. ANSI Y32.14 Logic Symbols (Sheet 3 of 6)
+
+6-22
+Section VI
+
+Model 7475A
+INDICATOR SYMBOLS (Continued)
+CONTROL
+BLOCK
+—L Cc The Control Block is used to show when common
+control signals are applied to a group of mechani-
+cally connected, but functionally separate units.
+ARRAY
+COMMON CONTROL BLOCK
+assy 16 U10 Fa 15
+[ol 1
+8 A0-1
+1
+Vv | 3-ST
+~] mux
+1 0 FAL? F input must be low to enable outputs. When
+10 1 F is high, outputs are high impedance. Address
+5 7 input determines whether 0 or 1 input will
+0 FA pass to output.
+6 1
+1405 FAL2
+13
+2 ' 4
+3 0 FA
+—4,
+1-A-6-2
+
+Figure 6-23. ANSI. Y32.14 Logic Symbols (Sheet 4 of 6)
+
+6-23
+Section VI
+
+Model 7475A
+
+1-A-28-1
+
+ult s+
++5V 24 iad 17
+1-4-9
+12 R1-4 3
+$5]
+13 ps {11
+1
+S6
+re {cL
+57 14
+3st 77
+23 XCVR ;
+Os¢
+ROO
+22
+eesc
+R140
+21
+© $1-4 4
+R140
+206 <5 S14 S
+Ly R140
+19 6
+t }O $1-4 eT
+18 R1-40 J
+» © $5
+La R5O
+16
+© 86 9
+R6 ©
+15. J OR
+“eae
+R7O
+Ag 1
+oS 41 Xey | U5 __ 13
+A121], opps
+A220,
+A319],
+A0-255
+Aa 18446 vop[22_-+5v
+AS 17|,,
+AG 16/.,
+A815
+~ 12} 128 vss
+G1
+__10N) 3-63
+9 RAM 9 D7
+ae 8 2,A,3 a rs
+j 2,A,3 1.A.3F7
+DS 20,3 1A 3t- 5
+D4 6A 3 ~«*1A, 3 : =
+D3 212, A, 3 LA 3 =
+= 2A 3 VAs ——
+a 12-83 1A 3 —
+De 2,A,3..1,A,3
+
+Level of inputs in control block (S/R) deter-
+mines direction of data flow.
+
+Random access memory with 256 addresses
+and 8-bit parallel inputs and outputs on the
+same pins. Each data location is selected by
+the 8-bit address in the upper left corner of
+the control block. The data input (write)
+function is enabled when gates G1/G2 are low
+and G3 is true (pin 14 high, pin 10 low). The
+read function when G1/G2 are high and G3 is
+true.
+
+6-24
+
+Figure 6-23. ANSI Y32.14 Logic Symbols (Sheet 5 of 6)
+Model 7475A
+
+Section VI
+
+1-A-27-1
+
+A7 10 ’ x»Y | U16
+AG 9 2
+A5 8],
+A4 7
+8 A0-8191
+A3 6 hig ;
+5 VPP | +5V
+A2 32
+Al 4i¢,
+AG 3 1128 vcc | 26, 28 +5V
+Al@ 25 256
+A12_ 24,45 7
+vss
+Ag 211 1024
+A8 20) 5048
+AN 23) ngs
+cs 22 1
+2
+27 &-G2
+ROM C 1 D7
+At 7 D6
+A,1 13
+A, 15 De
+A,1
+At 16 D3
+17. D2
+A! 18 D1
+A.t 19
+A,1 Dg
+
+Read only memory with 8192 addresses and
+8hit parallel output. Each output byte is
+selected by the 12-bit address in the upper
+left corner of the control block. Output is
+enabled only when F1 is high and G2 is low.
+
+Figure 6-23. ANSI Y32.14 Logic Symbols (Sheet 6 of 6)
+
+6-25/6-26
+PART OF Al MAIN PCA
+
+(07475-6610) )
+
+(DATE CODE 2450-1!)
+
+7475-J-37-1C
+
+ON THIS SCHEMATIC DIAGRAM, X DESIGNATES THE LOGIC FUNCTIONS
+CONTROLLING THE PAPER DRIVE AND Y DESIGNATES THE LOGIC
+FUNCTIONS CONTROLLING THE PEN DRIVE
+
+am PROCESSOR —————sn ” ROMS = 2oA™ Pom RAM -——-—_---—~._ -” PAPER MOTOF ORIVERS ————————~,,
+J4 USA ~ +18/26V +18/26V +18 /26V
+RECEIVED DATA II \ 3 2 >= +5V
+3 A RxD sv —8]yce UNA 25 AIS AT 1o | XY furs AT lof xeY] O76 AT af, ey] UIT |a_|s 3 b a4
+cis voo 2. sey $5 PROCESSOR | 24 Ala) AG | AG 2], AS ian U2A } | \
+AS |
++5V —4vcc 23 NED AS 8], vpp L! 45V AS 84 ver 45V AS 6], veo |24 assy '
+p23 AIS. pAS___§ |
+DATA TERMINAL GF aw t3 34 |g 22 Al2 a4 an vor [28 a4 ian Vee 28] A4 53 3
+90 | READY 3Aui ia |2 5 Ars 20 All AR 6 \\¢ we Lee VAS bl i6 AS 4\\6 vss 12 assy —!
+\ RN2 19 AIS Az 5 AB-819 | A2 5 Az 3 A@-2047 XC 2 HS J3
+R27 C6 7 A, Z 32 |< 2432 —2432 PAPER
++12V TRa+— ne 4.7K 18 Ag A 4 Al 4 AD- 16383 Al 2 X+
+4.64K 470PF | 3 3 b> 64 > 84 | 64 I ORIVE
+a 33 45V MR 17 a8 j 3 AB Ember AD men 7 cRIT
+| ae) Ae ____3 pA@
+23 Deo 2 ~ — 16 AT AIG 25 AQ 23 (*
+ae| 24 HALT 2 —_&f | AE ___&9 |o56 yes 55-1258 as CRS WHEEL
+U26A eTS an? 36 | ae 15 AG eno |l4 Al2 24 |e eno 4 Ag 22 |e
+PAS 22 |
+« [2sR 3 vss +5V eK v 14 a5» AQ 21 O54 NT 19 | 004
+. rc NJ Yio. 52 1 Ee
+2 V | s5v —! $6 Nig 13 Aa A8____ 23 |ao4g aw DE s20 +18/26V LENCAX
+cae Ri2 7 12 AB All 2 | t096 5 +18/26V +18/26V x ENCBX
+pAll 2 | |
+4.7K ne —“13a " A2 AIS 26 ‘ _ & |cl +5V cc
+4 baa rte _]
+t 470PF cls 2 37 |. 10 Al AIS 5 I 50 8192 | | 24a WS PWE i Is_[5 : x + Q3 ENCODER T——cow
+. Ca > U25E: j +—, N
+ws U26B A3 t 38 ETAL a = AD FI Ala 8 ) wet a le co _ Lez U2B t t——
+° Tprotecrive ACIA YI 1 1SPF 27 __Dé ROM = & 5 | v248 < al Ram & A
+15 07 28 D5» 19 Dg ROM 1 re iT ]
+GROUND [—————- 4MHZ A, | 19 of 2,A,3 1,A,3 _ +5v —4
+| 2 D7 16 06 29__D4y “18 Di A, | D1 16 pores 3216 On) ¥A 7 HS
+0 FA I 38 peo _D& A, | \| —A.' Tig br) mi __213,4,3 1,A,3 tes _
+SIGNAL 3 ;' ) \7 DS XTAL 30 D3 ALl \7__b2 ile D2 D2 15 DA 3 TAS 15 02 x 2
+7 LCOMMON Shs zat 7 D6 18 D4 | ce 312 +5V a T's 03 Ab fos 4 bos ats l4 _D3Y 7 ia
+x s 2 2 2
+6 | ig D3 45V 27PF_i | vce 32.01 ATL IB 04 Ast epg N p43 eS ats Lis _DAN oS MW“ \ oa A cr
+RLSO rT 9 D5 20 D2 2 33. Of $ RN2 a ts_D5 A, t- >  ] DS tte TLDS»
+8 10° FA . 2 DI RIS kong vss . $ 4.7K Av 12 D6 A, THs 8 ros io oS —_tsAS 96
+* oe? 14 * rez D4 22 oR Fig.rk 4 40 Trg _INT 4 AL _o7 Aloe NN 07 a ree weak 07
+REQUEST 4aTOPF 13 | + RESET va LS * A, | }--———] — + Y ” PEN MOTOR DRIVERS
+4 10 SEND ar ag Lt! AS 1 c2T +18/26V
+V ) tL 22 +18/26V +18/26V 1
+6 8 +5V 1
+TXD cso +5V R2 |
+V 3 cif 2] Ta veA - — :
+| e__-—_ 4
+TRANSMITTED DATA 45V 0 =<s|9 y
+2 Te UIIB] 19 ABI C52 3 A
+C24 , Ut s 3
+470PF 3-sT F = RX CLK FZ ay —U
+TX ¢ Ye 2 HS
+SECONDARY a 12 oe T 2 a apo
+14 | TRANSMITTED DATA i {uric is I
+12 14 | 4
+if C23 FA ‘ 13 \ -_ (~ a5 K cr2
+per nc —C{FA oe RIO RX/TX CLOCK
+4.
+we 2ST i Sek 2 2 ADDRESS BUS Z 2 _, + ENCAY
+10] +5V S 4 J +18/26V po
+| DATA BUS +18/26V +18/26V ENCBY
+EXTERNAL gc y Z 7 7 £ —+ — +5V DRIVE vec
+7 | SLOCK_IN 10 8 is_|s $R3 - MOTOR ENCODER +E
+L- [ues ; Ik - .
+SECONDARY B 9 +5V “5V || —_
+RECEIVED DATA Ms | RNI, 4.7K | RN2, 4.7K 12 u21c 7 oi
+VO TTT PP ee ee es 1 AID 25 |= 108 BESET 1138 lLAw mea hk 37 6 6 h \
+5 | ] all 24 |A!@ Rese E28 g |WR/MR CS RAM —— =
+ca $f $$ hb fh S| All 24 Jai IMHZ IMHZ 26 Ye +5¥ ——4
+aTOPF ig 3 8 g 3 3 3 8 $ 3 2 3 AB 26], US ¥C 7 HS t
+4 > < —
+ye 4 JL 1 3! J-LI_LJ_LI_ | | Ag _27 | GATE xeon ls NC 33 Arsron 28 YA YA Y- >
+4—-kF AQ x YA |
+' —. 2 {3 5 le {7 |8 {9 to 2 [3 |4 [5 |6 {7 |e [9 LOT 32 ARRAY OKI?
+ENTER o— 6 v7 Fe D6 312? a x 12 IMA EIN3}22 o |
+1” +sv —4 —A.i] A we __S' log _—_—— a6 k CR3 1
+VIEW o— 8 fo) 05 30 15 10 |= 27 J6
+AD-I 5 380 Jag EIN2 IN EOUTT IS £= we |
+—l_ U I 04 29 18 . vee
+o— Ly <= Ng EIN! +5V 38 anh 8 +5¥Y ——| 3 +
+7 MUX f 37 ENT RIS CSI/0 BAUD 2 ENCAY ' y,
+o tL _. 14 FAL 2 8 view 4.64K 4 ENCBY y
+a 13 36 22 18 COM
+; PE Oo at 7 sy?! .33MHZ IN 1.33MH 7 i}
+1 PE 5 6 t FA 3 (P2 2MHZ IN}23 TN MHz 0 IT ob |
+oEN —l_ 2h Fatt 35 bee In 12! 19 ADEE ney +23 Blane 3 veg S— gray “oo PEN [OWN DRIVER ~ JI
+° | 3 | { 31 16 Y 8 +5V ~\ vec y
+i ! \_o- 2 DECY 2IDEC vec be 45 +5V ——4 3 '
+PEN o ib ral 2 34 52 4MHZ Srey | 30 13S renSERVO Van | lee —sy a {3 3 ENCAX y
+1 | 10 3 AI5 13 29 li, 12 5 Ul . 5 ENCBX ' y,
+PEN oO | + PINCH-ROLLER AIS * PULSE PULSE 4 T
+5 Al4 14 22 17 2 3 COM y,
+—1_ 4 SWITCH Al4 Y SAT MOT SAT ' t
+3 7 13 AIS 15 21 18 /
+> X SIGN AL3 Y ERR ERROR |
+3 14 Al2 16 |, 14 7 ENCAY =e % 4 +18/26V
+' o— t X PULSE TT U22E 2 5 36 3 jclk SE| 19,20 _ENCBY wv 3 J2
+—1_ 4tirastT 1 SENSE X2 x2 stg Ys
+I 39 FA 40 All fit qo Gi TE 35 4 10 >
+o— S vod} +8V > AT teray X4 x4 TP NC f 2 PEN
+o— 9 VSS 1g % 03 7 r WW, )VR? ¥ ce 8 q SOLENOID
+—_Ll_ AD IN PEN D3 |
+o- ap out +12 be § pe 4 ick YF vegbE— s1av
+1 D1 5 3 X 8 PEN COIL J8 a)
+3 Y 4 |?! 4|%2 servo YOCT Tp *8¥ SUPPLY
+a 3) 2 33 16 1X4 YBB be -5Y j
+oo ae yite Inc x}35 =] INC (5)
+1 o +5V —557VD0 DEC YP3% 7 [DEC V 2 *2
+; i vss X SAT MOT SAT >
+AS x ERR}24 8 ERROR sei Le ENCAX 3
+SES 19,20 ENCBX +5V (Q) CAROUSEL
+h__DATA_BUS 13 | st6N TPL 2r!0 nec 4 '4 CRIB STEPPER
+11,12 visc (3)
+PULSE MOTOR
+ps3 +5V 6 8
+0 a ’ +5V Ri2 75V 4
+1 +5V RN3 3 4.64K
+1 BAUD ‘ 3! lie 210 6 Tocie Ree > A 5 qj AN — 45 5 Uisp CRIT, |__| 5 (2) Le,
+RATE [ERROR] ‘ ulop} ,
+! amie ia 3 +N a 0! °|4 $3 & MOTOR CURRENT SENSE we uu 6
+[4 115 i3 12 ont #
+5! 114 2H Pd , +5V
+{ ot 310 PEN PEN R6 DS2
+PAPER 6 13 i 2 a
+° 7! is li2 18 +5V
+3 S - 45V [ PAPER SIZE [A3]
+1 o 6 8 K OS! 4,
+I Al=| FAST=A/B 7 wn —d assy t
+Al=0 FAST=[FAST d °
+| PAPER SIZE [A4]
+NOTE
+
+Section VI
+
+SERVICE SHEET
+
+Figure 6-24. RS-232-C, Option 001
+Schematic Diagram
+
+6-27/6-28
+Model 7475A
+
+O03
+a4
+
+:
+He
+
+o(Ciz}e
+
+R2?
+
+el-ec14
+C3
+c17
+
+E1@ @
+ee:
+us
+
+FA
+c1 e@
+sq C=O
+CRS
+CO e007
+| C10
+u3
+Roots
+° :
+(3
+Us
+Cas} S
+U6 .
+C15
+=|e
+u10 = u7
+RNB RNI
+fooeeeeseen Deeeeetecsl
+
+(Rit)
+(Ri2)
+(R13)
+LR 14)
+
+i
+(9
+U12
+(R10)
+C20
+C21
+
+ull
+
+u14
+
+Cc
+Ui5
+U16
+IN
+ES
+
+ul?
+
+4
+U13
+C22
+19 :
+
+U26
+>]
+U27 é
+CXR REREXED ||
+RN4
+u20
+o-C)-0C25
+u18
+U
+C26
+“ os)
+
+C29
+
+U24
+U25
+
+E10
+C34
+
++
+
+7475-B-29-1A
+PART OF Al MAIN PCA 07475-60102 (DATE CODE 2450-11)
+
+3. 16K
+
+t
+PAPER SIZE a)
+
+- INPUT /OUTPUT = PROCESSOR ——— A. -— aE RAM ~ - PAPER MOTOR DRIVERS —————_—_
++5vV “vec a 2 +10/26V +19/26V +18/26V
++5V
+LOND 8 vce AIS AT 10 or ula AT of, xy] JIS AT UI6 Js [5 gh r 04
+AL___19 J
+' tc PROCESSOR AG a], (a6 Q | AG U2A i t— \
+1 vec AS 8 | (AS 8 l (AS 24 y {
+BGND oN 4 VPP +5V —- VPP aeq— *8¥ he vec +5V A
+S R/W } 22 _Al2 AS its vec + 28 ee vec +28 7 :
+AS 6 \"5 ne 28 AS 6 | AS vss 2 +5v —
+J4 AlO A2 5,5 A8-8 AZ 5 | A2 047 XC 2 HS 3 PAPER
+HP-1B Ag Al 4 a 4 |< Ad-16383 Al X+
+37ST 45V — WR [i7 aa AB 3|*4 AD 3 Ao ORIVE
+| _xCVvR b-————— 128 > |28 4 GRIT
+O10! 3 2 16 AT AID 25 Alp 25 AQ 1*~
+{ > SB HALT +=" 256 <> 1256 a8 Wao WHEEL
+La 15 AG Al2 14 Al2 24 14 A8 K.
+p102 2 +5V Re 4 as yng 2 8° exo aati |e GNe yaio 19 |
+? Tape sis ! wut ris aa nea 028 ae 2513028 7 — ENCAX
+D103 I MI Fiz. ASN Vari 2/2048 Vary 212048 Ri OE +18/26V +18/26V +18/26V ENCBX
+3 ° Si-4 |-_ <$—_____°=| U21B 4096 A 5 4096 2
+Lal NC ——{BA il A2 | AI3 78 W +5V 4 vec
+o104 Q 2 [oar YL < | eee ls_|s * b a3 ENCOOER tow
+4 o Sins ETAL [9 —ABN a g | U2sc 8 ; 62 U2B IK a —-—
+los or |
+13 [2208 54 ae 26 OT ee 2 +5V & +F Er SSs - A ; “ef
+5 RAM
+g [NoAC B45 55 A, 1} 18 08 ROM [ig og De 2,A,3 Ta, 3} 28 = sv 4
+reqecel Aer Pi ae ro 3} 8 81 KA 7 HS
+5 [fol & +S 6 XTAL a Lit b2 A> pe aS Lis 02 x=] 5
+as +SV a, 11803 J A653 DS 2,A,3 1,A, 3 p14 3) 4
+17 LREN 54% oF vss ans A. Hs—2t a 15 ba 2,A,3. 1 A,S Hs oN J < a7 e cR4
+vss A, |} >—?— “113 05 \ VY —>———12,A,3 1,4,3}---——"
+18 4.7K a1 1206 A, Ib Sse D6 10 ats ratg_lo__Dé
+4 1107 A, | VOT 9 Ai2T9 DT
+19 A, | ttt OT {24,3 1,A,3 PEN MOTOR DR RS
+20 vec RESET A, 1 }-—— N a IVERS ————~
+D7
+o Leno Dé +18/26V +18/26V +18/26V ‘
+23 DS +5v | -_ \
+D4 4MHZ 8 > Ql
+2a BGND D3 (MHZ U8A IK a
+D2 \
+12 | SHIELO DI
+b 3 we sv —4
+\ YC 2 HS J5
+SRQ 23, L_ -XCVR y+
+10 Tye ATN |
+1g -OL08 3 51-4 TFC ) es cre
+15 LOI07 24 Assia ee
+LM 2 ADDRESS BUS 2 y,
+6 [OAV 204 51-4 5 " 7 +18/26V ENCAY
+DATA BUS 2 y, y +18/26V +18/26V y ENCBY
+f- f a
+14 | 2108 + 2 51-4 “a 5 bR3 - ENCODER 2
+7 LNRFD ig Asse © vee ] IK a +, ——_
+Ly u2ic q «+
+© HoT ASS 7 HoT Ss 1 i ‘
+j) PATN 1& A3 $6 ; Al2 28 |aio Reser 38 WR/MR CS RaW 3o 5 yas & \| | PEN
+3 All 24 {41 IMHz +28 St imyz ok 26 ei +sv —4
+2 pat Sos ; CamerTapeS ie ad YE wa ro 6 r- t
+° u -k- - AQ xt CSROM YA 2
+ate 8 [9 6 or 32 ARRAY LOT?
+z ENTER ° 06 3] XA VMA EIN3 +22 3 (~*~
+NUL
+VIEW o D5 30/26 5 27 K_ } 96 Br crs us|
+mae 5a 8 EIN2 [5 INT EouTT =" ne Nes vee )
+o 37 eat EINI iv CSi/0 Baup 8 ; ENCAY y
+° 6 ENCBY
+VIEW 4
+; 3 Spi 1.33MHz IN-*2 | .33MHZ ad
+\ 3° 2 |P2 2MHz 1n}23 2MHZ DUT GT
+os. 35 ren 2! DEC Incy +23 16 linc YS veg +12V om PEN DOWN DRIVER J]
+I 31 15 Y +5V vec }
+—l. 12 DECY DEC vec +5V wv — 3
+3 34 E10B}-—— 4MHZ 30 13 SERVO 12 ls [3 ENCAX 7A
+a | 8 13 AIS Y SIGNI 39 11,12 | oLN veBTe “SV ul T 5 2 ENCBX J
+° s+ X SIGN Naa AIS Y PULSE FSS 77] PULSE > > 4 cou 4
+1. 4 14 N Al4 Y SAT MOT SAT iv i
+ros ane X PULSE AIS Ala Y ERR LZ! 8 | RoR
+— 3 1) Al2 \4 7 ENCAY | 4
+' UP/DOWN ° 4 oor 1 SENSE 40 ' U2IE Al2 us 36 ce ory 19,20 ENCBY wv a J2
+! SIZE _A/B o 39 jae voD } All 7 GATE 35 4 [9,10 7 ~ —
+— s vss +22 L- AT ARRAY x4 TP Ne TI? PEN
+9 19 D3 7 A +5V SOLENOID
+—— AD IN PEN D3 1
+Zz 3 10 02 6 14 U4 14 6 }
+cared AD OUT NT 5 02 ziclk «6 (vos +12V ISA ps J 13 Ay
+° od 310! T1*2 servo VS SV 5 ie 18/26V sy
+—l. +18/26V Dg x4 vag + -5y I
+Ly) oO Ed ine x/-33 16 | TAc 5 +5V
+! FAST o— 40 tp pec y}s2 18 InE¢ V 13 ‘4 2 [1224 2
+! $3 RNA, 407K vss x saT}s4 IT lot sat UISB ye
++5V ww x ERR +24 18 ERROR sei} ENCAX 7 2]
+f t seg {12.20 ENCBX (3) CAROUSEL
+REAR PANEL , 5 3 13 | cron TPL o2!0 nc 4 DRIVE
+SWITCHES I i. M12 lou se (4) STEPPER
+; _
+| 5H 14 6 [4 Ds ps3 +5V RII MOTOR
+| 2 4 113 RN2 4.64K
+' ; et 2 ~ 6 = iof **7K aT 1 -ae R7 he #1
+p ADDRESS ~ 4 TY D2 rn ERROR a 4 $316 MOTOR CURRENT SENSE 0.
+8 * o (2)
+2 b3 - PEN PEN
+9 2
+5 R12 ® PART OF U24
+US/A4 2 5 pat, DIOOE ASSEMBLY
+-—---d 12 +5¥ ——wne
+' PINCH- i asv I
+ROLLER y Ri3
+SWITCH
+
+747§-J-38-1C
+
+NOTE
+
+ON THIS SCHEMATIC OLAGRAM, X OESIGNATES THE
+LOGIC FUNCTIONS CONTROLLING THE PAPER DRIVE
+
+AND Y DESIGNATES THE LOGIC FUNCTIONS CONTRGLLING
+THE PEN DRIVE.
+
+Section VI
+
+SERVICE SHEET
+
+Figure 6-25. HP-IB, Option 002
+Schematic Diagram
+
+6-29/6-30
+DS2 DSi
+
+C14
+C15
+Ci6
+
+< H13
+J6
+RN3e ee ew)
+Kia
+«i
+U3
+ts ] as
+—_
+U4 gq
+US ,
+e@(Rs }e
+U6 :
+c1Z
+fos
+= Oe
+“XUYURKEXY )
+RN2 RN1
+
+U10
+uti
+
+31
+RN4
+ul2
+u13
+u14
+UIs
+IN
+E4
+U16
+Ci7
+u17 Ee
+IN
+uU18
+
+u21
+U22
+U23
+
+)]
+
+Model 7475A
+
+7475-B-30-1A
+Section VI
+
+PART OF Al MAIN PCA 07475-6(0! (POWER SUPPLY FOR RS-232)
+
++18/26V F |
+CRT PEN TO ERROR COMP 3.15
+- Ri +18/26V
+a > COPEL y R19 +] VY (UNREGULATED)
+CRI2 cCRII 0.8A } Qlo c2
+' + I
+' cre X cao CI 1
+1/3 68
+s: 2) r | at
+(908) A! (918) (8) (8) i oT 8 zm FCRE VR6
+7 | esoopr | ‘4?
+2
+j2ov { — (5 _cs28) § 3 % "
+0 4) { 1.6A 1
+LINE | __ rH ; {8 < <4 2 13 fb * +5V ,
+| I + R26 + al al C5-7,15
+| c37 C82 38.3 U2 | CSO C26 €18-32,35,26,29,45
+6800PF 6800uF ; REGULATOR VR | 1.0 0.1 “01
+(98) Me (928) } (928) 5 5.6V
+6 C35 °
+<—— nec 1.0 2
+(958) _. 7 L a R2| =
+<t— ne 7 + 1.21K
+C39 _L ¢38 LL ¢4i nev . -5y 1
+6800PF T 330 330 ~ i
+VR2 C3
+5.11V i 2b!
+R23
+CRI6 CRIS 150
+' wv ' -|2V
+t
+R25 $R24 CRI3 cRI4. |, C42 VR3 if C3] | C14 ;
+10 10 4 330 6.19V 7 47 0! '
+.
+VR4
+6.19V
+9 !8) (8) ¢ gl
+(928) 2
+100V 3 PART OF Al MAIN PCA _ 07475-6c02
+LINE —< . -- -- -- -- -- -- -- -- --5
+(8) 4 s+ 8/26 Fl
+=< TO ERROR COMP 3.154 +18/26V
+mi TO MOTOR DRIVERS
+(958) B10 5500
++12V
+1 '
+1 I
+(9281 (928) - 2 6 iy 13
+° <-— ne 5 s1 OQ a 3
+T (908) "  (918),-4 (8) (8) ] TI
+< NC ° < C30
+6800PF “T .47
+
+Jl
+
+a
+foe)
+~
+
+}
+
+F3 WI
+
+2
+928) § 3 1.64 L|
+4 . AA ’ & & +5V
+
+l
+(8) | i
+izov) —,_| 454) | 1228) ¢
+LINE Fy ; (8) —< 2 ¢ +—
+_
+2 | + R22 | cas Is YT Teco: tL c22 1 c8-9, 12-19,23
+628 C26 38.3 22 u20 0.1 1.0 01
+(958) 3 | 6800PF 6800uF , + REGULATOR VR} a , L ’ a :
+220V (98) K“ (928) | (928) , 75 LT 5.6V
+4 <
+
+LINE - c26
+(958) $ TN | L ar
+if c29 i
+i 6800PF —- $ R2 ;
+F261 G3 R19
+9 £228) (928) 5 a7 CRIS > BK
+(8) 6 1 * WW -5V
+HS A ™~
+<— — nc + L C32 L C3
+928) » Ty ’ Ch4 AT 01
+X ' a VR2 a .
+5. 11V
+5 8) (8) Z|
+2
+3
+(958) ;
+240v 4 | __ __ _. _- a _- -- -- --4 SERVICE SHEET
+Figure 6-26. Power Supply,
+(928) (928) 5 Schematic Diagram
+(B) 6 £6 xe
+(928) ¢ ¢T xe 6-31
